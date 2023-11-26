@@ -89,7 +89,7 @@
                 width="50">
             </el-table-column>
             <el-table-column label="索引" :align="contents.tableAlign"  v-if="contents.tableIndex" type="index" width="50" />
-                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
+                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="wenzhangbiaoti"
                    :header-align="contents.tableAlign"
 		    label="文章标题">
@@ -97,7 +97,7 @@
                        {{scope.row.wenzhangbiaoti}}
                      </template>
                 </el-table-column>
-                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
+                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="wenzhangleixing"
                    :header-align="contents.tableAlign"
 		    label="文章类型">
@@ -116,7 +116,7 @@
                       <div v-else>无图片</div>
                     </template>
                   </el-table-column>
-                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
+                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="jianshu"
                    :header-align="contents.tableAlign"
 		    label="简述">
@@ -124,7 +124,7 @@
                        {{scope.row.jianshu}}
                      </template>
                 </el-table-column>
-                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
+                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="fabushijian"
                    :header-align="contents.tableAlign"
 		    label="发布时间">
@@ -132,7 +132,7 @@
                        {{scope.row.fabushijian}}
                      </template>
                 </el-table-column>
-                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
+                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="yonghuming"
                    :header-align="contents.tableAlign"
 		    label="用户名">
@@ -140,12 +140,12 @@
                        {{scope.row.yonghuming}}
                      </template>
                 </el-table-column>
-              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" 
+              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign"
                   prop="shhf"
                  :header-align="contents.tableAlign"
                   label="审核回复">
               </el-table-column>
-              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" 
+              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign"
                   prop="sfsh"
                  :header-align="contents.tableAlign"
                   label="审核状态">
@@ -153,7 +153,7 @@
                     <span style="margin-right:10px">{{scope.row.sfsh=='是'?'通过':'未通过'}}</span>
                   </template>
               </el-table-column>
-              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" 
+              <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign"
                   v-if="isAuth('wenzhangxinxi','审核')"
                   prop="sfsh"
                  :header-align="contents.tableAlign"
@@ -162,7 +162,7 @@
                     <el-button  type="text" icon="el-icon-edit" size="small" @click="shDialog(scope.row)">审核</el-button>
                   </template>
               </el-table-column>
-            <el-table-column width="300" :align="contents.tableAlign" 
+            <el-table-column width="300" :align="contents.tableAlign"
                :header-align="contents.tableAlign"
                 label="操作">
                 <template slot-scope="scope">
@@ -664,11 +664,11 @@ export default {
       }
     }
   }
-  
+
 
   .el-button+.el-button {
     margin:0;
-  } 
+  }
 
   .tables {
 	& /deep/ .el-button--success {
@@ -681,7 +681,7 @@ export default {
 		border-radius: 44px;
 		background-color: rgba(45, 103, 81, 1);
 	}
-	
+
 	& /deep/ .el-button--primary {
 		height: 40px;
 		color: rgba(255, 255, 255, 1);
@@ -692,7 +692,7 @@ export default {
 		border-radius: 44px;
 		background-color: rgba(45, 103, 81, 1);
 	}
-	
+
 	& /deep/ .el-button--danger {
 		height: 40px;
 		color: rgba(255, 255, 255, 1);
@@ -714,7 +714,7 @@ export default {
 	.table-content {
 		background: transparent;
 	}
-	
+
 	.tables /deep/ .el-table__body tr {
 				background-color: rgba(255, 255, 255, 1) !important;
 				color: rgba(0, 0, 0, 1) !important;
@@ -726,10 +726,10 @@ export default {
 		background-color: #F5F7FA !important;
 		color: #606266 !important;
 	}
-	
+
 	 .tables /deep/ .el-table__body tr:hover>td {
 	   	   background-color: rgba(155, 200, 183, 0.5) !important;
 	   	   	   color: rgba(0, 0, 0, 1) !important;
 	   	 }
-	 
+
 </style>

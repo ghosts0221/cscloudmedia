@@ -105,7 +105,7 @@ color: #999 !important;
 					<div class="layui-carousel" id="swiper" :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 auto","borderColor":"rgba(0,0,0,.3)","borderRadius":"0","borderWidth":"0","width":"400px","borderStyle":"solid","height":"400px"}'>
 					  <div carousel-item>
 						<div v-if="swiperList.length" v-for="(item,index) in swiperList" :key="index">
-							<img style="width: 100%;height: 100%;object-fit:cover;" :src="baseurl+item" />
+							<img style="width: 100%;height: 100%;object-fit:cover;" :src="baseurl2+item" />
 						</div>
 					  </div>
 					</div>
@@ -184,7 +184,7 @@ color: #999 !important;
 		<div class="data-detail">
 			
 			<div class="video-container">
-				<video :style='{"width":"80%","margin":"20px auto","borderRadius":"20px","display":"block"}' style="width: 100%;" :src="baseurl+detail.shipinbofang" controls="controls">
+				<video :style='{"width":"80%","margin":"20px auto","borderRadius":"20px","display":"block"}' style="width: 100%;" :src="baseurl2+detail.shipinbofang" controls="controls">
 					您的浏览器不支持视频播放
 				</video>
 			</div>
@@ -593,6 +593,8 @@ color: #999 !important;
 			var id = http.getParam('id');
 			vue.detail.id = id;
 			vue.baseurl = http.baseurl;
+			vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
+
 
 			// 商品信息
 			http.request(`${vue.detailTable}/detail/` + id, 'get', {}, function(res) {

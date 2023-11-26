@@ -94,7 +94,7 @@
 				<div class="data-list layui-col-md8 layui-col-md-offset2">
 					<div @click="jump('../'+item.tablename+'/detail.html?id='+item.refid)" v-for="(item,index) in dataList" v-bind:key="index"
 					 class="data-item layui-col-md3">
-						<img class="cover" :src="baseurl+item.picture.split(',')[0]">
+						<img class="cover" :src="baseurl2+item.picture.split(',')[0]">
 						<h3 class="title">{{item.name}}</h3>
 					</div>
 				</div>
@@ -155,6 +155,8 @@
 				var limit = 8;
 
 				vue.baseurl = http.baseurl;
+				vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
+
 				// 获取轮播图 数据
 				http.request('config/list', 'get', {
 					page: 1,
@@ -166,7 +168,7 @@
 							if (item.name.indexOf('picture') >= 0 && item.value && item.value != "" && item.value != null) {
 								swiperItemHtml +=
 									'<div>' +
-									'<img class="swiper-item" style="width: 100%;height: 100%;object-fit:cover;" src="' + http.baseurl+item.value + '">' +
+									'<img class="swiper-item" style="width: 100%;height: 100%;object-fit:cover;" src="' + http.baseurl2+item.value + '">' +
 									'</div>';
 							}
 						}

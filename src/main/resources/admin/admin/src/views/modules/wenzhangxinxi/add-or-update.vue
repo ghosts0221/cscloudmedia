@@ -10,14 +10,14 @@
     >
       <el-row >
       <el-col :span="12">
-        <el-form-item class="input" v-if="type!='info'"  label="文章标题" prop="wenzhangbiaoti">
+        <el-form-item class="input" v-if="type!='info'"  label="文章标" prop="wenzhangbiaoti">
           <el-input v-model="ruleForm.wenzhangbiaoti" 
-              placeholder="文章标题" clearable  :readonly="ro.wenzhangbiaoti"></el-input>
+              placeholder="文章标" clearable  :readonly="ro.wenzhangbiaoti"></el-input>
         </el-form-item>
         <div v-else>
-          <el-form-item class="input" label="文章标题" prop="wenzhangbiaoti">
+          <el-form-item class="input" label="文章标" prop="wenzhangbiaoti">
               <el-input v-model="ruleForm.wenzhangbiaoti" 
-                placeholder="文章标题" readonly></el-input>
+                placeholder="文章标" readonly></el-input>
           </el-form-item>
         </div>
       </el-col>
@@ -126,6 +126,7 @@
   </div>
 </template>
 <script>
+vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
 // 数字，邮件，手机，url，身份证校验
 import { isNumber,isIntNumer,isEmail,isPhone, isMobile,isURL,checkIdCard } from "@/utils/validate";
 export default {

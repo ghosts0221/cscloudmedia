@@ -1,5 +1,5 @@
 
-var projectName = '智能热度分析和自媒体推送平台';
+var projectName = 'CS Cloud Media';
 /**
  * 轮播图配置
  */
@@ -56,7 +56,7 @@ var indexNav = [
 
 ]
 
-var adminurl =  "http://localhost:8080/springboot9zo8s/admin/dist/index.html";
+var adminurl =  "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/admin/dist/index.html";
 
 var cartFlag = false
 

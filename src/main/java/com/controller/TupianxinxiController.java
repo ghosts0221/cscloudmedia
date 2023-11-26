@@ -165,6 +165,7 @@ public class TupianxinxiController {
     public R update(@RequestBody TupianxinxiEntity tupianxinxi, HttpServletRequest request){
         //ValidatorUtils.validateEntity(tupianxinxi);
         tupianxinxiService.updateById(tupianxinxi);//全部更新
+		tupianxinxi.setTupianfengmian("https://soupfish.blob.core.windows.net/soup/1651715916093.jpg");
         return R.ok();
     }
     

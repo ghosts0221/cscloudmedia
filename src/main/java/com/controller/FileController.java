@@ -1,8 +1,6 @@
 package com.controller;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
@@ -11,6 +9,14 @@ import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 
+import com.azure.cosmos.*;
+import com.azure.cosmos.models.PartitionKey;
+import com.azure.storage.blob.BlobClient;
+import com.azure.storage.blob.BlobContainerClient;
+import com.azure.storage.blob.BlobServiceClient;
+import com.azure.storage.blob.BlobServiceClientBuilder;
+import com.azure.storage.blob.models.BlobHttpHeaders;
+import com.azure.storage.common.StorageSharedKeyCredential;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,46 +48,95 @@ import com.utils.R;
 public class FileController{
 	@Autowired
     private ConfigService configService;
+
+	// 替换为你的存储帐户名称
+	private static final String AZURE_ACCOUNT_NAME = "soupfish";
+
+	// 替换为你的存储帐户密钥
+	private static final String AZURE_ACCOUNT_KEY = "vwmS6PRxFkcBmp6ObsAgO5jXSVJnPIoUsCoCh1pgZLXLx5LJLSJj0vJehRzXFK1p7v+9jOMELdhw+AStwFipfw==";
+
+	private static final String AZURE_CONTAINER_NAME = "soup";
+
+	private static final String COSMOS_DB_ENDPOINT = "your-cosmos-db-endpoint";
+	private static final String COSMOS_DB_KEY = "your-cosmos-db-key";
+	private static final String COSMOS_DB_DATABASE_NAME = "your-database-name";
+	private static final String COSMOS_DB_CONTAINER_NAME = "your-container-name";
 	/**
 	 * 上传文件
 	 */
+
+
 	@RequestMapping("/upload")
 	public R upload(@RequestParam("file") MultipartFile file,String type) throws Exception {
 		if (file.isEmpty()) {
 			throw new EIException("上传文件不能为空");
 		}
-		String fileExt = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".")+1);
-		File path = new File(ResourceUtils.getURL("classpath:static").getPath());
-		if(!path.exists()) {
-		    path = new File("");
+
+		// 使用存储帐户名称和密钥创建 BlobServiceClient
+		BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+				.endpoint("https://" + AZURE_ACCOUNT_NAME + ".blob.core.windows.net")
+				.credential(new StorageSharedKeyCredential(AZURE_ACCOUNT_NAME, AZURE_ACCOUNT_KEY))
+				.buildClient();
+
+		// 使用 BlobServiceClient 创建 BlobContainerClient
+		BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(AZURE_CONTAINER_NAME);
+
+		String fileExt = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
+		String fileName = new Date().getTime() + "." + fileExt;
+
+		// 使用 BlobContainerClient 创建 BlobClient
+		BlobClient blobClient = containerClient.getBlobClient(fileName);
+
+		InputStream targetStream = new ByteArrayInputStream(file.getBytes());
+		blobClient.upload(targetStream, file.getSize(), true);
+
+		BlobHttpHeaders headers = new BlobHttpHeaders();
+		headers.setContentType(file.getContentType());
+		blobClient.setHttpHeaders(headers);
+		String fileUrl = "https://soupfish.blob.core.windows.net/soup/" + fileName;
+		
+
+		ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
+		if (configEntity == null) {
+			configEntity = new ConfigEntity();
+			configEntity.setName("faceFile");
+			configEntity.setValue(fileName);
+		} else {
+			configEntity.setValue(fileName);
 		}
-		File upload = new File(path.getAbsolutePath(),"/upload/");
-		if(!upload.exists()) {
-		    upload.mkdirs();
-		}
-		String fileName = new Date().getTime()+"."+fileExt;
-		File dest = new File(upload.getAbsolutePath()+"/"+fileName);
-		file.transferTo(dest);
-		/**
-  		 * 如果使用idea或者eclipse重启项目，发现之前上传的图片或者文件丢失，将下面一行代码注释打开
-   		 * 请将以下的"D:\\springbootq33sd\\src\\main\\resources\\static\\upload"替换成你本地项目的upload路径，
- 		 * 并且项目路径不能存在中文、空格等特殊字符
- 		 */
-//		FileUtils.copyFile(dest, new File("D:\\springbootq33sd\\src\\main\\resources\\static\\upload"+"/"+fileName)); /**修改了路径以后请将该行最前面的//注释去掉**/
-		if(StringUtils.isNotBlank(type) && type.equals("1")) {
-			ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
-			if(configEntity==null) {
-				configEntity = new ConfigEntity();
-				configEntity.setName("faceFile");
-				configEntity.setValue(fileName);
-			} else {
-				configEntity.setValue(fileName);
-			}
-			configService.insertOrUpdate(configEntity);
-		}
+		configService.insertOrUpdate(configEntity);
+
 		return R.ok().put("file", fileName);
 	}
-	
+
+//	private void saveMetadataToCosmosDB(String fileName, String contentType) {
+//		try {
+//			CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder()
+//					.endpoint(COSMOS_DB_ENDPOINT)
+//					.key(COSMOS_DB_KEY)
+//					.consistencyLevel(ConsistencyLevel.EVENTUAL)
+//					.contentResponseOnWriteEnabled(true);
+//
+//			CosmosClient cosmosClient = cosmosClientBuilder.buildClient();
+//			CosmosDatabase cosmosDatabase = cosmosClient.getDatabase(COSMOS_DB_DATABASE_NAME);
+//			CosmosContainer cosmosContainer = cosmosDatabase.getContainer(COSMOS_DB_CONTAINER_NAME);
+//
+//			FileMetadataEntity metadataEntity = new FileMetadataEntity();
+//			metadataEntity.setId(UUID.randomUUID().toString());
+//			metadataEntity.setFileName(fileName);
+//			metadataEntity.setFileType(contentType);
+//			// 其他元数据字段根据需要设置
+//
+//			ItemRequestOptions options = new ItemRequestOptions();
+//			options.partitionKey(new PartitionKey(metadataEntity.getId()));
+//
+//			cosmosContainer.createItem(metadataEntity, options, FileMetadataEntity.class);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			// 处理异常，根据实际情况进行日志记录等操作
+//		}
+//	}
+//
 	/**
 	 * 下载文件
 	 */

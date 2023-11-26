@@ -966,7 +966,7 @@
 	    <div class="list">
 	      <div v-for="(item,index) in wenzhangxinxiRecommend" :key="index" @click="jump('../wenzhangxinxi/detail.html?id='+item.id)" class="list-item" :class="4=='3'?'list-item3':4=='5'?'list-item5':''">
 	        <div class="list-item-body animation-box" :style='{"padding":"6px 0 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0 0 1px","borderStyle":"solid"}'>
-				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.tupian?baseurl+item.tupian.split(',')[0]:''" alt="" />
+				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.tupian?baseurl2+item.tupian.split(',')[0]:''" alt="" />
 				<div  class="line1" v-if='true' :style='{"isshow":true,"padding":"0","margin":"10px 0","backgroundColor":"rgba(0, 0, 0, 0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"center","fontSize":"16px"}' class="name">{{item.wenzhangbiaoti}}</div>
 	        </div>
 	      </div>
@@ -1022,7 +1022,7 @@
 	    <div class="list">
 	      <div v-for="(item,index) in tupianxinxiRecommend" :key="index" @click="jump('../tupianxinxi/detail.html?id='+item.id)" class="list-item" :class="4=='3'?'list-item3':4=='5'?'list-item5':''">
 	        <div class="list-item-body animation-box" :style='{"padding":"6px 0 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0 0 1px","borderStyle":"solid"}'>
-				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.tupianfengmian?baseurl+item.tupianfengmian.split(',')[0]:''" alt="" />
+				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.tupianfengmian?baseurl2+item.tupianfengmian.split(',')[0]:''" alt="" />
 				<div  class="line1" v-if='true' :style='{"isshow":true,"padding":"0","margin":"10px 0","backgroundColor":"rgba(0, 0, 0, 0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"center","fontSize":"16px"}' class="name">{{item.tupianmingcheng}}</div>
 	        </div>
 	      </div>
@@ -1078,7 +1078,7 @@
 	    <div class="list">
 	      <div v-for="(item,index) in shipinxinxiRecommend" :key="index" @click="jump('../shipinxinxi/detail.html?id='+item.id)" class="list-item" :class="4=='3'?'list-item3':4=='5'?'list-item5':''">
 	        <div class="list-item-body animation-box" :style='{"padding":"6px 0 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0 0 1px","borderStyle":"solid"}'>
-				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.shipinfengmian?baseurl+item.shipinfengmian.split(',')[0]:''" alt="" />
+				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"1px","width":"100%","borderStyle":"solid","height":"240px"}' :src="item.shipinfengmian?baseurl2+item.shipinfengmian.split(',')[0]:''" alt="" />
 				<div  class="line1" v-if='true' :style='{"isshow":true,"padding":"0","margin":"10px 0","backgroundColor":"rgba(0, 0, 0, 0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"center","fontSize":"16px"}' class="name">{{item.shipinmingcheng}}</div>
 	        </div>
 	      </div>
@@ -1137,7 +1137,7 @@
 			<div id="lists-five-swiperwenzhangxinxi" class="swiper-container" style="box-sizing: border-box;" :style='{"padding":"50px 0","boxShadow":"0 0 0px rgba(0,0,0,.3)","margin":"0","borderColor":"#ccc","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"10px","borderWidth":"0","width":"100%","borderStyle":"solid","height":"660px"}'>
 			  <div class="swiper-wrapper">
 			    <div class="swiper-slide" v-for="(item,index) in wenzhangxinxiList" class="list-item" :key="index" @click="jump('../wenzhangxinxi/detail.html?id='+item.id)">
-					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.tupian?baseurl+item.tupian.split(',')[0]:''" alt="" />
+					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.tupian?baseurl2+item.tupian.split(',')[0]:''" alt="" />
 				</div>
 			  </div>
 			  <!-- Add Pagination -->
@@ -1196,7 +1196,7 @@
 			<div id="lists-five-swipertupianxinxi" class="swiper-container" style="box-sizing: border-box;" :style='{"padding":"50px 0","boxShadow":"0 0 0px rgba(0,0,0,.3)","margin":"0","borderColor":"#ccc","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"10px","borderWidth":"0","width":"100%","borderStyle":"solid","height":"660px"}'>
 			  <div class="swiper-wrapper">
 			    <div class="swiper-slide" v-for="(item,index) in tupianxinxiList" class="list-item" :key="index" @click="jump('../tupianxinxi/detail.html?id='+item.id)">
-					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.tupianfengmian?baseurl+item.tupianfengmian.split(',')[0]:''" alt="" />
+					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.tupianfengmian?baseurl2+item.tupianfengmian.split(',')[0]:''" alt="" />
 				</div>
 			  </div>
 			  <!-- Add Pagination -->
@@ -1255,7 +1255,7 @@
 			<div id="lists-five-swipershipinxinxi" class="swiper-container" style="box-sizing: border-box;" :style='{"padding":"50px 0","boxShadow":"0 0 0px rgba(0,0,0,.3)","margin":"0","borderColor":"#ccc","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"10px","borderWidth":"0","width":"100%","borderStyle":"solid","height":"660px"}'>
 			  <div class="swiper-wrapper">
 			    <div class="swiper-slide" v-for="(item,index) in shipinxinxiList" class="list-item" :key="index" @click="jump('../shipinxinxi/detail.html?id='+item.id)">
-					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.shipinfengmian?baseurl+item.shipinfengmian.split(',')[0]:''" alt="" />
+					<img style="object-fit: cover;position:absolute;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"#ccc","backgroundColor":"#fff","borderRadius":"130px 130px 0 0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"80%"}' :src="item.shipinfengmian?baseurl2+item.shipinfengmian.split(',')[0]:''" alt="" />
 				</div>
 			  </div>
 			  <!-- Add Pagination -->
@@ -1339,6 +1339,7 @@
 		var http = layui.http;
 		var jquery = layui.jquery;
 	vue.baseurl=http.baseurl;
+		vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
       // 获取轮播图 数据
       http.request('config/list', 'get', {
         page: 1,
@@ -1349,7 +1350,7 @@
           res.data.list.forEach(element => {
             if (element.value != null) {
               swiperList.push({
-                img: http.baseurl + element.value
+                img: + element.value
               });
             }
           });

@@ -286,7 +286,7 @@ width: 100%;
 		</div>
 	      <div @click="jump('../shipinxinxi/detail.html?id='+item.id)" v-for="(item,index) in dataList" :key="index" class="list-item" :class="4=='3'?'list-item3':4=='5'?'list-item5':''">
 	        <div class="list-item-body animation-box" :style='{"padding":"10px","boxShadow":"0px 3px 6px rgba(0, 0, 0, 0.16)","margin":"0 0 10px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","borderRadius":"20px","borderWidth":"0","borderStyle":"solid"}'>
-				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(0,0,0,.3)","borderRadius":"25px","borderWidth":"0","width":"100%","borderStyle":"solid","height":"200px"}' :src="item.shipinfengmian?baseurl+item.shipinfengmian.split(',')[0]:''">
+				<img :style='{"boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(0,0,0,.3)","borderRadius":"25px","borderWidth":"0","width":"100%","borderStyle":"solid","height":"200px"}' :src="item.shipinfengmian?baseurl2+item.shipinfengmian.split(',')[0]:''">
 				<div class="info">
 					<div v-if="item.price" :style='{"padding":"0","margin":"10px 0 0 0","backgroundColor":"rgba(0,0,0,0)","color":"red","borderRadius":"0","textAlign":"left","width":"100%","fontSize":"12px"}' class="price"><span :style='{"fontSize":"12px"}'>￥</span>{{Number(item.price).toFixed(2)}}</div>
 					<div v-if="item.vipprice&&item.vipprice>0" :style='{"padding":"0","margin":"10px 0 0 0","backgroundColor":"rgba(0,0,0,0)","color":"red","borderRadius":"0","textAlign":"left","width":"100%","fontSize":"12px"}' class="price"><span :style='{"fontSize":"12px"}'>￥</span>{{Number(item.vipprice).toFixed(2)}} <span :style='{"fontSize":"12px"}'>会员价</span></div>
@@ -354,7 +354,9 @@ width: 100%;
 	var limit = 8;
     limit = 4 * 2;
 	vue.baseurl = http.baseurl;
-      // 获取轮播图 数据
+	vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
+
+		// 获取轮播图 数据
       http.request('config/list', 'get', {
         page: 1,
         limit: 5

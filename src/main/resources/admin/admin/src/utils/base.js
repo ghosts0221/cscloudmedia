@@ -9,7 +9,7 @@ const base = {
     },
     getProjectName(){
         return {
-            projectName: "智能热度分析和自媒体推送平台"
+            projectName: "CS Cloud Media"
         } 
     }
 }

@@ -1,10 +1,12 @@
 # Tomcat
 server:
-    tomcat:
-        uri-encoding: UTF-8
-    port: 8080
-    servlet:
-        context-path: /springboot9zo8s
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+  servlet:
+    context-path: /springboot9zo8s
+
+
 
 spring:
   datasource:
@@ -13,10 +15,16 @@ spring:
     username: soupfish
     password: Tygg0906
 
-#        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-#        url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=springboot9zo8s
-#        username: sa
-#        password: 123456
+    #        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    #        url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=springboot9zo8s
+    #        username: sa
+    #        password: 123456
+
+    azure:
+      storage:
+        account-name: soupfish
+        account-key: dleJwXdJd8TfuMwalBMZvp7F7BSVuGB7xJ2+JJthsUcyK5JFSTbD8UcSsWmkHGNyCOomDb//rYnJ+AStwrW8KA==
+        blob-endpoint: https://soupfish.blob.core.windows.net/
 
     servlet:
       multipart:
