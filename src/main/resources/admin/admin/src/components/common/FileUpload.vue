@@ -84,6 +84,9 @@ export default {
     },
     // 上传文件成功后执行
     handleUploadSuccess(res, file, fileList) {
+      console.log('Response:', res);
+      console.log('File info:', file);
+      console.log('File list:', fileList);
       if (res && res.code === 0) {
         fileList[fileList.length - 1]["url"] = "upload/" + file.response.file;
         this.setFileList(fileList);

@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,6 +13,15 @@ import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
+import com.azure.storage.blob.BlobClient;
+import com.azure.storage.blob.BlobContainerClient;
+import com.azure.storage.blob.BlobServiceClient;
+import com.azure.storage.blob.BlobServiceClientBuilder;
+import com.azure.storage.blob.models.BlobHttpHeaders;
+import com.azure.storage.common.StorageSharedKeyCredential;
+import com.entity.ConfigEntity;
+import com.entity.EIException;
+import com.service.ConfigService;
 import com.utils.ValidatorUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +49,7 @@ import com.utils.CommonUtil;
 import java.io.IOException;
 import com.service.StoreupService;
 import com.entity.StoreupEntity;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * 文章信息
@@ -54,6 +66,22 @@ public class WenzhangxinxiController {
 
     @Autowired
     private StoreupService storeupService;
+
+	@Autowired
+	private ConfigService configService;
+
+	// 替换为你的存储帐户名称
+	private static final String AZURE_ACCOUNT_NAME = "soupfish";
+
+	// 替换为你的存储帐户密钥
+	private static final String AZURE_ACCOUNT_KEY = "vwmS6PRxFkcBmp6ObsAgO5jXSVJnPIoUsCoCh1pgZLXLx5LJLSJj0vJehRzXFK1p7v+9jOMELdhw+AStwFipfw==";
+
+	private static final String AZURE_CONTAINER_NAME = "soup";
+
+	private static final String COSMOS_DB_ENDPOINT = "your-cosmos-db-endpoint";
+	private static final String COSMOS_DB_KEY = "your-cosmos-db-key";
+	private static final String COSMOS_DB_DATABASE_NAME = "your-database-name";
+	private static final String COSMOS_DB_CONTAINER_NAME = "your-container-name";
 
     
 
@@ -156,7 +184,9 @@ public class WenzhangxinxiController {
     public R save(@RequestBody WenzhangxinxiEntity wenzhangxinxi, HttpServletRequest request){
     	wenzhangxinxi.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
     	//ValidatorUtils.validateEntity(wenzhangxinxi);
-        wenzhangxinxiService.insert(wenzhangxinxi);
+		String fileName = (String) request.getSession().getAttribute("file");
+		wenzhangxinxi.setTupian(fileName);
+		wenzhangxinxiService.insert(wenzhangxinxi);
         return R.ok();
     }
     
@@ -167,7 +197,9 @@ public class WenzhangxinxiController {
     public R add(@RequestBody WenzhangxinxiEntity wenzhangxinxi, HttpServletRequest request){
     	wenzhangxinxi.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
     	//ValidatorUtils.validateEntity(wenzhangxinxi);
-        wenzhangxinxiService.insert(wenzhangxinxi);
+		String fileName = (String) request.getSession().getAttribute("file");
+		wenzhangxinxi.setTupian(fileName);
+		wenzhangxinxiService.insert(wenzhangxinxi);
         return R.ok();
     }
 
@@ -178,9 +210,62 @@ public class WenzhangxinxiController {
     @Transactional
     public R update(@RequestBody WenzhangxinxiEntity wenzhangxinxi, HttpServletRequest request){
         //ValidatorUtils.validateEntity(wenzhangxinxi);
-        wenzhangxinxiService.updateById(wenzhangxinxi);//全部更新
-        return R.ok();
+		String fileName = (String) request.getSession().getAttribute("file");
+		if (fileName != null && fileName.equals(wenzhangxinxi.getTupian())) {
+			// 文件没有变化，按原本的图片执行
+			wenzhangxinxiService.updateById(wenzhangxinxi);// 全部更新
+		} else {
+			wenzhangxinxi.setTupian(fileName);
+			wenzhangxinxi.setThumbsupnum(wenzhangxinxi.getThumbsupnum()+1);
+			wenzhangxinxiService.updateById(wenzhangxinxi);// 全部更新
+		}        return R.ok();
     }
+
+	@RequestMapping("/upload")
+	public R upload(@RequestParam("file") MultipartFile file, String type,HttpServletRequest request) throws Exception {
+
+		if (file.isEmpty()) {
+			throw new EIException("上传文件不能为空");
+		}
+
+		// 使用存储帐户名称和密钥创建 BlobServiceClient
+		BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
+				.endpoint("https://" + AZURE_ACCOUNT_NAME + ".blob.core.windows.net")
+				.credential(new StorageSharedKeyCredential(AZURE_ACCOUNT_NAME, AZURE_ACCOUNT_KEY))
+				.buildClient();
+
+		// 使用 BlobServiceClient 创建 BlobContainerClient
+		BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(AZURE_CONTAINER_NAME);
+
+		String fileExt = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
+		String fileName = new Date().getTime() + "." + fileExt;
+
+		// 使用 BlobContainerClient 创建 BlobClient
+		BlobClient blobClient = containerClient.getBlobClient(fileName);
+
+		InputStream targetStream = new ByteArrayInputStream(file.getBytes());
+		blobClient.upload(targetStream, file.getSize(), true);
+
+		BlobHttpHeaders headers = new BlobHttpHeaders();
+		headers.setContentType(file.getContentType());
+		blobClient.setHttpHeaders(headers);
+		String fileUrl = "https://soupfish.blob.core.windows.net/soup/" + fileName;
+		request.getSession().setAttribute("file",fileName);
+
+		if(StringUtils.isNotBlank(type) && type.equals("1")) {
+			ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
+			if(configEntity==null) {
+				configEntity = new ConfigEntity();
+				configEntity.setName("faceFile");
+				configEntity.setValue(fileName);
+			} else {
+				configEntity.setValue(fileName);
+			}
+			configService.insertOrUpdate(configEntity);
+		}
+
+		return R.ok().put("file", fileName);
+	}
     
 
     /**

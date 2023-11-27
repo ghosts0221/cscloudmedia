@@ -39,6 +39,8 @@ import com.entity.EIException;
 import com.service.ConfigService;
 import com.utils.R;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * 上传文件映射表
  */
@@ -67,7 +69,8 @@ public class FileController{
 
 
 	@RequestMapping("/upload")
-	public R upload(@RequestParam("file") MultipartFile file,String type) throws Exception {
+	public R upload(@RequestParam("file") MultipartFile file, String type, HttpServletRequest request) throws Exception {
+
 		if (file.isEmpty()) {
 			throw new EIException("上传文件不能为空");
 		}
@@ -83,6 +86,12 @@ public class FileController{
 
 		String fileExt = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
 		String fileName = new Date().getTime() + "." + fileExt;
+		if (isVideoFile(fileExt)){
+			String videName = new Date().getTime()+"."+fileExt;
+			request.getSession().setAttribute("video",videName);
+		}else {
+			request.getSession().setAttribute("file",fileName);
+		}
 
 		// 使用 BlobContainerClient 创建 BlobClient
 		BlobClient blobClient = containerClient.getBlobClient(fileName);
@@ -94,7 +103,6 @@ public class FileController{
 		headers.setContentType(file.getContentType());
 		blobClient.setHttpHeaders(headers);
 		String fileUrl = "https://soupfish.blob.core.windows.net/soup/" + fileName;
-
 
 		if(StringUtils.isNotBlank(type) && type.equals("1")) {
 			ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
@@ -110,6 +118,11 @@ public class FileController{
 
 		return R.ok().put("file", fileName);
 	}
+
+	private boolean isVideoFile(String fileExt) {
+		return fileExt != null && (fileExt.equalsIgnoreCase("mp4") || fileExt.equalsIgnoreCase("avi") || fileExt.equalsIgnoreCase("mov") || fileExt.equalsIgnoreCase("mkv"));
+	}
+
 
 //	private void saveMetadataToCosmosDB(String fileName, String contentType) {
 //		try {

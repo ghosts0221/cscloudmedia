@@ -8446,7 +8446,7 @@
                 }, [n("file-upload", {
                     attrs: {
                         tip: "点击上传图片封面",
-                        action: "file/upload",
+                        action: "tupianxinxi/upload",
                         limit: 3,
                         multiple: !0,
                         fileUrls: t.ruleForm.tupianfengmian ? t.ruleForm.tupianfengmian : ""
@@ -8519,7 +8519,7 @@
                 }, [n("editor", {
                     staticClass: "editor",
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {action: "file/upload"},
+                    attrs: {action: "tupianxinxi/upload"},
                     model: {
                         value: t.ruleForm.tupianxiangqing, callback: function (e) {
                             t.$set(t.ruleForm, "tupianxiangqing", e)
@@ -10515,7 +10515,7 @@
                 }, [n("file-upload", {
                     attrs: {
                         tip: "点击上传图片",
-                        action: "file/upload",
+                        action: "wenzhangxinxi/upload",
                         limit: 3,
                         multiple: !0,
                         fileUrls: t.ruleForm.tupian ? t.ruleForm.tupian : ""
@@ -10592,7 +10592,7 @@
                 }, [n("editor", {
                     staticClass: "editor",
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {action: "file/upload"},
+                    attrs: {action: "wenzhangxinxi/upload"},
                     model: {
                         value: t.ruleForm.wenzhangneirong, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangneirong", e)
@@ -12186,6 +12186,9 @@
                         }
                     }, handleBeforeUpload: function (t) {
                     }, handleUploadSuccess: function (t, e, n) {
+                        console.log('t:', res);
+                        console.log('e:', file);
+                        console.log('n:', fileList);
                         t && 0 === t.code ? (n[n.length - 1]["url"] = "upload/" + e.response.file, this.setFileList(n), this.$emit("change", this.fileUrlList.join(",")), this.$message.success("文件导入成功")) : this.$message.error(t.msg)
                     }, handleUploadErr: function (t, e, n) {
                         this.$message.error("文件导入失败")
