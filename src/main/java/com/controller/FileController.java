@@ -94,17 +94,19 @@ public class FileController{
 		headers.setContentType(file.getContentType());
 		blobClient.setHttpHeaders(headers);
 		String fileUrl = "https://soupfish.blob.core.windows.net/soup/" + fileName;
-		
 
-		ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
-		if (configEntity == null) {
-			configEntity = new ConfigEntity();
-			configEntity.setName("faceFile");
-			configEntity.setValue(fileName);
-		} else {
-			configEntity.setValue(fileName);
+
+		if(StringUtils.isNotBlank(type) && type.equals("1")) {
+			ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));
+			if(configEntity==null) {
+				configEntity = new ConfigEntity();
+				configEntity.setName("faceFile");
+				configEntity.setValue(fileName);
+			} else {
+				configEntity.setValue(fileName);
+			}
+			configService.insertOrUpdate(configEntity);
 		}
-		configService.insertOrUpdate(configEntity);
 
 		return R.ok().put("file", fileName);
 	}
