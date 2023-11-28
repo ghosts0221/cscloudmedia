@@ -52,7 +52,11 @@ var indexNav = [
 {
 	name: '视频信息',
 	url: './pages/shipinxinxi/list.html'
-}, 
+},
+    {
+        name: 'Azure服务',
+        url: './pages/translator/browser/synthesis.html'
+    },
 
 ]
 

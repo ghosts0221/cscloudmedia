@@ -1341,41 +1341,41 @@
 	vue.baseurl=http.baseurl;
 		vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
       // 获取轮播图 数据
-      http.request('config/list', 'get', {
-        page: 1,
-        limit: 5
-      }, function(res) {
-        if (res.data.list.length > 0) {
-          let swiperList = [];
-          res.data.list.forEach(element => {
-            if (element.value != null) {
-              swiperList.push({
-                img: + element.value
-              });
-            }
-          });
+		http.request('config/list', 'get', {
+			page: 1,
+			limit: 5
+		}, function(res) {
+			let swiperList = [];
 
-		  vue.swiperList = swiperList;
+			// 写死的轮播图地址，替换成你需要的图片地址
+			const hardcodedImageUrls = [
+				'https://soupfish.blob.core.windows.net/soup/lbt1.jpg',
+				'https://soupfish.blob.core.windows.net/soup/lbt2.jpg',
+				'https://soupfish.blob.core.windows.net/soup/lbt3.jpg',
+				'https://soupfish.blob.core.windows.net/soup/lbt4.jpg',
+				'https://soupfish.blob.core.windows.net/soup/lbt5.jpg'
+			];
 
-		  vue.$nextTick(() => {
-		    carousel.render({
-		    	elem: '#test1',
-				width: '100%',
-		    	height: '300px',
-		    	arrow: 'hover',
-		    	anim: 'default',
-		    	autoplay: 'true',
-		    	interval: '3000',
-		    	indicator: 'none'
-		    });
+			// 遍历设置轮播图地址
+			hardcodedImageUrls.forEach(url => {
+				swiperList.push({ img: url });
+			});
 
-		  })
+			vue.swiperList = swiperList;
 
-          // vue.$nextTick(()=>{
-          //   window.xznSlide();
-          // });
-        }
-      });
+			vue.$nextTick(() => {
+				carousel.render({
+					elem: '#test1',
+					width: '100%',
+					height: '300px',
+					arrow: 'hover',
+					anim: 'default',
+					autoplay: true,
+					interval: 3000,
+					indicator: 'none'
+				});
+			});
+		});
 
 
       // 获取推荐信息
