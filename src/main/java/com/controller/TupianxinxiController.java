@@ -56,7 +56,7 @@ import org.springframework.web.multipart.MultipartFile;
  * 后端接口
  * @author 
  * @email 
- * @date 2022-05-05 09:37:48
+ * @date 2023-11-25 09:37:48
  */
 @RestController
 @RequestMapping("/tupianxinxi")

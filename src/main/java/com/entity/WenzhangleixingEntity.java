@@ -26,7 +26,7 @@ import com.baomidou.mybatisplus.enums.IdType;
  * 数据库通用操作实体类（普通增删改查）
  * @author 
  * @email 
- * @date 2022-05-05 09:37:47
+ * @date 2023-11-25 09:37:47
  */
 @TableName("wenzhangleixing")
 public class WenzhangleixingEntity<T> implements Serializable {

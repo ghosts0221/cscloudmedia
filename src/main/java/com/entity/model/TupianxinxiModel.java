@@ -17,7 +17,7 @@ import java.io.Serializable;
  * 取自ModelAndView 的model名称
  * @author 
  * @email 
- * @date 2022-05-05 09:37:48
+ * @date 2023-11-25 09:37:48
  */
 public class TupianxinxiModel  implements Serializable {
 	private static final long serialVersionUID = 1L;

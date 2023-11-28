@@ -16,7 +16,7 @@ import com.entity.view.DiscusswenzhangxinxiView;
  *
  * @author 
  * @email 
- * @date 2022-05-05 09:37:48
+ * @date 2023-11-25 09:37:48
  */
 public interface DiscusswenzhangxinxiService extends IService<DiscusswenzhangxinxiEntity> {
 

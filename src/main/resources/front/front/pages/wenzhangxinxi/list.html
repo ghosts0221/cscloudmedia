@@ -279,9 +279,9 @@ width: 100%;
 	    <!-- 样式一 -->
 	    <div class="list" style="position: relative;">
 		<div v-if="1 == 1" style="position: absolute;left: 0;top: 0;transform: translate3d(-100%, 0, 0);" :style='{"padding":"0","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0px 0px 0px -20px","borderColor":"rgba(0,0,0,1)","backgroundColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"120px","borderStyle":"solid","height":"auto"}'>
-	    		<div style="text-align: center;cursor: pointer;" class="category-search" :index="-1" :style='swiperIndex==-1?{"padding":"0 10px","boxShadow":"0 6px 0 #82C6F3","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}'>全部</div>
+	    		<div style="text-align: center;cursor: pointer;" class="category-search" :index="-1" :style='swiperIndex==-1?{"padding":"0 10px","boxShadow":"0 6px 0 #000000","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}'>全部</div>
 			<div v-for="(item,index) in categoryList" :key="index" >
-				<div style="text-align: center;cursor: pointer;" :style='swiperIndex==index?{"padding":"0 10px","boxShadow":"0 6px 0 #82C6F3","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' :index="index" class="category-search">{{categoryList[index]}}</div>
+				<div style="text-align: center;cursor: pointer;" :style='swiperIndex==index?{"padding":"0 10px","boxShadow":"0 6px 0 #000000","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' :index="index" class="category-search">{{categoryList[index]}}</div>
 			</div>
 		</div>
 	      <div @click="jump('../wenzhangxinxi/detail.html?id='+item.id)" v-for="(item,index) in dataList" :key="index" class="list-item" :class="4=='3'?'list-item3':4=='5'?'list-item5':''">
@@ -452,7 +452,7 @@ width: 100%;
             limit: limit,
             groups: 5,
             layout: ["prev","page","next"],
-            theme: '#82C6F3',
+            theme: '#000000',
             jump: function(obj, first) {
             	param.page = obj.curr;
               //首次不执行

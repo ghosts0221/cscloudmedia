@@ -17,7 +17,7 @@ import com.entity.view.YonghuView;
  * 
  * @author 
  * @email 
- * @date 2022-05-05 09:37:47
+ * @date 2023-11-25 09:37:47
  */
 public interface YonghuDao extends BaseMapper<YonghuEntity> {
 	

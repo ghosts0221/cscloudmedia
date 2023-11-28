@@ -191,7 +191,7 @@ color: #999 !important;
 			
 
 			<div class="layui-row detail-tab">
-				<div class="layui-tab layui-tab-card" :style='{"boxShadow":"0 0 6px #82C6F3","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"10px","borderStyle":"solid","borderWidth":"0"}' style="overflow: hidden;">
+				<div class="layui-tab layui-tab-card" :style='{"boxShadow":"0 0 6px #000000","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"10px","borderStyle":"solid","borderWidth":"0"}' style="overflow: hidden;">
 
 					<ul class="layui-tab-title" :style='{"color":"rgba(130, 198, 243, 1)","backgroundColor":"#f2f2f2","fontSize":"14px"}'>
 						
@@ -216,33 +216,33 @@ color: #999 !important;
 						
 						<div class="layui-tab-item">
 							<div class="message-container">
-								<form class="layui-form message-form" :style='{"padding":"20px","boxShadow":"0 0 6px #82C6F3","margin":"0 0 20px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}'>
+								<form class="layui-form message-form" :style='{"padding":"20px","boxShadow":"0 0 6px #000000","margin":"0 0 20px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}'>
 									<div class="layui-form-item layui-form-text" style="display: flex;align-items: center;margin:0">
 										<label style="width: auto;" :style='{"padding":"0","minWidth":"54px","fontSize":"14px","color":"#333","textAlign":"center"}' class="layui-form-label">评论</label>
 										<div class="layui-input-block" style="margin:0;flex:1;">
-											<textarea :style='{"padding":"10px","boxShadow":"0 0 6px #82C6F3","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid","height":"120px"}' name="content" required lay-verify="required" placeholder="请输入内容" class="layui-textarea"></textarea>
+											<textarea :style='{"padding":"10px","boxShadow":"0 0 6px #000000","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid","height":"120px"}' name="content" required lay-verify="required" placeholder="请输入内容" class="layui-textarea"></textarea>
 										</div>
 									</div>
 									<div class="layui-form-item">
 										<div class="layui-input-block">
 											<button :style='{"padding":"0 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="layui-btn btn-submit" lay-submit lay-filter="*">立即提交</button>
-											<button :style='{"padding":"0 20px","boxShadow":"0 0 6px #82C6F3","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' type="reset" class="layui-btn layui-btn-primary">重置</button>
+											<button :style='{"padding":"0 20px","boxShadow":"0 0 6px #000000","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' type="reset" class="layui-btn layui-btn-primary">重置</button>
 										</div>
 									</div>
 								</form>
-								<div class="message-list" :style='{"padding":"0 20px 20px","boxShadow":"0 0 6px #82C6F3","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}'>
+								<div class="message-list" :style='{"padding":"0 20px 20px","boxShadow":"0 0 6px #000000","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}'>
 									<div :style='{"padding":"20px 0","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0 0 1px 0","borderStyle":"solid"}' class="message-item" v-for="(item,index) in dataList" v-bind:key="index">
 										<div class="username-container">
-											<img :style='{"boxShadow":"0 0 6px #82C6F3","margin":"0 10px 0 0","borderColor":"rgba(0,0,0,.3)","borderRadius":"100%","borderWidth":"0","width":"40px","borderStyle":"solid","height":"40px"}' class="avator" src="http://codegen.caihongy.cn/20201211/da4d2513e31447efa461a278574f51fc.jpg">
-											<span style="display: inline-block;" :style='{"padding":"0 10px","boxShadow":"0 0 6px #82C6F3","margin":"0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"28px","fontSize":"14px","borderStyle":"solid"}' class="username">{{item.nickname}}</span>
+											<img :style='{"boxShadow":"0 0 6px #000000","margin":"0 10px 0 0","borderColor":"rgba(0,0,0,.3)","borderRadius":"100%","borderWidth":"0","width":"40px","borderStyle":"solid","height":"40px"}' class="avator" src="http://codegen.caihongy.cn/20201211/da4d2513e31447efa461a278574f51fc.jpg">
+											<span style="display: inline-block;" :style='{"padding":"0 10px","boxShadow":"0 0 6px #000000","margin":"0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"28px","fontSize":"14px","borderStyle":"solid"}' class="username">{{item.nickname}}</span>
 										</div>
 										<div class="content" style="margin: 0;flex: 1;">
-											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 6px #82C6F3","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
+											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 6px #000000","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
 												{{item.content}}
 											</span>
 										</div>
 										<div v-if="item.reply" class="content" style="margin: 0;flex: 1;">
-											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 6px #82C6F3","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
+											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 6px #000000","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
 												回复:{{item.reply}}
 											</span>
 										</div>
