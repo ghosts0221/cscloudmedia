@@ -164,15 +164,10 @@ public class ShipinxinxiController {
         //ValidatorUtils.validateEntity(shipinxinxi);
         String fileName = (String) request.getSession().getAttribute("file");
         String vedioName = (String) request.getSession().getAttribute("video");
-        if (fileName != null && fileName.equals(shipinxinxi.getShipinfengmian())) {
-            // 文件没有变化，按原本的图片执行
-            shipinxinxiService.updateById(shipinxinxi);// 全部更新
-        } else {
-            shipinxinxi.setShipinfengmian(fileName);
-            shipinxinxi.setShipinbofang(vedioName);
-            shipinxinxi.setThumbsupnum(shipinxinxi.getThumbsupnum()+1);
-            shipinxinxiService.updateById(shipinxinxi);// 全部更新
-        }
+        shipinxinxi.setShipinfengmian(fileName);
+        shipinxinxi.setShipinbofang(vedioName);
+        shipinxinxiService.updateById(shipinxinxi);// 全部更新
+
         return R.ok();
     }
 

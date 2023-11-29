@@ -216,7 +216,6 @@ public class WenzhangxinxiController {
 			wenzhangxinxiService.updateById(wenzhangxinxi);// 全部更新
 		} else {
 			wenzhangxinxi.setTupian(fileName);
-			wenzhangxinxi.setThumbsupnum(wenzhangxinxi.getThumbsupnum()+1);
 			wenzhangxinxiService.updateById(wenzhangxinxi);// 全部更新
 		}        return R.ok();
     }

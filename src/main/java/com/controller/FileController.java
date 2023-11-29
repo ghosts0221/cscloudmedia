@@ -120,7 +120,7 @@ public class FileController{
 	}
 
 	private boolean isVideoFile(String fileExt) {
-		return fileExt != null && (fileExt.equalsIgnoreCase("mp4") || fileExt.equalsIgnoreCase("avi") || fileExt.equalsIgnoreCase("mov") || fileExt.equalsIgnoreCase("mkv"));
+		return fileExt != null && (fileExt.equalsIgnoreCase("mp4") || fileExt.equalsIgnoreCase("avi") || fileExt.equalsIgnoreCase("mov") || fileExt.equalsIgnoreCase("mkv")|| fileExt.equalsIgnoreCase("mp3"));
 	}
 
 
