@@ -33,7 +33,7 @@ lintOnSave: false,
         https: false, // 是否开启https模式
         proxy: { // 请求代理服务器
             '/springboot9zo8s': { //带上api前缀的
-                target: 'https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/', //代理目标地址
+                target: 'https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/', //代理目标地址
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: { // 在发出请求后将/api替换为''空值，这样不影响接口请求

@@ -82,8 +82,8 @@ export default {
         return;
       }
       this.$confirm(`确定支付?`, "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+        confirmButtonText: "Sure",
+        cancelButtonText: "Cancel",
         type: "warning"
       }).then(() => {
         this.obj.ispay = "已支付";

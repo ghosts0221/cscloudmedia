@@ -92,7 +92,7 @@ public class ConfigController{
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     public R update(@RequestBody ConfigEntity config){

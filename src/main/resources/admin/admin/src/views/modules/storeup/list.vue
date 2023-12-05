@@ -113,9 +113,9 @@
                 <el-button v-if="isAuth('storeup','查看') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="success" icon="el-icon-tickets" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}</el-button>
                 <el-button v-if="isAuth('storeup','查看') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="success" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}<i class="el-icon-tickets el-icon--right" /></el-button>
                 <el-button v-if="isAuth('storeup','查看') && contents.tableBtnIcon == 0" type="success" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}</el-button>
-                <el-button v-if=" isAuth('storeup','修改') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="primary" icon="el-icon-edit" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}</el-button>
-                <el-button v-if=" isAuth('storeup','修改') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}<i class="el-icon-edit el-icon--right" /></el-button>
-                <el-button v-if=" isAuth('storeup','修改') && contents.tableBtnIcon == 0" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}</el-button>
+                <el-button v-if=" isAuth('storeup','Revise') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="primary" icon="el-icon-edit" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}</el-button>
+                <el-button v-if=" isAuth('storeup','Revise') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}<i class="el-icon-edit el-icon--right" /></el-button>
+                <el-button v-if=" isAuth('storeup','Revise') && contents.tableBtnIcon == 0" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}</el-button>
 
 
 
@@ -421,7 +421,7 @@ export default {
     selectionChangeHandler(val) {
       this.dataListSelections = val;
     },
-    // 添加/修改
+    // 添加/Revise
     addOrUpdateHandler(id,type) {
       this.showFlag = false;
       this.addOrUpdateFlag = true;
@@ -446,8 +446,8 @@ export default {
             return Number(item.id);
           });
       this.$confirm(`确定进行[${id ? "删除" : "批量删除"}]操作?`, "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+        confirmButtonText: "Sure",
+        cancelButtonText: "Cancel",
         type: "warning"
       }).then(() => {
         this.$http({

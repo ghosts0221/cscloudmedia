@@ -47,8 +47,8 @@
             </el-col>
           </el-row>
       <el-form-item class="btn">
-        <el-button  v-if="type!='info'" type="primary" class="btn-success" @click="onSubmit">提交</el-button>
-        <el-button v-if="type!='info'" class="btn-close" @click="back()">取消</el-button>
+        <el-button  v-if="type!='info'" type="primary" class="btn-success" @click="onSubmit">Submit</el-button>
+        <el-button v-if="type!='info'" class="btn-close" @click="back()">Cancel</el-button>
         <el-button v-if="type=='info'" class="btn-close" @click="back()">返回</el-button>
       </el-form-item>
     </el-form>
@@ -234,7 +234,7 @@ export default {
     },
 
 
-    // 提交
+    // Submit
     onSubmit() {
 
 

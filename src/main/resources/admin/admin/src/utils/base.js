@@ -1,10 +1,10 @@
 const base = {
     get() {
         return {
-            url : "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/",
+            url : "https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/",
             name: "springboot9zo8s",
             // 退出到首页链接
-            indexUrl: 'https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/front/index.html'
+            indexUrl: 'https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/front/index.html'
         };
     },
     getProjectName(){

@@ -144,7 +144,7 @@ public class DiscusswenzhangxinxiController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

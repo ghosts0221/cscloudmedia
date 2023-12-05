@@ -69,7 +69,7 @@ public class CommonController{
 	}
 	
 	/**
-	 * 根据table中的column获取单条记录
+	 * 根据table中的column获取单Article记录
 	 * @param table
 	 * @param column
 	 * @return

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>注册</title>
+		<title>Enroll</title>
 		<!-- bootstrap样式，地图插件使用 -->
 		<link rel="stylesheet" href="../../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../../layui/css/layui.css">
@@ -120,20 +120,20 @@
 				<form class="layui-form layui-form-pane add" lay-filter="myForm">
 					
                     <div  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}' class="layui-form-item" pane>
-						<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">名称：</label>
+						<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Name：</label>
 						<div class="layui-input-block">
 							<input :style='{"padding":"0 12px","boxShadow":"0 0 0px rgba(255,0,0,.8)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","fontSize":"16px","borderStyle":"solid","height":"40px"}' v-model="detail.name" type="text" :readonly="ro.name" name="name" id="name" autocomplete="off" class="layui-input">
 						</div>
 					</div>
                     <div :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}' class="layui-form-item" pane>
-						<label :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">值：</label>
+						<label :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Value：</label>
 						<div class="layui-input-block">
 							<div v-if="detail.value" style="display:inline-block;margin-right:10px;">
 								<img id="valueImg" style="width: 100px;height: 100px;border-radius: 50%;border: 2px solid #EEEEEE;" :src="baseurl+detail.value.split(',')[0]">
 								<input type="hidden" :value="detail.value" id="value" name="value" />
 							</div>
 							<button v-if="!ro.value" :style='{"padding":"0 20px","boxShadow":"0 0 0px rgba(255,0,0,.5)","margin":"0 10px 0 0","borderColor":"#ccc","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"44px","borderWidth":"0","width":"auto","fontSize":"14px","borderStyle":"solid","height":"44px"}' type="button" class="layui-btn btn-theme" id="valueUpload">
-								<i v-if="true" :style='{"color":"#fff","show":true,"fontSize":"14px"}' class="layui-icon">&#xe67c;</i>上传值
+								<i v-if="true" :style='{"color":"#fff","show":true,"fontSize":"14px"}' class="layui-icon">&#xe67c;</i>uploadValues
 							</button>
 						</div>
 					</div>
@@ -141,8 +141,8 @@
 
 					<div  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}' class="layui-form-item">
 						<div class="layui-input-block" style="text-align: right;">
-							<button  :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.5)","margin":"0 10px","borderColor":"#ccc","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"44px","borderWidth":"0","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' class="layui-btn btn-submit" lay-submit lay-filter="*">提交</button>
-							<button :style='{"padding":"0 10px","boxShadow":"0 0 6px #000000","margin":"0 10px","borderColor":"#ccc","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"44px","borderWidth":"0","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' type="reset" class="layui-btn layui-btn-primary">重置</button>
+							<button  :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.5)","margin":"0 10px","borderColor":"#ccc","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"44px","borderWidth":"0","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' class="layui-btn btn-submit" lay-submit lay-filter="*">Submit</button>
+							<button :style='{"padding":"0 10px","boxShadow":"0 0 6px #000000","margin":"0 10px","borderColor":"#ccc","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"44px","borderWidth":"0","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' type="reset" class="layui-btn layui-btn-primary">Reset</button>
 						</div>
 					</div>
 				</form>
@@ -279,7 +279,7 @@
 						console.log(res);
 						layer.closeAll();
 						if (res.code == 0) {
-							layer.msg("上传成功", {
+							layer.msg("TheUploadIsSuccessful", {
 								time: 2000,
 								icon: 6
 							})
@@ -297,7 +297,7 @@
 					//请求异常回调
 					error: function() {
 						layer.closeAll();
-						layer.msg("请求接口异常", {
+						layer.msg("TheRequestInterfaceIsAbnormal", {
 							time: 2000,
 							icon: 5
 						})
@@ -323,12 +323,12 @@
 				}
 				
 
-		// 提交
+		// Submit
 		form.on('submit(*)', function(data) {
 			data = data.field;
                     // 数据校验
                     if(!data.name){
-                        layer.msg('名称不能为空', {
+                        layer.msg('TheNameCannotBeEmpty', {
 				time: 2000,
 				icon: 5
 			});
@@ -385,7 +385,7 @@
 
 						// 提交数据
 						http.requestJson('config' + '/add', 'post', data, function(res) {
-							layer.msg('提交成功', {
+							layer.msg('TheSubmissionWasSuccessful', {
 								time: 2000,
 								icon: 6
 							}, function() {
@@ -398,7 +398,7 @@
                 // 跨表计算
 				// 提交数据
 				http.requestJson('config' + '/add', 'post', data, function(res) {
-					layer.msg('提交成功', {
+					layer.msg('TheSubmissionWasSuccessful', {
 						time: 2000,
 						icon: 6
 					}, function() {

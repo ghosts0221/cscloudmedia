@@ -135,7 +135,13 @@
 		<dependency>
 			<groupId>com.azure</groupId>
 			<artifactId>azure-cosmos</artifactId>
-			<version>4.22.0</version>
+			<version>4.45.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.5.8</version>
 		</dependency>
 
 		

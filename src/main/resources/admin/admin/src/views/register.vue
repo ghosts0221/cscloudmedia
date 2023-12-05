@@ -5,9 +5,9 @@
         <h1 class="h1">CS Cloud Media注册</h1>
 		<el-form ref="rgsForm" class="rgs-form" :model="rgsForm">
 			<!-- <div v-if="tableName=='yonghu'" class="input-group">
-			   <div class="label">用户名</div>
+			   <div class="label">Username</div>
 			   <div class="input-container">
-			     <input v-model="ruleForm.yonghuming" class="input" type="text" placeholder="用户名">
+			     <input v-model="ruleForm.yonghuming" class="input" type="text" placeholder="Username">
 			   </div>
 			 </div> -->
 			<el-form-item label="用户名" class="input" v-if="tableName=='yonghu'">
@@ -46,7 +46,7 @@
 			</el-form-item>
 			<div style="display: flex;flex-wrap: wrap;width: 100%;justify-content: center;">
 				<el-button class="btn" type="primary" @click="login()">注册</el-button>
-				<el-button class="btn close" type="primary" @click="close()">取消</el-button>
+				<el-button class="btn close" type="primary" @click="close()">Cancel</el-button>
 			</div>
 		</el-form>
       </div>

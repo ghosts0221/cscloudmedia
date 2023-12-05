@@ -3,9 +3,9 @@ layui.define(['jquery', 'layer'], function(exports) { //提示：模块也可以
 	"use strict";
 	var jquery = layui.jquery,
 		layer = layui.layer,
-        baseurl = "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/";
+        baseurl = "https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/";
 	var http = {
-        domain : "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/",
+        domain : "https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/",
 		baseurl: baseurl,
 		/**
 		 * 获取传递参数值(修改支持中文)

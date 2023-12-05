@@ -186,7 +186,7 @@
     function buildBootstrapModalHTML() {
         var toolsHtml = '<div class="btn-group">'
             + '<button id="idAMapPositionPickerLocation" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;定位</button>'
-            + '<button id="idAMapPositionPickerReset" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-repeat"></span>&nbsp;重置</button>'
+            + '<button id="idAMapPositionPickerReset" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>'
             + '<button id="idAMapPositionPickerClear" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;清除</button>'
             + '<button id="idAMapPositionPickerSearch" type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#idAMapPositionPickerSearchPanel"><span class="glyphicon glyphicon-search"></span>&nbsp;搜索</button>'
             + '</div>';
@@ -203,7 +203,7 @@
             + '<input class="form-control input-sm" style="margin-top:5px;" id="idAMapPositionPickerAddress"/>'
             + '</div>' //End of modal-Body
             + '<div class="modal-footer">'
-            + '<button id="idAMapPositionPickerSelect" type="button" class="btn btn-primary btn-sm">确定</button><button id="idAMapPositionPickerCancelBtn" type="button" class="btn btn-default btn-sm" data-dismiss="modal">取消</button>'
+            + '<button id="idAMapPositionPickerSelect" type="button" class="btn btn-primary btn-sm">Sure</button><button id="idAMapPositionPickerCancelBtn" type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>'
             + '</div>' //End of Modal-footer
             + '</div>' //End of Modal-content
             + '</div>' // End of Modal-dialog
@@ -437,7 +437,7 @@
                                 }
                                 mapObj.panTo(markerList[0].getPosition());
                             } else {
-                                $searchPanel.append('<li class="list-group-item disabled"><small>抱歉，暂无找到符合条件的结果。</small></li>');
+                                $searchPanel.append('<li class="list-group-item disabled"><small>抱歉，暂无找到符合Article件的结果。</small></li>');
                             }
                         });
                     });

@@ -144,7 +144,7 @@ public class ShipinleixingController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

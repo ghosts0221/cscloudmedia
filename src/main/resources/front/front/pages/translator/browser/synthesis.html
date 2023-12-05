@@ -70,96 +70,96 @@
   <table>
     <tr>
       <td></td>
-      <td><h1 style="font-weight:500;">Microsoft Cognitive Services 文本转语音</h1></td>
+      <td><h1 style="font-weight:500;">Microsoft Cognitive Services : Text To Speech</h1></td>
     </tr>
     <tr>
       <td align="right">
         <label for="subscriptionKey">
           <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started"
              rel="noreferrer noopener"
-             target="_blank">订阅密钥</a>
+             target="_blank">SubscriptionKeys</a>
         </label>
       </td>
       <td><input id="subscriptionKey" type="text" size="40" placeholder="YourSubscriptionKey"></td>
     </tr>
     <tr>
-      <td align="right"><label for="regionOptions">地区</label></td>
+      <td align="right"><label for="regionOptions">Region</label></td>
       <td>
         <!-- 查看 https://aka.ms/csspeech/region 以获取更多详细信息 -->
         <select id="regionOptions">
-          <option value="westus" selected="selected">西部美国</option>
-          <option value="westus2">西部美国2</option>
-          <option value="eastus">东部美国</option>
-          <option value="eastus2">东部美国2</option>
-          <option value="centralus">中部美国</option>
-          <option value="northcentralus">北中部美国</option>
-          <option value="southcentralus">南中部美国</option>
-          <option value="westcentralus">西中部美国</option>
-          <option value="canadacentral">加拿大中部</option>
-          <option value="brazilsouth">巴西南部</option>
-          <option value="eastasia">东亚</option>
-          <option value="southeastasia">东南亚</option>
-          <option value="australiaeast">澳大利亚东部</option>
-          <option value="centralindia">印度中部</option>
-          <option value="japaneast">日本东部</option>
-          <option value="japanwest">日本西部</option>
-          <option value="koreacentral">韩国中部</option>
-          <option value="northeurope">北欧</option>
-          <option value="westeurope">西欧</option>
-          <option value="francecentral">法国中部</option>
-          <option value="switzerlandnorth">瑞士北部</option>
-          <option value="uksouth">英国南部</option>
-          <option value="chinaeast2">中国东部2（azure.cn）</option>
-          <option value="chinanorth2">中国北部2（azure.cn）</option>
+          <option value="westus" selected="selected">WestUSA</option>
+          <option value="westus2">WestUSA2</option>
+          <option value="eastus">EasternUSA</option>
+          <option value="eastus2">EastUSA2</option>
+          <option value="centralus">CentralAmerica</option>
+          <option value="northcentralus">NorthCentralUSA</option>
+          <option value="southcentralus">SouthCentralAmerica</option>
+          <option value="westcentralus">WestCentralUSA</option>
+          <option value="canadacentral">CentralCanada</option>
+          <option value="brazilsouth">SouthernBrazil</option>
+          <option value="eastasia">EasternAsia</option>
+          <option value="southeastasia">SoutheastAsia</option>
+          <option value="australiaeast">EasternAustralia</option>
+          <option value="centralindia">CentralIndia</option>
+          <option value="japaneast">EasternJapan</option>
+          <option value="japanwest">WesternJapan</option>
+          <option value="koreacentral">CentralKorea</option>
+          <option value="northeurope">NorthernEurope</option>
+          <option value="westeurope">WesternEurope</option>
+          <option value="francecentral">CentralFrance</option>
+          <option value="switzerlandnorth">NorthernSwitzerland</option>
+          <option value="uksouth">UKSouth</option>
+          <option value="chinaeast2">EastChina2（azure.cn）</option>
+          <option value="chinanorth2">NorthChina2（azure.cn）</option>
         </select>
       </td>
     </tr>
     <tr>
-      <td align="right"><label for="voiceOptions">语音</label></td>
+      <td align="right"><label for="voiceOptions">Voice</label></td>
       <td>
-        <button id="updateVoiceListButton">更新语音列表</button>
+        <button id="updateVoiceListButton">Update The List O fVoices</button>
         <select id="voiceOptions" disabled>
-          <option>请先更新语音列表。</option>
+          <option>Please Update The List Of Voices First</option>
         </select>
       </td>
     </tr>
     <tr>
-      <td align="right"><label for="formatOptions">格式</label></td>
+      <td align="right"><label for="formatOptions">Format</label></td>
       <td>
         <select id="formatOptions">
-          <option>等待 SDK 加载。</option>
+          <option>Wait ForThe SDK To Load</option>
         </select>
-        （riff pcm、mp3、ogg 和 webm 格式支持播放。）
+        （Riff PCM, MP3, OGG, and WebM formats support playback.）
       </td>
     </tr>
     <tr>
-      <td align="right"><label for="isSSML">是否为 SSML</label><br></td>
+      <td align="right"><label for="isSSML">Whether It Is SSML</label><br></td>
       <td>
         <input type="checkbox" id="isSSML" name="isSSML" value="ssml">
       </td>
     </tr>
     <tr>
-      <td align="right"><label for="synthesisText">文本</label></td>
+      <td align="right"><label for="synthesisText">Text</label></td>
       <td>
                 <textarea id="synthesisText" style="display: inline-block;width:500px;height:100px"
-                          placeholder="输入用于合成的文本或 SSML。"></textarea>
+                          placeholder="ENTER TEXT OR SSML FOR COMPOSITING"></textarea>
       </td>
     </tr>
     <tr>
       <td></td>
       <td>
-        <button id="startSynthesisAsyncButton">开始合成</button>
-        <button id="pauseButton">暂停</button>
-        <button id="resumeButton">恢复</button>
-        <button id="downloadButton">下载</button>
+        <button id="startSynthesisAsyncButton">START SYNTHESIZING</button>
+        <button id="pauseButton">TimeOut</button>
+        <button id="resumeButton">Recover</button>
+        <button id="downloadButton">Download</button>
       </td>
     </tr>
     <tr>
-      <td align="right" valign="top"><label for="resultsDiv">结果</label></td>
+      <td align="right" valign="top"><label for="resultsDiv">Outcome</label></td>
       <td><textarea id="resultsDiv" readonly style="display: inline-block;width:500px;height:50px"></textarea></td>
     </tr>
     <tr>
-      <td align="right" valign="top"><label for="eventsDiv">事件</label></td>
+      <td align="right" valign="top"><label for="eventsDiv">Affair</label></td>
       <td><textarea id="eventsDiv" readonly style="display: inline-block;width:500px;height:200px"></textarea></td>
     </tr>
   </table>

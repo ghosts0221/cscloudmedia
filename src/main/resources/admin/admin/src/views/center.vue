@@ -9,8 +9,8 @@
     >  
      <el-row>
       <el-col :span="12">
-        <el-form-item   v-if="flag=='yonghu'"  label="用户名" prop="yonghuming">
-          <el-input v-model="ruleForm.yonghuming" readonly              placeholder="用户名" clearable></el-input>
+        <el-form-item   v-if="flag=='yonghu'"  label="Username" prop="yonghuming">
+          <el-input v-model="ruleForm.yonghuming" readonly              placeholder="Username" clearable></el-input>
         </el-form-item>
       </el-col>
       <el-col :span="12">
@@ -35,9 +35,9 @@
           <el-input v-model="ruleForm.shouji"               placeholder="手机" clearable></el-input>
         </el-form-item>
       </el-col>
-      <el-form-item v-if="flag=='users'" label="用户名" prop="username">
+      <el-form-item v-if="flag=='users'" label="Username" prop="username">
         <el-input v-model="ruleForm.username" 
-        placeholder="用户名"></el-input>
+        placeholder="Username"></el-input>
       </el-form-item>
       <el-col :span="24">
       <el-form-item>
@@ -79,7 +79,7 @@ export default {
   methods: {
     onUpdateHandler() {
       if((!this.ruleForm.yonghuming)&& 'yonghu'==this.flag){
-        this.$message.error('用户名不能为空');
+        this.$message.error('Username不能为空');
         return
       }
       if((!this.ruleForm.mima)&& 'yonghu'==this.flag){
@@ -91,7 +91,7 @@ export default {
         return
       }
       if('users'==this.flag && this.ruleForm.username.trim().length<1) {
-	this.$message.error(`用户名不能为空`);
+	this.$message.error(`Username不能为空`);
         return	
       }
       this.$http({

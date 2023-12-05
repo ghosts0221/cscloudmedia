@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 <meta charset="utf-8">
-<title>文章信息</title>
+<title>Article</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="renderer" content="webkit">
@@ -262,15 +262,15 @@ width: 100%;
 	<div class="recommend index-pv1" :style='{"padding":"10px 0 10px 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0px 0 0 0","borderColor":"rgba(0,0,0,.3)","borderRadius":"0","borderWidth":"0","background":"transparent","borderStyle":"solid"}'>
 		<div class="box" style='width:80%'>
 	    <div class="title" :style='{"padding":"10px 26px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px 0 10px 0","borderColor":"rgba(21, 71, 106, 1)","backgroundColor":"rgba(130, 198, 243, 1)","borderRadius":"4px","borderWidth":"0 0 10px","borderStyle":"solid","justifyContent":"space-between","height":"54px"}'>
-	      <span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(255,0,0,1)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0 0 2px 0","borderWidth":"0","fontSize":"18px","borderStyle":"solid"}'>文章信息</span><span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}'>您现在的位置：文章信息</span>
+	      <span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(255,0,0,1)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0 0 2px 0","borderWidth":"0","fontSize":"18px","borderStyle":"solid"}'>Article</span><span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(0, 0, 0, 1)","borderRadius":"0","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}'>YouAreHere：Article</span>
 	    </div>
 		<form class="layui-form filter" :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px 0 10px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(0, 0, 0, 0)","borderRadius":"4px","borderWidth":"0","borderStyle":"solid","justifyContent":"flex-end","height":"64px"}'>
 			<div class="item-list">
-				<div class="lable" :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(0,0,0,0)","backgroundColor":"transparent","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"right","borderWidth":"0","width":"auto","fontSize":"16px","borderStyle":"solid"}'>文章标题</div>
-				<input type="text" :style='{"boxShadow":"0 0 0px rgba(255,0,0,0)","borderColor":"rgba(233, 233, 233, 1)","backgroundColor":"rgba(233, 233, 233, 1)","color":"#333","borderRadius":"8px","textAlign":"center","borderWidth":"0","width":"140px","fontSize":"14px","borderStyle":"solid","height":"44px"}' name="wenzhangbiaoti" id="wenzhangbiaoti" placeholder="文章标题" autocomplete="off" class="layui-input">
+				<div class="lable" :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(0,0,0,0)","backgroundColor":"transparent","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"right","borderWidth":"0","width":"auto","fontSize":"16px","borderStyle":"solid"}'>TitleOfTheArticle</div>
+				<input type="text" :style='{"boxShadow":"0 0 0px rgba(255,0,0,0)","borderColor":"rgba(233, 233, 233, 1)","backgroundColor":"rgba(233, 233, 233, 1)","color":"#333","borderRadius":"8px","textAlign":"center","borderWidth":"0","width":"140px","fontSize":"14px","borderStyle":"solid","height":"44px"}' name="wenzhangbiaoti" id="wenzhangbiaoti" placeholder="TitleOfTheArticle" autocomplete="off" class="layui-input">
 			</div>
 			<button :style='{"padding":"0 15px","boxShadow":"0 0 0px rgba(0,0,0,0)","margin":"0 0 0 10px","borderColor":"#409EFF","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"24px","borderWidth":"0","width":"auto","fontSize":"14px","borderStyle":"solid","height":"40px"}' id="btn-search" type="button" class="layui-btn layui-btn-normal">
-			  <i v-if="true" class="layui-icon layui-icon-search"></i>搜索
+			  <i v-if="true" class="layui-icon layui-icon-search"></i>Search
 			</button>
 			<button :style='{"padding":"0 15px","boxShadow":"0 0 0px rgba(0,0,0,0)","margin":"0 0 0 10px","borderColor":"#409EFF","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"24px","borderWidth":"0","width":"auto","fontSize":"14px","borderStyle":"solid","height":"40px"}' v-if="isAuth('wenzhangxinxi','新增')" @click="jump('../wenzhangxinxi/add.html')" type="button" class="layui-btn btn-theme">
 			  <i v-if="true" class="layui-icon">&#xe654;</i>添加
@@ -279,7 +279,7 @@ width: 100%;
 	    <!-- 样式一 -->
 	    <div class="list" style="position: relative;">
 		<div v-if="1 == 1" style="position: absolute;left: 0;top: 0;transform: translate3d(-100%, 0, 0);" :style='{"padding":"0","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0px 0px 0px -20px","borderColor":"rgba(0,0,0,1)","backgroundColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"120px","borderStyle":"solid","height":"auto"}'>
-	    		<div style="text-align: center;cursor: pointer;" class="category-search" :index="-1" :style='swiperIndex==-1?{"padding":"0 10px","boxShadow":"0 6px 0 #000000","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}'>全部</div>
+	    		<div style="text-align: center;cursor: pointer;" class="category-search" :index="-1" :style='swiperIndex==-1?{"padding":"0 10px","boxShadow":"0 6px 0 #000000","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}'>All</div>
 			<div v-for="(item,index) in categoryList" :key="index" >
 				<div style="text-align: center;cursor: pointer;" :style='swiperIndex==index?{"padding":"0 10px","boxShadow":"0 6px 0 #000000","margin":"4px 0","borderColor":"rgba(188, 203, 213, 1)","backgroundColor":"rgba(51, 51, 51, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}:{"padding":"0 10px","boxShadow":"0 6px 0px #989898","margin":"4px 0","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"100%","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' :index="index" class="category-search">{{categoryList[index]}}</div>
 			</div>
@@ -354,7 +354,7 @@ width: 100%;
 	var limit = 8;
     limit = 4 * 2;
 	vue.baseurl = http.baseurl;
-	vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
+	vue.baseurl2="https://cscloudmedia.blob.core.windows.net/cscloudmedia/";
       // 获取轮播图 数据
       http.request('config/list', 'get', {
         page: 1,
@@ -424,13 +424,13 @@ width: 100%;
           page: 1,
           limit: limit
         }
-	if(category!=null && category!='全部') {
+	if(category!=null && category!='All') {
         	vCategory = category;
    	     if (jquery('#wenzhangbiaoti').val()) {
        	  	 param['wenzhangbiaoti'] = '';
              }
         }
-        if(vCategory!='' && category!='全部') {
+        if(vCategory!='' && category!='All') {
         	param['wenzhangleixing'] = category;
         }
 

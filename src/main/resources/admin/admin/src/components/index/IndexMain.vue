@@ -57,11 +57,11 @@
 			},
 			centerChange(index) {
 				this.itemMenu = [{
-					"buttons": ["新增", "查看", "修改", "删除"],
+					"buttons": ["新增", "查看", "Revise", "删除"],
 					"menu": "修改密码",
 					"tableName": "updatePassword"
 				}, {
-					"buttons": ["新增", "查看", "修改", "删除"],
+					"buttons": ["新增", "查看", "Revise", "删除"],
 					"menu": "个人信息",
 					"tableName": "center"
 				}];

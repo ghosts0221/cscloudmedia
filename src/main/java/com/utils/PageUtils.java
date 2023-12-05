@@ -8,27 +8,27 @@ import java.util.Map;
 import com.baomidou.mybatisplus.plugins.Page;
 
 /**
- * 分页工具类
+ * 分Page工具类
  */
 public class PageUtils implements Serializable {
 	private static final long serialVersionUID = 1L;
 	//总记录数
 	private long total;
-	//每页记录数
+	//每Page记录数
 	private int pageSize;
-	//总页数
+	//总Page数
 	private long totalPage;
-	//当前页数
+	//当前Page数
 	private int currPage;
 	//列表数据
 	private List<?> list;
 	
 	/**
-	 * 分页
+	 * 分Page
 	 * @param list        列表数据
 	 * @param totalCount  总记录数
-	 * @param pageSize    每页记录数
-	 * @param currPage    当前页数
+	 * @param pageSize    每Page记录数
+	 * @param currPage    当前Page数
 	 */
 	public PageUtils(List<?> list, int totalCount, int pageSize, int currPage) {
 		this.list = list;
@@ -39,7 +39,7 @@ public class PageUtils implements Serializable {
 	}
 
 	/**
-	 * 分页
+	 * 分Page
 	 */
 	public PageUtils(Page<?> page) {
 		this.list = page.getRecords();
@@ -50,7 +50,7 @@ public class PageUtils implements Serializable {
 	}
 	
 	/*
-	 * 空数据的分页
+	 * 空数据的分Page
 	 */
 	public PageUtils(Map<String, Object> params) {
  		Page page =new Query(params).getPage();

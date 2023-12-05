@@ -12,7 +12,7 @@ import com.entity.view.TupianxinxiView;
 
 
 /**
- * 图片信息
+ * Image
  *
  * @author 
  * @email 

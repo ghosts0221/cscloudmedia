@@ -4,8 +4,8 @@
 
       <div :class="3 == 1 ? 'left' : 3 == 2 ? 'left center' : 'left right'">
         <el-form class="login-form" label-position="left" :label-width="1 == 3 || 1 == 2 ? '30px': '0px'">
-          <div class="title-container"><h3 class="title">CS Cloud Media登录</h3></div>
-          <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="1 == 3 ? '用户名' : ''" :class="'style'+1">
+          <div class="title-container"><h3 class="title">CS Cloud Media Login</h3></div>
+          <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="1 == 3 ? 'Username' : ''" :class="'style'+1">
             <span v-if="1 != 3" class="svg-container" style="
 			color:rgba(0, 0, 0, 1);
 			line-height:30px;
@@ -20,7 +20,7 @@
 			background-color:rgba(255, 255, 255, 1);
 			box-shadow:0 0 0px rgba(0,0,0,0);
 			}"><svg-icon icon-class="user" /></span>
-            <el-input placeholder="请输入用户名" name="username" type="text" v-model="rulesForm.username" />
+            <el-input placeholder="请输入Username" name="username" type="text" v-model="rulesForm.username" />
           </el-form-item>
           <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(255, 255, 255, 0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="1 == 3 ? '密码' : ''" :class="'style'+1">
             <span v-if="1 != 3" class="svg-container" style="color:rgba(0, 0, 0, 1);
@@ -47,7 +47,7 @@
           </el-form-item>
           <el-form-item v-if="roles.length==1" label=" " prop="loginInRole" class="role" style="display: flex;align-items: center;">
           </el-form-item>
-          <el-button type="primary" @click="login()" class="loginInBt">{{'1' == '1' ? '登录' : 'login'}}</el-button>
+          <el-button type="primary" @click="login()" class="loginInBt">{{'1' == '1' ? 'Login' : 'login'}}</el-button>
           <el-form-item class="setting">
             <!-- <div style="color:${template2.back.login.loginInSettingFontColor}" class="reset">修改密码</div> -->
           </el-form-item>
@@ -117,7 +117,7 @@ export default {
     // 登陆
     login() {
       if (!this.rulesForm.username) {
-         this.$message.error("请输入用户名");
+         this.$message.error("请输入Username");
         return;
       }
       if (!this.rulesForm.password) {

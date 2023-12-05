@@ -13,7 +13,7 @@ import com.entity.view.WenzhangxinxiView;
 
 
 /**
- * 文章信息
+ * Article
  * 
  * @author 
  * @email 

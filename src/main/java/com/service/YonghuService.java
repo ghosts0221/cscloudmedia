@@ -12,7 +12,7 @@ import com.entity.view.YonghuView;
 
 
 /**
- * 用户
+ * User
  *
  * @author 
  * @email 

@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * 视频信息
+ * Multimedia
  * 后端接口
  *
  * @author
@@ -156,7 +156,7 @@ public class ShipinxinxiController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

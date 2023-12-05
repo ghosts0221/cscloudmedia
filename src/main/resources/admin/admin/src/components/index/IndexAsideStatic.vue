@@ -10,7 +10,7 @@
           <el-submenu :index="1+''">
             <template slot="title">
 				<i v-if="true" class="el-icon-menu el-icon-user-solid" />
-				<span>个人中心</span>
+				<span>PersonalCenter</span>
             </template>
             <el-menu-item :index="1-1" @click="menuHandler('updatePassword')">修改密码</el-menu-item>
             <el-menu-item :index="1-2" @click="menuHandler('center')">个人信息</el-menu-item>

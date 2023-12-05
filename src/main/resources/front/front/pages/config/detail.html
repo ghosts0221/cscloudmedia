@@ -1,11 +1,11 @@
 
-<!-- 首页 -->
+<!-- Home -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>首页</title>
+	<title>Home</title>
 	<link rel="stylesheet" href="../../layui/css/layui.css">
 	<!-- 样式 -->
 	<link rel="stylesheet" href="../../css/style.css" />
@@ -79,7 +79,7 @@ color: #999 !important;
 		<div class="data-detail" style="padding:0">
 			<div class="data-detail-breadcrumb" :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"20px auto","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","borderRadius":"4px","borderWidth":"0","borderStyle":"solid","height":"54px"}'>
 				<span class="layui-breadcrumb">
-					<a class="first" :style='{"padding":"8px 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0 5px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"#999","borderRadius":"0","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}' href="../home/home.html">首页</a>
+					<a class="first" :style='{"padding":"8px 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0 5px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"#999","borderRadius":"0","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}' href="../home/home.html">Home</a>
 					<a><cite :style='{"padding":"8px 15px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"0 15px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(0, 0, 0, 1)","borderRadius":"4px","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}'>{{title}}</cite></a>
 				</span>
 				
@@ -114,7 +114,7 @@ color: #999 !important;
 
 					
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>名称：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>Name：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.name}}
 						</span>
@@ -211,17 +211,17 @@ color: #999 !important;
 						if (time > 60 && time < 60 * 60) {
 							time =
 								parseInt(time / 60.0) +
-								"分钟" +
+								"Minute" +
 								parseInt((parseFloat(time / 60.0) - parseInt(time / 60.0)) * 60) +
-								"秒";
+								"Second";
 						} else if (time >= 60 * 60 && time < 60 * 60 * 24) {
 							time =
 								parseInt(time / 3600.0) +
-								"小时" +
+								"Hour" +
 								parseInt(
 									(parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60
 								) +
-								"分钟" +
+								"Minute" +
 								parseInt(
 									(parseFloat(
 											(parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60
@@ -231,20 +231,20 @@ color: #999 !important;
 										)) *
 									60
 								) +
-								"秒";
+								"Second";
 						} else if (time >= 60 * 60 * 24) {
 							time =
 								parseInt(time / 3600.0 / 24) +
-								"天" +
+								"Day" +
 								parseInt(
 									(parseFloat(time / 3600.0 / 24) - parseInt(time / 3600.0 / 24)) *
 									24
 								) +
-								"小时" +
+								"Hour" +
 								parseInt(
 									(parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60
 								) +
-								"分钟" +
+								"Minute" +
 								parseInt(
 									(parseFloat(
 											(parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60
@@ -254,9 +254,9 @@ color: #999 !important;
 										)) *
 									60
 								) +
-								"秒";
+								"Second";
 						} else {
-							time = parseInt(time) + "秒";
+							time = parseInt(time) + "Second";
 						}
 					}
 					return time;
@@ -285,7 +285,7 @@ color: #999 !important;
 							_this.count = _this.count - 1;
 							if (_this.count < 0) {
 								window.clearInterval(_this.inter);
-								layer.msg("活动已结束", {
+								layer.msg("TheEventHasEnded", {
 									time: 2000,
 									icon: 5
 								})
@@ -298,7 +298,7 @@ color: #999 !important;
 				downFile(url) {
 					var download = $("#download");
 					download.append(
-						"<a id=\"down\" href=\"aaaa.txt\" target=\"_blank\" download=\"aaaa.txt\" style=\"display:none\">下载该文件</a>");
+						"<a id=\"down\" href=\"aaaa.txt\" target=\"_blank\" download=\"aaaa.txt\" style=\"display:none\">DownloadTheFile</a>");
 					console.log(download);
 					$("#down")[0].click();
 				},

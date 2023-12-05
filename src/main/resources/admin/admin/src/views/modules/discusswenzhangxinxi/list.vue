@@ -4,10 +4,10 @@
     <div v-if="showFlag">
       <el-form :inline="true" :model="searchForm" class="form-content">
         <el-row  :gutter="20" class="slt" :style="{justifyContent:contents.searchBoxPosition=='1'?'flex-start':contents.searchBoxPosition=='2'?'center':'flex-end'}">
-                <el-form-item :label="contents.inputTitle == 1 ? '用户名' : ''">
-                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search" v-model="searchForm.nickname" placeholder="用户名" clearable></el-input>
-                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search" v-model="searchForm.nickname" placeholder="用户名" clearable></el-input>
-                  <el-input v-if="contents.inputIcon == 0" v-model="searchForm.nickname" placeholder="用户名" clearable></el-input>
+                <el-form-item :label="contents.inputTitle == 1 ? 'Username' : ''">
+                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search" v-model="searchForm.nickname" placeholder="Username" clearable></el-input>
+                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search" v-model="searchForm.nickname" placeholder="Username" clearable></el-input>
+                  <el-input v-if="contents.inputIcon == 0" v-model="searchForm.nickname" placeholder="Username" clearable></el-input>
                 </el-form-item>
                 <el-form-item :label="contents.inputTitle == 1 ? '评论内容' : ''">
                   <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search" v-model="searchForm.content" placeholder="评论内容" clearable></el-input>
@@ -86,7 +86,7 @@
                 <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign" 
                     prop="nickname"
                    :header-align="contents.tableAlign"
-		    label="用户名">
+		    label="Username">
 		     <template slot-scope="scope">
                        {{scope.row.nickname}}
                      </template>
@@ -114,9 +114,9 @@
                 <el-button v-if=" contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="success" icon="el-icon-tickets" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}</el-button>
                 <el-button v-if=" contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="success" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}<i class="el-icon-tickets el-icon--right" /></el-button>
                 <el-button v-if=" contents.tableBtnIcon == 0" type="success" size="mini" @click="addOrUpdateHandler(scope.row.id,'info')">{{ contents.tableBtnFont == 1?'详情':'' }}</el-button>
-                <el-button v-if=" isAuth('discusswenzhangxinxi','修改') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="primary" icon="el-icon-edit" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}</el-button>
-                <el-button v-if=" isAuth('discusswenzhangxinxi','修改') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}<i class="el-icon-edit el-icon--right" /></el-button>
-                <el-button v-if=" isAuth('discusswenzhangxinxi','修改') && contents.tableBtnIcon == 0" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'修改':'' }}</el-button>
+                <el-button v-if=" isAuth('discusswenzhangxinxi','Revise') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="primary" icon="el-icon-edit" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}</el-button>
+                <el-button v-if=" isAuth('discusswenzhangxinxi','Revise') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 2" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}<i class="el-icon-edit el-icon--right" /></el-button>
+                <el-button v-if=" isAuth('discusswenzhangxinxi','Revise') && contents.tableBtnIcon == 0" type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'Revise':'' }}</el-button>
 
 
                 <el-button v-if="isAuth('discusswenzhangxinxi','查看评论') && contents.tableBtnIcon == 1 && contents.tableBtnIconPosition == 1" type="primary" icon="el-icon-edit" size="mini" @click="disscussListHandler(scope.row.id)">{{ contents.tableBtnFont == 1?'查看评论':'' }}</el-button>
@@ -431,7 +431,7 @@ export default {
     selectionChangeHandler(val) {
       this.dataListSelections = val;
     },
-    // 添加/修改
+    // 添加/Revise
     addOrUpdateHandler(id,type) {
       this.showFlag = false;
       this.addOrUpdateFlag = true;
@@ -459,8 +459,8 @@ export default {
             return Number(item.id);
           });
       this.$confirm(`确定进行[${id ? "删除" : "批量删除"}]操作?`, "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+        confirmButtonText: "Sure",
+        cancelButtonText: "Cancel",
         type: "warning"
       }).then(() => {
         this.$http({

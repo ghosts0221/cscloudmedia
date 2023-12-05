@@ -1,11 +1,11 @@
 
-<!-- 首页 -->
+<!-- Home -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>首页</title>
+	<title>Home</title>
 	<link rel="stylesheet" href="../../layui/css/layui.css">
 	<!-- 样式 -->
 	<link rel="stylesheet" href="../../css/style.css" />
@@ -79,15 +79,15 @@ color: #999 !important;
 		<div class="data-detail" style="padding:0">
 			<div class="data-detail-breadcrumb" :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"20px auto","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","borderRadius":"4px","borderWidth":"0","borderStyle":"solid","height":"54px"}'>
 				<span class="layui-breadcrumb">
-					<a class="first" :style='{"padding":"8px 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0 5px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"#999","borderRadius":"0","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}' href="../home/home.html">首页</a>
+					<a class="first" :style='{"padding":"8px 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0 5px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"#999","borderRadius":"0","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}' href="../home/home.html">Home</a>
 					<a><cite :style='{"padding":"8px 15px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"0 15px","borderColor":"rgba(255,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(0, 0, 0, 1)","borderRadius":"4px","borderWidth":"0","fontSize":"16px","borderStyle":"solid"}'>{{title}}</cite></a>
 				</span>
 				
 	     <a v-if='storeupFlag' :style='{"padding":"0 12px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"4px","borderWidth":"0","fontSize":"16px","lineHeight":"34px","borderStyle":"solid"}' @click="storeUp()" href="javascript:void(0)">
-		<i class="layui-icon" style="font-size: 20px;color: red;" v-if='true' :style='{"color":"rgba(130, 198, 243, 1)","padding":"0 2px 0 0","fontSize":"18px"}'>&#xe67a;</i>取消收藏
+		<i class="layui-icon" style="font-size: 20px;color: red;" v-if='true' :style='{"color":"rgba(130, 198, 243, 1)","padding":"0 2px 0 0","fontSize":"18px"}'>&#xe67a;</i>Unfavorite
 	     </a>
 	     <a v-if='!storeupFlag' :style='{"padding":"0 12px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"4px","borderWidth":"0","fontSize":"16px","lineHeight":"34px","borderStyle":"solid"}' @click="storeUp()" href="javascript:void(0)">
-		<i class="layui-icon" style="font-size: 20px;color: red;" v-if='true' :style='{"color":"rgba(130, 198, 243, 1)","padding":"0 2px 0 0","fontSize":"18px"}'>&#xe67b;</i>点我收藏
+		<i class="layui-icon" style="font-size: 20px;color: red;" v-if='true' :style='{"color":"rgba(130, 198, 243, 1)","padding":"0 2px 0 0","fontSize":"18px"}'>&#xe67b;</i>CLICK HERE TO BOOKMARK
 	     </a>
 				
 			</div>
@@ -112,21 +112,14 @@ color: #999 !important;
 
 					
 				<div class="tool-container">
-						<div v-if='!thumbsupFlag&&!crazilyFlag' @click="thumbsupnumClick()" style="display: flex;align-items: center;">
-							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c6;</i>
-							赞一下({{detail.thumbsupnum==null?0:detail.thumbsupnum}})
-						</div>
-						<div v-if='thumbsupFlag' @click="thumbsupnumClick()" style="display: flex;align-items: center;">
-							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c6;</i>
-							取消赞({{detail.thumbsupnum==null?0:detail.thumbsupnum}})
-						</div>
+
 						<div v-if='!thumbsupFlag&&!crazilyFlag' @click="crazilynumClick()" style="display: flex;align-items: center;">
-							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c5;</i>
-							踩一下({{detail.crazilynum==null?0:detail.crazilynum}})
+							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c6;</i>
+							Like({{detail.crazilynum==null?0:detail.crazilynum}})
 						</div>
 						<div v-if='crazilyFlag' @click="crazilynumClick()" style="display: flex;align-items: center;">
-							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c5;</i>
-							取消踩({{detail.crazilynum==null?0:detail.crazilynum}})
+							<i class="layui-icon" style="font-size: 20px;color: red;margin-right: 10px;">&#xe6c6;</i>
+							Unlike({{detail.crazilynum==null?0:detail.crazilynum}})
 						</div>
 					</div>
 		
@@ -138,31 +131,31 @@ color: #999 !important;
 
 					
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>文章类型：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>The type of article：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.wenzhangleixing}}
 						</span>
 					</div>
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>简述：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>Briefly：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.jianshu}}
 						</span>
 					</div>
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>发布时间：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>Released：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.fabushijian}}
 						</span>
 					</div>
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>用户名：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>Username：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.yonghuming}}
 						</span>
 					</div>
 					<div :style='{"padding":"6px 15px","boxShadow":"0 0 6px rgba(255,0,0,0)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}' class="detail-item">
-						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>点击次数：</span>
+						<span :style='{"padding":"0 12px 0 0","minWidth":"94px","fontSize":"15px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}'>Clicks：</span>
 						<span  style="word-break: break-all" :style='{"padding":"5px 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(0, 0, 0, 1)","backgroundColor":"#fff","color":"rgba(0, 0, 0, 1)","borderRadius":"0","textAlign":"left","borderWidth":"1px","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="desc">
 							{{detail.clicknum}}
 						</span>
@@ -184,11 +177,11 @@ color: #999 !important;
 
 					<ul class="layui-tab-title" :style='{"color":"rgba(130, 198, 243, 1)","backgroundColor":"#f2f2f2","fontSize":"14px"}'>
 						
-						<li class="layui-this">文章内容</li>
+						<li class="layui-this">Article Content</li>
 						
 
 						
-						<li>评论</li>
+						<li>Comments</li>
 						
 
 
@@ -211,15 +204,15 @@ color: #999 !important;
 							<div class="message-container">
 								<form class="layui-form message-form" :style='{"padding":"20px","boxShadow":"0 0 6px #000000","margin":"0 0 20px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0","borderStyle":"solid"}'>
 									<div class="layui-form-item layui-form-text" style="display: flex;align-items: center;margin:0">
-										<label style="width: auto;" :style='{"padding":"0","minWidth":"54px","fontSize":"14px","color":"#333","textAlign":"center"}' class="layui-form-label">评论</label>
+										<label style="width: auto;" :style='{"padding":"0","minWidth":"54px","fontSize":"14px","color":"#333","textAlign":"center"}' class="layui-form-label">Comments</label>
 										<div class="layui-input-block" style="margin:0;flex:1;">
-											<textarea :style='{"padding":"10px","boxShadow":"0 0 6px #000000","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid","height":"120px"}' name="content" required lay-verify="required" placeholder="请输入内容" class="layui-textarea"></textarea>
+											<textarea :style='{"padding":"10px","boxShadow":"0 0 6px #000000","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid","height":"120px"}' name="content" required lay-verify="required" placeholder="Please enter your content" class="layui-textarea"></textarea>
 										</div>
 									</div>
 									<div class="layui-form-item">
 										<div class="layui-input-block">
-											<button :style='{"padding":"0 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="layui-btn btn-submit" lay-submit lay-filter="*">立即提交</button>
-											<button :style='{"padding":"0 20px","boxShadow":"0 0 6px #000000","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' type="reset" class="layui-btn layui-btn-primary">重置</button>
+											<button :style='{"padding":"0 20px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(130, 198, 243, 1)","color":"#fff","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="layui-btn btn-submit" lay-submit lay-filter="*">Submit now</button>
+											<button :style='{"padding":"0 20px","boxShadow":"0 0 6px #000000","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"rgba(130, 198, 243, 1)","borderRadius":"34px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' type="reset" class="layui-btn layui-btn-primary">Reset</button>
 										</div>
 									</div>
 								</form>
@@ -405,7 +398,7 @@ color: #999 !important;
 								layui.http.requestJson(`${_this.detailTable}/update`, 'post', _this.detail, function(res2) {
 									console.log(res2);
 								})
-								layer.msg('取消成功', {
+								layer.msg('The cancellation was successful', {
 									time: 1000,
 									icon: 5
 								}, function() {
@@ -426,7 +419,7 @@ color: #999 !important;
 							layui.http.requestJson(`${_this.detailTable}/update`, 'post', _this.detail, function(res2) {
 								console.log(res2);
 							})
-							layer.msg('点赞成功', {
+							layer.msg('Like success', {
 								time: 1000,
 								icon: 6
 							}, function() {
@@ -453,7 +446,7 @@ color: #999 !important;
 								layui.http.requestJson(`${_this.detailTable}/update`, 'post', _this.detail, function(res2) {
 									console.log(res2);
 								})
-								layer.msg('取消成功', {
+								layer.msg('The cancellation was successful', {
 									time: 1000,
 									icon: 5
 								}, function() {
@@ -474,7 +467,7 @@ color: #999 !important;
 							layui.http.requestJson(`${_this.detailTable}/update`, 'post', _this.detail, function(res2) {
 								console.log(res2);
 							})
-							layer.msg('点踩成功', {
+							layer.msg('Like success', {
 								time: 1000,
 								icon: 6
 							}, function() {
@@ -540,7 +533,7 @@ color: #999 !important;
 						vue.dataList = res.data.list
 						if(res.data.list.length==1) {
 							layui.http.requestJson(`storeup/delete`, 'post', [res.data.list[0].id], function(res) {
-								layer.msg('取消成功', {
+								layer.msg('The cancellation was successful', {
 									time: 1000,
 									icon: 5
 								}, function() {
@@ -557,7 +550,7 @@ color: #999 !important;
 							refid: this.detail.id,
 							tablename: this.detailTable
 						}, function(res) {
-							layer.msg('收藏成功', {
+							layer.msg('Collected successfully', {
 								time: 1000,
 								icon: 6
 							}, function() {
@@ -586,7 +579,7 @@ color: #999 !important;
 			var id = http.getParam('id');
 			vue.detail.id = id;
 			vue.baseurl = http.baseurl;
-			vue.baseurl2="https://soupfish.blob.core.windows.net/soup/";
+			vue.baseurl2="https://cscloudmedia.blob.core.windows.net/cscloudmedia/";
 
 
 			// 商品信息
@@ -710,7 +703,7 @@ color: #999 !important;
                     }
                 }
 				http.requestJson(`discuss${vue.detailTable}/save`, 'post', data, function(res) {
-					layer.msg('评论成功', {
+					layer.msg('The review was successful', {
 						time: 2000,
 						icon: 6
 					}, function() {

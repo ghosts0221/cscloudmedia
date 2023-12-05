@@ -144,7 +144,7 @@ public class TupianleixingController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

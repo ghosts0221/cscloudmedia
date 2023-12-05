@@ -12,7 +12,7 @@ import com.entity.view.ShipinxinxiView;
 
 
 /**
- * 视频信息
+ * Multimedia
  *
  * @author 
  * @email 

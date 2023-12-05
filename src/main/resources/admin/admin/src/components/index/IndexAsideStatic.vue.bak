@@ -14,7 +14,7 @@
             :index="1+''"
           >
             <template slot="title">
-              <span>个人中心</span>
+              <span>PersonalCenter</span>
             </template>
             <el-menu-item
               @click="menuHandler('updatePassword')"

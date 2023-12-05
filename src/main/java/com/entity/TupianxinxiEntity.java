@@ -22,7 +22,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 
 
 /**
- * 图片信息
+ * Image
  * 数据库通用操作实体类（普通增删改查）
  * @author 
  * @email 
@@ -52,7 +52,7 @@ public class TupianxinxiEntity<T> implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 图片名称
+	 * TheNameOfTheImage
 	 */
 					
 	private String tupianmingcheng;
@@ -141,13 +141,13 @@ public class TupianxinxiEntity<T> implements Serializable {
 		this.id = id;
 	}
 	/**
-	 * 设置：图片名称
+	 * 设置：TheNameOfTheImage
 	 */
 	public void setTupianmingcheng(String tupianmingcheng) {
 		this.tupianmingcheng = tupianmingcheng;
 	}
 	/**
-	 * 获取：图片名称
+	 * 获取：TheNameOfTheImage
 	 */
 	public String getTupianmingcheng() {
 		return tupianmingcheng;

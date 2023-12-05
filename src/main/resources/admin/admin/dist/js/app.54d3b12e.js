@@ -593,11 +593,11 @@
                     staticClass: "logout",
                     style: {color: t.heads.headLogoutFontColor, fontSize: t.heads.headLogoutFontSize},
                     on: {click: t.onIndexTap}
-                }, [t._v("退出到前台")]) : t._e(), n("div", {
+                }, [t._v("Exit to the front desk")]) : t._e(), n("div", {
                     staticClass: "logout",
                     style: {color: t.heads.headLogoutFontColor, fontSize: t.heads.headLogoutFontSize},
                     on: {click: t.onLogout}
-                }, [t._v("退出登录")])])])
+                }, [t._v("Sign out")])])])
             }, y = [], F = (n("3e5d"), n("184c"), n("01bf"), n("ad91"), {
                 data: function () {
                     return {
@@ -674,20 +674,20 @@
                                 return t.menuHandler("")
                             }
                         }
-                    }, [n("i", {staticClass: "el-icon-menu el-icon-s-home"}), t._v("首页")]), n("el-submenu", {attrs: {index: "1"}}, [n("template", {slot: "title"}, [n("i", {staticClass: "el-icon-menu el-icon-user-solid"}), n("span", [t._v("个人中心")])]), n("el-menu-item", {
+                    }, [n("i", {staticClass: "el-icon-menu el-icon-s-home"}), t._v("Home")]), n("el-submenu", {attrs: {index: "1"}}, [n("template", {slot: "title"}, [n("i", {staticClass: "el-icon-menu el-icon-user-solid"}), n("span", [t._v("PersonalCenter")])]), n("el-menu-item", {
                         attrs: {index: 0},
                         on: {
                             click: function (e) {
                                 return t.menuHandler("updatePassword")
                             }
                         }
-                    }, [t._v("修改密码")]), n("el-menu-item", {
+                    }, [t._v("Change your password")]), n("el-menu-item", {
                         attrs: {index: -1}, on: {
                             click: function (e) {
                                 return t.menuHandler("center")
                             }
                         }
-                    }, [t._v("个人信息")])], 2), t._l(e.backMenu, (function (e, o) {
+                    }, [t._v("Personal Information")])], 2), t._l(e.backMenu, (function (e, o) {
                         return n("el-submenu", {
                             key: e.menu,
                             attrs: {index: o + 2 + ""}
@@ -713,154 +713,154 @@
                         backMenu: [{
                             child: [{
                                 appFrontIcon: "cuIcon-pay",
-                                buttons: ["新增", "查看", "修改", "删除"],
-                                menu: "用户",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete"],
+                                menu: "User",
+                                menuJump: "List",
                                 tableName: "yonghu"
-                            }], menu: "用户管理"
+                            }], menu: "User management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-medal",
-                                buttons: ["新增", "查看", "修改", "删除"],
-                                menu: "文章类型",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete"],
+                                menu: "The type of article",
+                                menuJump: "List",
                                 tableName: "wenzhangleixing"
-                            }], menu: "文章类型管理"
+                            }], menu: "Article type management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-discover",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论", "审核"],
-                                menu: "文章信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews", "Audit"],
+                                menu: "Article",
+                                menuJump: "List",
                                 tableName: "wenzhangxinxi"
-                            }], menu: "文章信息管理"
+                            }], menu: "Article information management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-vip",
-                                buttons: ["新增", "查看", "修改", "删除"],
-                                menu: "图片类型",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete"],
+                                menu: "Image type",
+                                menuJump: "List",
                                 tableName: "tupianleixing"
-                            }], menu: "图片类型管理"
+                            }], menu: "Image type management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-cardboard",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论", "审核"],
-                                menu: "图片信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews", "Audit"],
+                                menu: "Image",
+                                menuJump: "List",
                                 tableName: "tupianxinxi"
-                            }], menu: "图片信息管理"
+                            }], menu: "Picture information management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-album",
-                                buttons: ["新增", "查看", "修改", "删除"],
-                                menu: "视频类型",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete"],
+                                menu: "Video type",
+                                menuJump: "List",
                                 tableName: "shipinleixing"
-                            }], menu: "视频类型管理"
+                            }], menu: "Video type management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-brand",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论", "审核"],
-                                menu: "视频信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews", "Audit"],
+                                menu: "Multimedia",
+                                menuJump: "List",
                                 tableName: "shipinxinxi"
-                            }], menu: "视频信息管理"
+                            }], menu: "Video information management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-similar",
-                                buttons: ["新增", "查看", "修改", "删除"],
-                                menu: "轮播图管理",
+                                buttons: ["New", "View", "Revise", "Delete"],
+                                menu: "Carousel management",
                                 tableName: "config"
-                            }], menu: "系统管理"
+                            }], menu: "System administration"
                         }],
                         frontMenu: [{
                             child: [{
                                 appFrontIcon: "cuIcon-newshot",
-                                buttons: ["查看"],
-                                menu: "文章信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of article information",
+                                menuJump: "List",
                                 tableName: "wenzhangxinxi"
-                            }], menu: "文章信息模块"
+                            }], menu: "Article information module"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-news",
-                                buttons: ["查看"],
-                                menu: "图片信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of image information",
+                                menuJump: "List",
                                 tableName: "tupianxinxi"
-                            }], menu: "图片信息模块"
+                            }], menu: "Picture information module"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-present",
-                                buttons: ["查看"],
-                                menu: "视频信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of video messages",
+                                menuJump: "List",
                                 tableName: "shipinxinxi"
-                            }], menu: "视频信息模块"
+                            }], menu: "Video information module"
                         }],
                         hasBackLogin: "是",
                         hasBackRegister: "否",
                         hasFrontLogin: "否",
                         hasFrontRegister: "否",
-                        roleName: "管理员",
+                        roleName: "Administrator",
                         tableName: "users"
                     }, {
                         backMenu: [{
                             child: [{
                                 appFrontIcon: "cuIcon-discover",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论"],
-                                menu: "文章信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews"],
+                                menu: "Article",
+                                menuJump: "List",
                                 tableName: "wenzhangxinxi"
-                            }], menu: "文章信息管理"
+                            }], menu: "Article information management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-cardboard",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论"],
-                                menu: "图片信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews"],
+                                menu: "Image",
+                                menuJump: "List",
                                 tableName: "tupianxinxi"
-                            }], menu: "图片信息管理"
+                            }], menu: "Picture information management"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-brand",
-                                buttons: ["新增", "查看", "修改", "删除", "查看评论"],
-                                menu: "视频信息",
-                                menuJump: "列表",
+                                buttons: ["New", "View", "Revise", "Delete", "Check out the reviews"],
+                                menu: "Multimedia",
+                                menuJump: "List",
                                 tableName: "shipinxinxi"
-                            }], menu: "视频信息管理"
+                            }], menu: "Video information management"
                         }],
                         frontMenu: [{
                             child: [{
                                 appFrontIcon: "cuIcon-newshot",
-                                buttons: ["查看"],
-                                menu: "文章信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of article information",
+                                menuJump: "List",
                                 tableName: "wenzhangxinxi"
-                            }], menu: "文章信息模块"
+                            }], menu: "Article information module"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-news",
-                                buttons: ["查看"],
-                                menu: "图片信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of image information",
+                                menuJump: "List",
                                 tableName: "tupianxinxi"
-                            }], menu: "图片信息模块"
+                            }], menu: "Picture information module"
                         }, {
                             child: [{
                                 appFrontIcon: "cuIcon-present",
-                                buttons: ["查看"],
-                                menu: "视频信息列表",
-                                menuJump: "列表",
+                                buttons: ["View"],
+                                menu: "A list of video messages",
+                                menuJump: "List",
                                 tableName: "shipinxinxi"
-                            }], menu: "视频信息模块"
+                            }], menu: "Video information module"
                         }],
                         hasBackLogin: "否",
                         hasBackRegister: "否",
                         hasFrontLogin: "是",
                         hasFrontRegister: "是",
-                        roleName: "用户",
+                        roleName: "User",
                         tableName: "yonghu"
                     }]
                 }
@@ -968,12 +968,12 @@
                         this.itemMenu = [], this.title = "", this.currentIndex = t, this.$router.push({name: "home"})
                     }, centerChange: function (t) {
                         this.itemMenu = [{
-                            buttons: ["新增", "查看", "修改", "删除"],
-                            menu: "修改密码",
+                            buttons: ["New", "View", "Revise", "Delete"],
+                            menu: "Change your password",
                             tableName: "updatePassword"
                         }, {
-                            buttons: ["新增", "查看", "修改", "删除"],
-                            menu: "个人信息",
+                            buttons: ["New", "View", "Revise", "Delete"],
+                            menu: "Personal Information",
                             tableName: "center"
                         }], this.title = "", this.currentIndex = t, this.$router.push({name: "home"})
                     }
@@ -998,7 +998,7 @@
                         fontSize: "60px",
                         borderStyle: "solid"
                     }
-                }, [t._v("欢迎使用 " + "CS Cloud Media")])])
+                }, [t._v("Welcome " + "CS Cloud Media")])])
             }, T = [], Z = {
                 data: function () {
                     return {}
@@ -1020,7 +1020,7 @@
                 return n("div", [n("div", {staticClass: "container loginIn"}, [n("div", {class: "left right"}, [n("el-form", {
                     staticClass: "login-form",
                     attrs: {"label-position": "left", "label-width": "0px"}
-                }, [n("div", {staticClass: "title-container"}, [n("h3", {staticClass: "title"}, [t._v("CS Cloud Media登录")])]), n("el-form-item", {
+                }, [n("div", {staticClass: "title-container"}, [n("h3", {staticClass: "title"}, [t._v("CS Cloud MEDIA LOGIN")])]), n("el-form-item", {
                     class: "style1",
                     style: {
                         padding: "0",
@@ -1053,7 +1053,7 @@
                     }
                 }, [n("svg-icon", {attrs: {"icon-class": "user"}})], 1), n("el-input", {
                     attrs: {
-                        placeholder: "请输入用户名",
+                        placeholder: "Please enter your username",
                         name: "username",
                         type: "text"
                     }, model: {
@@ -1094,7 +1094,7 @@
                     }
                 }, [n("svg-icon", {attrs: {"icon-class": "password"}})], 1), n("el-input", {
                     attrs: {
-                        placeholder: "请输入密码",
+                        placeholder: "Please enter your password",
                         name: "password",
                         type: "password"
                     }, model: {
@@ -1126,7 +1126,7 @@
                             return t.login()
                         }
                     }
-                }, [t._v(t._s("登录"))]), n("el-form-item", {staticClass: "setting"})], 1)], 1)])])
+                }, [t._v(t._s("Login"))]), n("el-form-item", {staticClass: "setting"})], 1)], 1)])])
             }, Q = [], J = (n("93a6"), {
                 data: function () {
                     return {
@@ -1159,7 +1159,7 @@
                         var t = this;
                         if (this.rulesForm.username) if (this.rulesForm.password) {
                             if (this.roles.length > 1) {
-                                if (!this.rulesForm.role) return void this.$message.error("请选择角色");
+                                if (!this.rulesForm.role) return void this.$message.error("Please select a role");
                                 for (var e = this.menus, n = 0; n < e.length; n++) e[n].roleName == this.rulesForm.role && (this.tableName = e[n].tableName)
                             } else this.tableName = this.roles[0].tableName, this.rulesForm.role = this.roles[0].roleName;
                             this.$http({
@@ -1169,7 +1169,7 @@
                                 var n = e.data;
                                 n && 0 === n.code ? (t.$storage.set("Token", n.token), t.$storage.set("role", t.rulesForm.role), t.$storage.set("sessionTable", t.tableName), t.$storage.set("adminName", t.rulesForm.username), t.$router.replace({path: "/index/"})) : t.$message.error(n.msg)
                             }))
-                        } else this.$message.error("请输入密码"); else this.$message.error("请输入用户名")
+                        } else this.$message.error("please enter your password"); else this.$message.error("Please enter username")
                     }, getRandCode: function () {
                         var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 4;
                         this.randomString(t)
@@ -1195,7 +1195,7 @@
                 return o("div", {staticClass: "content"}, [o("img", {
                     staticClass: "backgroud",
                     attrs: {src: n("8f20"), alt: ""}
-                }), o("div", {staticClass: "text main-text"}, [t._v("出错了...页面失踪了")]), o("div", [o("el-button", {
+                }), o("div", {staticClass: "text main-text"}, [t._v("出错了...Page面失踪了")]), o("div", [o("el-button", {
                     staticClass: "text",
                     attrs: {type: "text", icon: "el-icon-back"},
                     on: {
@@ -1203,7 +1203,7 @@
                             return t.back()
                         }
                     }
-                }, [t._v("返回")])], 1)])
+                }, [t._v("Return")])], 1)])
             }, tt = [], et = {
                 methods: {
                     back: function () {
@@ -1219,7 +1219,7 @@
                     attrs: {rules: t.rules, model: t.ruleForm, "label-width": "80px"}
                 }, [n("el-form-item", {
                     attrs: {
-                        label: "原密码",
+                        label: "Original password",
                         prop: "password"
                     }
                 }, [n("el-input", {
@@ -1231,7 +1231,7 @@
                     }
                 })], 1), n("el-form-item", {
                     attrs: {
-                        label: "新密码",
+                        label: "New passwords",
                         prop: "newpassword"
                     }
                 }, [n("el-input", {
@@ -1243,7 +1243,7 @@
                     }
                 })], 1), n("el-form-item", {
                     attrs: {
-                        label: "确认密码",
+                        label: "Confirm your password",
                         prop: "repassword"
                     }
                 }, [n("el-input", {
@@ -1264,9 +1264,9 @@
                         ruleForm: {},
                         user: {},
                         rules: {
-                            password: [{required: !0, message: "密码不能为空", trigger: "blur"}],
-                            newpassword: [{required: !0, message: "新密码不能为空", trigger: "blur"}],
-                            repassword: [{required: !0, message: "确认密码不能为空", trigger: "blur"}]
+                            password: [{required: !0, message: "The password cannot be empty", trigger: "blur"}],
+                            newpassword: [{required: !0, message: "The new password cannot be empty", trigger: "blur"}],
+                            repassword: [{required: !0, message: "The confirmation password cannot be empty", trigger: "blur"}]
                         }
                     }
                 }, mounted: function () {
@@ -1286,8 +1286,8 @@
                         this.$refs["ruleForm"].validate((function (e) {
                             if (e) {
                                 var n = "";
-                                if (t.user.mima ? n = t.user.mima : t.user.password && (n = t.user.password), t.ruleForm.password != n) return void t.$message.error("原密码错误");
-                                if (t.ruleForm.newpassword != t.ruleForm.repassword) return void t.$message.error("两次密码输入不一致");
+                                if (t.user.mima ? n = t.user.mima : t.user.password && (n = t.user.password), t.ruleForm.password != n) return void t.$message.error("The original password is incorrect");
+                                if (t.ruleForm.newpassword != t.ruleForm.repassword) return void t.$message.error("The password is entered inconsistently");
                                 t.user.password = t.ruleForm.newpassword, t.user.mima = t.ruleForm.newpassword, t.$http({
                                     url: "".concat(t.$storage.get("sessionTable"), "/update"),
                                     method: "post",
@@ -1295,7 +1295,7 @@
                                 }).then((function (e) {
                                     var n = e.data;
                                     n && 0 === n.code ? t.$message({
-                                        message: "修改密码成功,下次登录系统生效",
+                                        message: "If the password is changed, it will take effect the next time you log in to the system",
                                         type: "success",
                                         duration: 1500,
                                         onClose: function () {
@@ -1395,7 +1395,7 @@
                             return t.back()
                         }
                     }
-                }, [t._v("返回")])], 1)], 1)
+                }, [t._v("Return")])], 1)], 1)
             }, ht = [], pt = {
                 data: function () {
                     return {name: "", account: "", type: "", table: "", obj: ""}
@@ -1405,9 +1405,9 @@
                 }, methods: {
                     submitTap: function () {
                         var t = this;
-                        this.type ? this.$confirm("确定支付?", "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.type ? this.$confirm("确定支付?", "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             t.obj.ispay = "已支付", t.$http({
@@ -1425,7 +1425,7 @@
                                     }
                                 }) : t.$message.error(n.msg)
                             }))
-                        })) : this.$message.error("请选择支付方式")
+                        })) : this.$message.error("Please select a payment method")
                     }, back: function () {
                         this.$router.go(-1)
                     }
@@ -1439,9 +1439,9 @@
                     attrs: {model: t.rgsForm}
                 }, ["yonghu" == t.tableName ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名"}
+                    attrs: {label: "Username"}
                 }, [n("el-input", {
-                    attrs: {autocomplete: "off", placeholder: "用户名"},
+                    attrs: {autocomplete: "off", placeholder: "Username"},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -1449,9 +1449,9 @@
                     }
                 })], 1) : t._e(), "yonghu" == t.tableName ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "密码"}
+                    attrs: {label: "Password"}
                 }, [n("el-input", {
-                    attrs: {autocomplete: "off", placeholder: "密码", type: "password"},
+                    attrs: {autocomplete: "off", placeholder: "Password", type: "password"},
                     scopedSlots: t._u([{
                         key: "elsetype", fn: function (t) {
                         }
@@ -1463,9 +1463,9 @@
                     }
                 })], 1) : t._e(), "yonghu" == t.tableName ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "确认密码"}
+                    attrs: {label: "Confirm your password"}
                 }, [n("el-input", {
-                    attrs: {autocomplete: "off", placeholder: "确认密码", type: "password"},
+                    attrs: {autocomplete: "off", placeholder: "Confirm your password", type: "password"},
                     model: {
                         value: t.ruleForm.mima2, callback: function (e) {
                             t.$set(t.ruleForm, "mima2", e)
@@ -1473,9 +1473,9 @@
                     }
                 })], 1) : t._e(), "yonghu" == t.tableName ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "昵称"}
+                    attrs: {label: "Nickname"}
                 }, [n("el-input", {
-                    attrs: {autocomplete: "off", placeholder: "昵称"},
+                    attrs: {autocomplete: "off", placeholder: "Nickname"},
                     model: {
                         value: t.ruleForm.nicheng, callback: function (e) {
                             t.$set(t.ruleForm, "nicheng", e)
@@ -1483,9 +1483,9 @@
                     }
                 })], 1) : t._e(), "yonghu" == t.tableName ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "手机"}
+                    attrs: {label: "CellPhone"}
                 }, [n("el-input", {
-                    attrs: {autocomplete: "off", placeholder: "手机"},
+                    attrs: {autocomplete: "off", placeholder: "CellPhone"},
                     model: {
                         value: t.ruleForm.shouji, callback: function (e) {
                             t.$set(t.ruleForm, "shouji", e)
@@ -1512,7 +1512,7 @@
                             return t.close()
                         }
                     }
-                }, [t._v("取消")])], 1)], 1)], 1)])])
+                }, [t._v("Cancel")])], 1)], 1)], 1)])])
             }, yt = [], Ft = {
                 data: function () {
                     return {ruleForm: {}, tableName: "", rules: {}}
@@ -1541,7 +1541,7 @@
                                     t.$router.replace({path: "/login"})
                                 }
                             }) : t.$message.error(n.msg)
-                        })) : this.$message.error("手机应输入手机格式") : this.$message.error("两次密码输入不一致") : this.$message.error("密码不能为空") : this.$message.error("用户名不能为空")
+                        })) : this.$message.error("The phone should be entered in the phone format") : this.$message.error("The password is entered inconsistently") : this.$message.error("The password cannot be empty") : this.$message.error("The username cannot be empty")
                     }
                 }
             }, Ct = Ft, xt = (n("20a2"), Object(d["a"])(Ct, ft, yt, !1, null, "89698b9e", null)), Bt = xt.exports,
@@ -1554,11 +1554,11 @@
                     attrs: {model: t.ruleForm, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["yonghu" == t.flag ? n("el-form-item", {
                     attrs: {
-                        label: "用户名",
+                        label: "Username",
                         prop: "yonghuming"
                     }
                 }, [n("el-input", {
-                    attrs: {readonly: "", placeholder: "用户名", clearable: ""},
+                    attrs: {readonly: "", placeholder: "Username", clearable: ""},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -1566,11 +1566,11 @@
                     }
                 })], 1) : t._e()], 1), n("el-col", {attrs: {span: 12}}, ["yonghu" == t.flag ? n("el-form-item", {
                     attrs: {
-                        label: "昵称",
+                        label: "Nickname",
                         prop: "nicheng"
                     }
                 }, [n("el-input", {
-                    attrs: {placeholder: "昵称", clearable: ""},
+                    attrs: {placeholder: "Nickname", clearable: ""},
                     model: {
                         value: t.ruleForm.nicheng, callback: function (e) {
                             t.$set(t.ruleForm, "nicheng", e)
@@ -1578,11 +1578,11 @@
                     }
                 })], 1) : t._e()], 1), n("el-col", {attrs: {span: 12}}, ["yonghu" == t.flag ? n("el-form-item", {
                     attrs: {
-                        label: "性别",
+                        label: "Gender",
                         prop: "xingbie"
                     }
                 }, [n("el-select", {
-                    attrs: {placeholder: "请选择性别"},
+                    attrs: {placeholder: "Please select a gender"},
                     model: {
                         value: t.ruleForm.xingbie, callback: function (e) {
                             t.$set(t.ruleForm, "xingbie", e)
@@ -1592,11 +1592,11 @@
                     return n("el-option", {key: e, attrs: {label: t, value: t}})
                 })), 1)], 1) : t._e()], 1), n("el-col", {attrs: {span: 12}}, ["yonghu" == t.flag ? n("el-form-item", {
                     attrs: {
-                        label: "手机",
+                        label: "CellPhone",
                         prop: "shouji"
                     }
                 }, [n("el-input", {
-                    attrs: {placeholder: "手机", clearable: ""},
+                    attrs: {placeholder: "CellPhone", clearable: ""},
                     model: {
                         value: t.ruleForm.shouji, callback: function (e) {
                             t.$set(t.ruleForm, "shouji", e)
@@ -1604,11 +1604,11 @@
                     }
                 })], 1) : t._e()], 1), "users" == t.flag ? n("el-form-item", {
                     attrs: {
-                        label: "用户名",
+                        label: "Username",
                         prop: "username"
                     }
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名"},
+                    attrs: {placeholder: "Username"},
                     model: {
                         value: t.ruleForm.username, callback: function (e) {
                             t.$set(t.ruleForm, "username", e)
@@ -1661,24 +1661,24 @@
                     }).then((function (e) {
                         var n = e.data;
                         n && 0 === n.code ? t.ruleForm = n.data : t.$message.error(n.msg)
-                    })), this.yonghuxingbieOptions = "男,女".split(",")
+                    })), this.yonghuxingbieOptions = "Man,Woman".split(",")
                 }, methods: {
                     onUpdateHandler: function () {
                         var t = this;
-                        this.ruleForm.yonghuming || "yonghu" != this.flag ? this.ruleForm.mima || "yonghu" != this.flag ? "yonghu" != this.flag || !this.ruleForm.shouji || Et(this.ruleForm.shouji) ? "users" == this.flag && this.ruleForm.username.trim().length < 1 ? this.$message.error("用户名不能为空") : this.$http({
+                        this.ruleForm.yonghuming || "yonghu" != this.flag ? this.ruleForm.mima || "yonghu" != this.flag ? "yonghu" != this.flag || !this.ruleForm.shouji || Et(this.ruleForm.shouji) ? "users" == this.flag && this.ruleForm.username.trim().length < 1 ? this.$message.error("Username不能为空") : this.$http({
                             url: "".concat(this.$storage.get("sessionTable"), "/update"),
                             method: "post",
                             data: this.ruleForm
                         }).then((function (e) {
                             var n = e.data;
                             n && 0 === n.code ? t.$message({
-                                message: "修改信息成功",
+                                message: "The modification is successful",
                                 type: "success",
                                 duration: 1500,
                                 onClose: function () {
                                 }
                             }) : t.$message.error(n.msg)
-                        })) : this.$message.error("手机应输入手机格式") : this.$message.error("密码不能为空") : this.$message.error("用户名不能为空")
+                        })) : this.$message.error("The phone should be entered in the phone format") : this.$message.error("The password cannot be empty") : this.$message.error("The username cannot be empty")
                     }
                 }
             }, Lt = It, Wt = Object(d["a"])(Lt, At, St, !1, null, "0c6b418d", null), Rt = Wt.exports, Pt = function () {
@@ -1690,10 +1690,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "文章类型" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "The type of article" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "文章类型",
+                        placeholder: "The type of article",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.wenzhangleixing, callback: function (e) {
@@ -1703,7 +1703,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "文章类型",
+                        placeholder: "The type of article",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.wenzhangleixing, callback: function (e) {
@@ -1711,7 +1711,7 @@
                         }, expression: "searchForm.wenzhangleixing"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "文章类型", clearable: ""},
+                    attrs: {placeholder: "The type of article", clearable: ""},
                     model: {
                         value: t.searchForm.wenzhangleixing, callback: function (e) {
                             t.$set(t.searchForm, "wenzhangleixing", e)
@@ -1726,24 +1726,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("wenzhangleixing", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("wenzhangleixing", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -1752,21 +1752,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -1776,7 +1776,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -1785,7 +1785,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -1794,7 +1794,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("wenzhangleixing", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("wenzhangleixing", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -1827,7 +1827,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -1838,7 +1838,7 @@
                         align: t.contents.tableAlign,
                         prop: "wenzhangleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "文章类型"
+                        label: "The type of article"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.wenzhangleixing) + " ")]
@@ -1849,10 +1849,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("wenzhangleixing", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("wenzhangleixing", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -1862,7 +1862,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -1871,7 +1871,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -1880,7 +1880,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -1890,7 +1890,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -1899,7 +1899,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -1908,7 +1908,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -1918,7 +1918,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -1927,7 +1927,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangleixing", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -1936,7 +1936,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 383297637)
                 })], 1) : t._e(), n("el-pagination", {
@@ -1966,9 +1966,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "文章类型", prop: "wenzhangleixing"}
+                    attrs: {label: "The type of article", prop: "wenzhangleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "文章类型", clearable: "", readonly: t.ro.wenzhangleixing},
+                    attrs: {placeholder: "The type of article", clearable: "", readonly: t.ro.wenzhangleixing},
                     model: {
                         value: t.ruleForm.wenzhangleixing, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangleixing", e)
@@ -1976,9 +1976,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "文章类型", prop: "wenzhangleixing"}
+                    attrs: {label: "The type of article", prop: "wenzhangleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "文章类型", readonly: ""},
+                    attrs: {placeholder: "The type of article", readonly: ""},
                     model: {
                         value: t.ruleForm.wenzhangleixing, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangleixing", e)
@@ -1988,21 +1988,21 @@
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, qt = [], Tt = (n("985f"), n("e2bb"), n("cf36"), n("4d16"), {
                 data: function () {
                     return {
@@ -2085,7 +2085,7 @@
                         type: "",
                         ro: {wenzhangleixing: !1},
                         ruleForm: {wenzhangleixing: ""},
-                        rules: {wenzhangleixing: [{required: !0, message: "文章类型不能为空", trigger: "blur"}]}
+                        rules: {wenzhangleixing: [{required: !0, message: "The article type cannot be empty", trigger: "blur"}]}
                     }
                 }, props: ["parent"], computed: {}, created: function () {
                     this.addEditStyleChange(), this.addEditUploadStyleChange()
@@ -2150,7 +2150,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -2167,7 +2167,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -2440,15 +2440,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "wenzhangleixing/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -2469,10 +2469,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "图片类型" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Image type" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "图片类型",
+                        placeholder: "Image type",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.tupianleixing, callback: function (e) {
@@ -2482,7 +2482,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "图片类型",
+                        placeholder: "Image type",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.tupianleixing, callback: function (e) {
@@ -2490,7 +2490,7 @@
                         }, expression: "searchForm.tupianleixing"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "图片类型", clearable: ""},
+                    attrs: {placeholder: "Image type", clearable: ""},
                     model: {
                         value: t.searchForm.tupianleixing, callback: function (e) {
                             t.$set(t.searchForm, "tupianleixing", e)
@@ -2505,24 +2505,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("tupianleixing", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("tupianleixing", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -2531,21 +2531,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("tupianleixing", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("tupianleixing", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("tupianleixing", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("tupianleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -2555,7 +2555,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("tupianleixing", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("tupianleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -2564,7 +2564,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -2573,7 +2573,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("tupianleixing", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("tupianleixing", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -2606,7 +2606,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -2617,7 +2617,7 @@
                         align: t.contents.tableAlign,
                         prop: "tupianleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "图片类型"
+                        label: "Image type"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.tupianleixing) + " ")]
@@ -2628,10 +2628,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("tupianleixing", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("tupianleixing", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -2641,7 +2641,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("tupianleixing", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("tupianleixing", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -2650,7 +2650,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -2659,7 +2659,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("tupianleixing", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("tupianleixing", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -2669,7 +2669,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("tupianleixing", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("tupianleixing", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -2678,7 +2678,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianleixing", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -2687,7 +2687,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 577642263)
                 })], 1) : t._e(), n("el-pagination", {
@@ -2717,9 +2717,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "图片类型", prop: "tupianleixing"}
+                    attrs: {label: "Image type", prop: "tupianleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "图片类型", clearable: "", readonly: t.ro.tupianleixing},
+                    attrs: {placeholder: "Image type", clearable: "", readonly: t.ro.tupianleixing},
                     model: {
                         value: t.ruleForm.tupianleixing, callback: function (e) {
                             t.$set(t.ruleForm, "tupianleixing", e)
@@ -2727,9 +2727,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "图片类型", prop: "tupianleixing"}
+                    attrs: {label: "Image type", prop: "tupianleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "图片类型", readonly: ""},
+                    attrs: {placeholder: "Image type", readonly: ""},
                     model: {
                         value: t.ruleForm.tupianleixing, callback: function (e) {
                             t.$set(t.ruleForm, "tupianleixing", e)
@@ -2739,21 +2739,21 @@
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, Xt = [], te = {
                 data: function () {
                     return {
@@ -2836,7 +2836,7 @@
                         type: "",
                         ro: {tupianleixing: !1},
                         ruleForm: {tupianleixing: ""},
-                        rules: {tupianleixing: [{required: !0, message: "图片类型不能为空", trigger: "blur"}]}
+                        rules: {tupianleixing: [{required: !0, message: "The image type cannot be empty", trigger: "blur"}]}
                     }
                 }, props: ["parent"], computed: {}, created: function () {
                     this.addEditStyleChange(), this.addEditUploadStyleChange()
@@ -2901,7 +2901,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -2918,7 +2918,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -3191,15 +3191,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "tupianleixing/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -3220,10 +3220,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "昵称" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Nickname" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "昵称",
+                        placeholder: "Nickname",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nicheng, callback: function (e) {
@@ -3233,7 +3233,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "昵称",
+                        placeholder: "Nickname",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nicheng, callback: function (e) {
@@ -3241,7 +3241,7 @@
                         }, expression: "searchForm.nicheng"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "昵称", clearable: ""},
+                    attrs: {placeholder: "Nickname", clearable: ""},
                     model: {
                         value: t.searchForm.nicheng, callback: function (e) {
                             t.$set(t.searchForm, "nicheng", e)
@@ -3249,9 +3249,9 @@
                     }
                 }) : t._e()], 1), n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "性别", prop: "xingbie"}
+                    attrs: {label: "Gender", prop: "xingbie"}
                 }, [n("el-select", {
-                    attrs: {clearable: "", placeholder: "请选择性别"},
+                    attrs: {clearable: "", placeholder: "Please select a gender"},
                     on: {change: t.xingbieChange},
                     model: {
                         value: t.searchForm.xingbie, callback: function (e) {
@@ -3269,24 +3269,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("yonghu", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("yonghu", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -3295,21 +3295,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("yonghu", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("yonghu", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("yonghu", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("yonghu", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("yonghu", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("yonghu", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -3319,7 +3319,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("yonghu", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("yonghu", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -3328,7 +3328,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("yonghu", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("yonghu", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -3337,7 +3337,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("yonghu", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("yonghu", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -3370,7 +3370,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -3381,7 +3381,7 @@
                         align: t.contents.tableAlign,
                         prop: "yonghuming",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.yonghuming) + " ")]
@@ -3393,7 +3393,7 @@
                         align: t.contents.tableAlign,
                         prop: "nicheng",
                         "header-align": t.contents.tableAlign,
-                        label: "昵称"
+                        label: "Nickname"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.nicheng) + " ")]
@@ -3405,7 +3405,7 @@
                         align: t.contents.tableAlign,
                         prop: "xingbie",
                         "header-align": t.contents.tableAlign,
-                        label: "性别"
+                        label: "Gender"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.xingbie) + " ")]
@@ -3417,7 +3417,7 @@
                         align: t.contents.tableAlign,
                         prop: "shouji",
                         "header-align": t.contents.tableAlign,
-                        label: "手机"
+                        label: "CellPhone"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.shouji) + " ")]
@@ -3428,10 +3428,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("yonghu", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("yonghu", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -3441,7 +3441,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("yonghu", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("yonghu", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -3450,7 +3450,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("yonghu", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("yonghu", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -3459,7 +3459,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("yonghu", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("yonghu", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -3469,7 +3469,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("yonghu", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("yonghu", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -3478,7 +3478,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("yonghu", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("yonghu", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -3487,7 +3487,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("yonghu", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("yonghu", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -3497,7 +3497,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("yonghu", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("yonghu", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -3506,7 +3506,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("yonghu", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("yonghu", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -3515,7 +3515,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 3695009209)
                 })], 1) : t._e(), n("el-pagination", {
@@ -3545,9 +3545,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: "", readonly: t.ro.yonghuming},
+                    attrs: {placeholder: "Username", clearable: "", readonly: t.ro.yonghuming},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -3555,9 +3555,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", readonly: ""},
+                    attrs: {placeholder: "Username", readonly: ""},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -3565,9 +3565,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "密码", prop: "mima"}
+                    attrs: {label: "Password", prop: "mima"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "密码", clearable: "", readonly: t.ro.mima},
+                    attrs: {placeholder: "Password", clearable: "", readonly: t.ro.mima},
                     model: {
                         value: t.ruleForm.mima, callback: function (e) {
                             t.$set(t.ruleForm, "mima", e)
@@ -3575,9 +3575,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "密码", prop: "mima"}
+                    attrs: {label: "Password", prop: "mima"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "密码", readonly: ""},
+                    attrs: {placeholder: "Password", readonly: ""},
                     model: {
                         value: t.ruleForm.mima, callback: function (e) {
                             t.$set(t.ruleForm, "mima", e)
@@ -3585,9 +3585,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "昵称", prop: "nicheng"}
+                    attrs: {label: "Nickname", prop: "nicheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "昵称", clearable: "", readonly: t.ro.nicheng},
+                    attrs: {placeholder: "Nickname", clearable: "", readonly: t.ro.nicheng},
                     model: {
                         value: t.ruleForm.nicheng, callback: function (e) {
                             t.$set(t.ruleForm, "nicheng", e)
@@ -3595,9 +3595,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "昵称", prop: "nicheng"}
+                    attrs: {label: "Nickname", prop: "nicheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "昵称", readonly: ""},
+                    attrs: {placeholder: "Nickname", readonly: ""},
                     model: {
                         value: t.ruleForm.nicheng, callback: function (e) {
                             t.$set(t.ruleForm, "nicheng", e)
@@ -3605,9 +3605,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "性别", prop: "xingbie"}
+                    attrs: {label: "Gender", prop: "xingbie"}
                 }, [n("el-select", {
-                    attrs: {disabled: t.ro.xingbie, placeholder: "请选择性别"},
+                    attrs: {disabled: t.ro.xingbie, placeholder: "Please select a gender"},
                     model: {
                         value: t.ruleForm.xingbie, callback: function (e) {
                             t.$set(t.ruleForm, "xingbie", e)
@@ -3617,9 +3617,9 @@
                     return n("el-option", {key: e, attrs: {label: t, value: t}})
                 })), 1)], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "性别", prop: "xingbie"}
+                    attrs: {label: "Gender", prop: "xingbie"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "性别", readonly: ""},
+                    attrs: {placeholder: "Gender", readonly: ""},
                     model: {
                         value: t.ruleForm.xingbie, callback: function (e) {
                             t.$set(t.ruleForm, "xingbie", e)
@@ -3627,9 +3627,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "手机", prop: "shouji"}
+                    attrs: {label: "CellPhone", prop: "shouji"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "手机", clearable: "", readonly: t.ro.shouji},
+                    attrs: {placeholder: "CellPhone", clearable: "", readonly: t.ro.shouji},
                     model: {
                         value: t.ruleForm.shouji, callback: function (e) {
                             t.$set(t.ruleForm, "shouji", e)
@@ -3637,9 +3637,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "手机", prop: "shouji"}
+                    attrs: {label: "CellPhone", prop: "shouji"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "手机", readonly: ""},
+                    attrs: {placeholder: "CellPhone", readonly: ""},
                     model: {
                         value: t.ruleForm.shouji, callback: function (e) {
                             t.$set(t.ruleForm, "shouji", e)
@@ -3649,21 +3649,21 @@
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, ue = [], he = {
                 data: function () {
                     var t = function (t, e, n) {
@@ -3751,8 +3751,8 @@
                         ruleForm: {yonghuming: "", mima: "", nicheng: "", xingbie: "", shouji: ""},
                         xingbieOptions: [],
                         rules: {
-                            yonghuming: [{required: !0, message: "用户名不能为空", trigger: "blur"}],
-                            mima: [{required: !0, message: "密码不能为空", trigger: "blur"}],
+                            yonghuming: [{required: !0, message: "The username cannot be empty", trigger: "blur"}],
+                            mima: [{required: !0, message: "The password cannot be empty", trigger: "blur"}],
                             nicheng: [],
                             xingbie: [],
                             shouji: [{validator: t, trigger: "blur"}]
@@ -3775,7 +3775,7 @@
                         }).then((function (t) {
                             var e = t.data;
                             if (e && 0 === e.code) e.data; else n.$message.error(e.msg)
-                        })), this.xingbieOptions = "男,女".split(",")
+                        })), this.xingbieOptions = "Man,Woman".split(",")
                     }, info: function (t) {
                         var e = this;
                         this.$http({url: "yonghu/info/".concat(t), method: "get"}).then((function (t) {
@@ -3821,7 +3821,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -3838,7 +3838,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -4080,7 +4080,7 @@
                         var t = [];
                         this.contents.pageTotal && t.push("total"), this.contents.pageSizes && t.push("sizes"), this.contents.pagePrevNext && (t.push("prev"), this.contents.pagePager && t.push("pager"), t.push("next")), this.contents.pageJumper && t.push("jumper"), this.layouts = t.join(), this.contents.pageEachNum = 10
                     }, init: function () {
-                        this.xingbieOptions = "男,女".split(",")
+                        this.xingbieOptions = "Man,Woman".split(",")
                     }, search: function () {
                         this.pageIndex = 1, this.getDataList()
                     }, getDataList: function () {
@@ -4112,15 +4112,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "yonghu/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -4141,10 +4141,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "视频名称" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "The name of the video" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "视频名称",
+                        placeholder: "The name of the video",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.shipinmingcheng, callback: function (e) {
@@ -4154,7 +4154,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "视频名称",
+                        placeholder: "The name of the video",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.shipinmingcheng, callback: function (e) {
@@ -4162,7 +4162,7 @@
                         }, expression: "searchForm.shipinmingcheng"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "视频名称", clearable: ""},
+                    attrs: {placeholder: "The name of the video", clearable: ""},
                     model: {
                         value: t.searchForm.shipinmingcheng, callback: function (e) {
                             t.$set(t.searchForm, "shipinmingcheng", e)
@@ -4170,9 +4170,9 @@
                     }
                 }) : t._e()], 1), n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "是否通过", prop: "sfsh"}
+                    attrs: {label: "Whether it passes or not", prop: "sfsh"}
                 }, [n("el-select", {
-                    attrs: {clearable: "", placeholder: "是否通过"},
+                    attrs: {clearable: "", placeholder: "Whether it passes or not"},
                     on: {change: t.sfshChange},
                     model: {
                         value: t.searchForm.sfsh, callback: function (e) {
@@ -4190,24 +4190,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("shipinxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("shipinxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -4216,21 +4216,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("shipinxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("shipinxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("shipinxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -4240,7 +4240,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("shipinxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -4249,7 +4249,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -4258,7 +4258,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("shipinxinxi", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("shipinxinxi", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -4291,7 +4291,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -4302,7 +4302,7 @@
                         align: t.contents.tableAlign,
                         prop: "shipinbianhao",
                         "header-align": t.contents.tableAlign,
-                        label: "视频编号"
+                        label: "Video number"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.shipinbianhao) + " ")]
@@ -4314,7 +4314,7 @@
                         align: t.contents.tableAlign,
                         prop: "shipinmingcheng",
                         "header-align": t.contents.tableAlign,
-                        label: "视频名称"
+                        label: "The name of the video"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.shipinmingcheng) + " ")]
@@ -4326,7 +4326,7 @@
                         align: t.contents.tableAlign,
                         prop: "shipinleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "视频类型"
+                        label: "Video type"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.shipinleixing) + " ")]
@@ -4339,16 +4339,16 @@
                         prop: "shipinfengmian",
                         "header-align": t.contents.tableAlign,
                         width: "200",
-                        label: "视频封面"
+                        label: "Video cover"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [e.row.shipinfengmian ? n("div", [n("img", {
                                 attrs: {
-                                    src: "https://soupfish.blob.core.windows.net/soup/" + e.row.shipinfengmian.split(",")[0],
+                                    src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e.row.shipinfengmian.split(",")[0],
                                     width: "100",
                                     height: "100"
                                 }
-                            })]) : n("div", [t._v("无图片")])]
+                            })]) : n("div", [t._v("No images")])]
                         }
                     }], null, !1, 199347580)
                 }), n("el-table-column", {
@@ -4357,16 +4357,16 @@
                         align: t.contents.tableAlign,
                         prop: "shipinbofang",
                         "header-align": t.contents.tableAlign,
-                        label: "视频播放"
+                        label: "Video playback"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [n("el-button", {
                                 attrs: {type: "text", size: "small"}, on: {
                                     click: function (n) {
-                                        return t.download("https://soupfish.blob.core.windows.net/soup/" + e.row.shipinbofang)
+                                        return t.download("https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e.row.shipinbofang)
                                     }
                                 }
-                            }, [t._v("预览")])]
+                            }, [t._v("Preview")])]
                         }
                     }], null, !1, 138316338)
                 }), n("el-table-column", {
@@ -4375,7 +4375,7 @@
                         align: t.contents.tableAlign,
                         prop: "faburiqi",
                         "header-align": t.contents.tableAlign,
-                        label: "发布日期"
+                        label: "Release date"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.faburiqi) + " ")]
@@ -4387,7 +4387,7 @@
                         align: t.contents.tableAlign,
                         prop: "yonghuming",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.yonghuming) + " ")]
@@ -4399,7 +4399,7 @@
                         align: t.contents.tableAlign,
                         prop: "shhf",
                         "header-align": t.contents.tableAlign,
-                        label: "审核回复"
+                        label: "Review responses"
                     }
                 }), n("el-table-column", {
                     attrs: {
@@ -4407,19 +4407,19 @@
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核状态"
+                        label: "Review status"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "通过" : "未通过"))])]
+                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "Pass" : "Failed"))])]
                         }
                     }], null, !1, 4265292497)
-                }), t.isAuth("shipinxinxi", "审核") ? n("el-table-column", {
+                }), t.isAuth("shipinxinxi", "Audit") ? n("el-table-column", {
                     attrs: {
                         sortable: t.contents.tableSortable,
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核"
+                        label: "Audit"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [n("el-button", {
@@ -4429,7 +4429,7 @@
                                         return t.shDialog(e.row)
                                     }
                                 }
-                            }, [t._v("审核")])]
+                            }, [t._v("Audit")])]
                         }
                     }], null, !1, 2984907060)
                 }) : t._e(), n("el-table-column", {
@@ -4437,10 +4437,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("shipinxinxi", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("shipinxinxi", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -4450,7 +4450,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("shipinxinxi", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("shipinxinxi", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -4459,7 +4459,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -4468,7 +4468,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("shipinxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -4478,7 +4478,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("shipinxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -4487,7 +4487,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -4496,7 +4496,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("shipinxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -4506,7 +4506,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("shipinxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -4515,7 +4515,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -4524,7 +4524,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("shipinxinxi", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -4534,7 +4534,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("shipinxinxi", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -4543,7 +4543,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinxinxi", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -4552,7 +4552,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 1596831459)
                 })], 1) : t._e(), n("el-pagination", {
@@ -4573,7 +4573,7 @@
                     ref: "addOrUpdate",
                     attrs: {parent: this}
                 }) : t._e(), n("el-dialog", {
-                    attrs: {title: "审核", visible: t.sfshVisiable, width: "50%"},
+                    attrs: {title: "Audit", visible: t.sfshVisiable, width: "50%"},
                     on: {
                         "update:visible": function (e) {
                             t.sfshVisiable = e
@@ -4582,19 +4582,19 @@
                 }, [n("el-form", {
                     ref: "form",
                     attrs: {model: t.form, "label-width": "80px"}
-                }, [n("el-form-item", {attrs: {label: "审核状态"}}, [n("el-select", {
-                    attrs: {placeholder: "审核状态"},
+                }, [n("el-form-item", {attrs: {label: "Review status"}}, [n("el-select", {
+                    attrs: {placeholder: "Review status"},
                     model: {
                         value: t.shForm.sfsh, callback: function (e) {
                             t.$set(t.shForm, "sfsh", e)
                         }, expression: "shForm.sfsh"
                     }
-                }, [n("el-option", {attrs: {label: "通过", value: "是"}}), n("el-option", {
+                }, [n("el-option", {attrs: {label: "Pass", value: "是"}}), n("el-option", {
                     attrs: {
-                        label: "不通过",
+                        label: "Not passed",
                         value: "否"
                     }
-                })], 1)], 1), n("el-form-item", {attrs: {label: "内容"}}, [n("el-input", {
+                })], 1)], 1), n("el-form-item", {attrs: {label: "Substance"}}, [n("el-input", {
                     attrs: {
                         type: "textarea",
                         rows: 8
@@ -4620,9 +4620,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频编号", prop: "shipinbianhao"}
+                    attrs: {label: "Video number", prop: "shipinbianhao"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频编号", readonly: ""},
+                    attrs: {placeholder: "Video number", readonly: ""},
                     model: {
                         value: t.ruleForm.shipinbianhao, callback: function (e) {
                             t.$set(t.ruleForm, "shipinbianhao", e)
@@ -4630,9 +4630,9 @@
                     }
                 })], 1) : n("div", [t.ruleForm.shipinbianhao ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频编号", prop: "shipinbianhao"}
+                    attrs: {label: "Video number", prop: "shipinbianhao"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频编号", readonly: ""},
+                    attrs: {placeholder: "Video number", readonly: ""},
                     model: {
                         value: t.ruleForm.shipinbianhao, callback: function (e) {
                             t.$set(t.ruleForm, "shipinbianhao", e)
@@ -4640,9 +4640,9 @@
                     }
                 })], 1) : t._e()], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频名称", prop: "shipinmingcheng"}
+                    attrs: {label: "The name of the video", prop: "shipinmingcheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频名称", clearable: "", readonly: t.ro.shipinmingcheng},
+                    attrs: {placeholder: "The name of the video", clearable: "", readonly: t.ro.shipinmingcheng},
                     model: {
                         value: t.ruleForm.shipinmingcheng, callback: function (e) {
                             t.$set(t.ruleForm, "shipinmingcheng", e)
@@ -4650,9 +4650,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频名称", prop: "shipinmingcheng"}
+                    attrs: {label: "The name of the video", prop: "shipinmingcheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频名称", readonly: ""},
+                    attrs: {placeholder: "The name of the video", readonly: ""},
                     model: {
                         value: t.ruleForm.shipinmingcheng, callback: function (e) {
                             t.$set(t.ruleForm, "shipinmingcheng", e)
@@ -4660,9 +4660,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "视频类型", prop: "shipinleixing"}
+                    attrs: {label: "Video type", prop: "shipinleixing"}
                 }, [n("el-select", {
-                    attrs: {disabled: t.ro.shipinleixing, placeholder: "请选择视频类型"},
+                    attrs: {disabled: t.ro.shipinleixing, placeholder: "Please select a video type"},
                     model: {
                         value: t.ruleForm.shipinleixing, callback: function (e) {
                             t.$set(t.ruleForm, "shipinleixing", e)
@@ -4672,9 +4672,9 @@
                     return n("el-option", {key: e, attrs: {label: t, value: t}})
                 })), 1)], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频类型", prop: "shipinleixing"}
+                    attrs: {label: "Video type", prop: "shipinleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频类型", readonly: ""},
+                    attrs: {placeholder: "Video type", readonly: ""},
                     model: {
                         value: t.ruleForm.shipinleixing, callback: function (e) {
                             t.$set(t.ruleForm, "shipinleixing", e)
@@ -4682,21 +4682,21 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 24}}, ["info" == t.type || t.ro.shipinfengmian ? n("div", [t.ruleForm.shipinfengmian ? n("el-form-item", {
                     attrs: {
-                        label: "视频封面",
+                        label: "Video cover",
                         prop: "shipinfengmian"
                     }
                 }, t._l(t.ruleForm.shipinfengmian.split(","), (function (e, o) {
                     return n("img", {
                         key: o,
                         staticStyle: {"margin-right": "20px"},
-                        attrs: {src: "https://soupfish.blob.core.windows.net/soup/" + e, width: "100", height: "100"}
+                        attrs: {src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e, width: "100", height: "100"}
                     })
                 })), 0) : t._e()], 1) : n("el-form-item", {
                     staticClass: "upload",
-                    attrs: {label: "视频封面", prop: "shipinfengmian"}
+                    attrs: {label: "Video cover", prop: "shipinfengmian"}
                 }, [n("file-upload", {
                     attrs: {
-                        tip: "点击上传视频封面",
+                        tip: "点击上传Video cover",
                         action: "file/upload",
                         limit: 3,
                         multiple: !0,
@@ -4704,21 +4704,21 @@
                     }, on: {change: t.shipinfengmianUploadChange}
                 })], 1)], 1), n("el-col", {attrs: {span: 24}}, ["info" == t.type || t.ro.shipinbofang ? n("div", [t.ruleForm.shipinbofang ? n("el-form-item", {
                     attrs: {
-                        label: "视频播放",
+                        label: "Video playback",
                         prop: "shipinbofang"
                     }
                 }, [n("el-button", {
                     attrs: {type: "text", size: "small"}, on: {
                         click: function (e) {
-                            return t.download("https://soupfish.blob.core.windows.net/soup/" + t.ruleForm.shipinbofang)
+                            return t.download("https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + t.ruleForm.shipinbofang)
                         }
                     }
-                }, [t._v("预览")])], 1) : t._e()], 1) : n("el-form-item", {
+                }, [t._v("Preview")])], 1) : t._e()], 1) : n("el-form-item", {
                     staticClass: "upload",
-                    attrs: {label: "视频播放", prop: "shipinbofang"}
+                    attrs: {label: "Video playback", prop: "shipinbofang"}
                 }, [n("file-upload", {
                     attrs: {
-                        tip: "点击上传视频播放",
+                        tip: "点击上传Video playback",
                         action: "file/upload",
                         limit: 1,
                         multiple: !0,
@@ -4726,14 +4726,14 @@
                     }, on: {change: t.shipinbofangUploadChange}
                 })], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "date",
-                    attrs: {label: "发布日期", prop: "faburiqi"}
+                    attrs: {label: "Release date", prop: "faburiqi"}
                 }, [n("el-date-picker", {
                     attrs: {
                         format: "yyyy 年 MM 月 dd 日",
                         "value-format": "yyyy-MM-dd",
                         type: "date",
                         readonly: t.ro.faburiqi,
-                        placeholder: "发布日期"
+                        placeholder: "Release date"
                     }, model: {
                         value: t.ruleForm.faburiqi, callback: function (e) {
                             t.$set(t.ruleForm, "faburiqi", e)
@@ -4741,9 +4741,9 @@
                     }
                 })], 1) : n("div", [t.ruleForm.faburiqi ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "发布日期", prop: "faburiqi"}
+                    attrs: {label: "Release date", prop: "faburiqi"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "发布日期", readonly: ""},
+                    attrs: {placeholder: "Release date", readonly: ""},
                     model: {
                         value: t.ruleForm.faburiqi, callback: function (e) {
                             t.$set(t.ruleForm, "faburiqi", e)
@@ -4751,9 +4751,9 @@
                     }
                 })], 1) : t._e()], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: "", readonly: t.ro.yonghuming},
+                    attrs: {placeholder: "Username", clearable: "", readonly: t.ro.yonghuming},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -4761,9 +4761,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", readonly: ""},
+                    attrs: {placeholder: "Username", readonly: ""},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -4771,10 +4771,10 @@
                     }
                 })], 1)], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "视频介绍", prop: "shipinjieshao"}
+                    attrs: {label: "Video introduction", prop: "shipinjieshao"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "视频介绍"},
+                    attrs: {type: "textarea", rows: 8, placeholder: "Video introduction"},
                     model: {
                         value: t.ruleForm.shipinjieshao, callback: function (e) {
                             t.$set(t.ruleForm, "shipinjieshao", e)
@@ -4782,28 +4782,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.shipinjieshao ? n("el-form-item", {
                     attrs: {
-                        label: "视频介绍",
+                        label: "Video introduction",
                         prop: "shipinjieshao"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.shipinjieshao))])]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, Ae = [], Se = {
                 data: function () {
                     var t = function (t, e, n) {
@@ -4918,8 +4918,8 @@
                         shipinleixingOptions: [],
                         rules: {
                             shipinbianhao: [],
-                            shipinmingcheng: [{required: !0, message: "视频名称不能为空", trigger: "blur"}],
-                            shipinleixing: [{required: !0, message: "视频类型不能为空", trigger: "blur"}],
+                            shipinmingcheng: [{required: !0, message: "The video name cannot be empty", trigger: "blur"}],
+                            shipinleixing: [{required: !0, message: "The video type cannot be empty", trigger: "blur"}],
                             shipinfengmian: [],
                             shipinbofang: [],
                             shipinjieshao: [],
@@ -5004,7 +5004,7 @@
                                         }).then((function (e) {
                                             var n = e.data;
                                             n && 0 === n.code ? t.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -5021,7 +5021,7 @@
                             }).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -5313,15 +5313,15 @@
                         })
                     }, shHandler: function () {
                         var t = this;
-                        this.$confirm("确定操作?", "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("Determine the action?", "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             t.$http({url: "shipinxinxi/update", method: "post", data: t.shForm}).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -5336,15 +5336,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "shipinxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -5365,10 +5365,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "视频类型" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Video type" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "视频类型",
+                        placeholder: "Video type",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.shipinleixing, callback: function (e) {
@@ -5378,7 +5378,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "视频类型",
+                        placeholder: "Video type",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.shipinleixing, callback: function (e) {
@@ -5386,7 +5386,7 @@
                         }, expression: "searchForm.shipinleixing"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "视频类型", clearable: ""},
+                    attrs: {placeholder: "Video type", clearable: ""},
                     model: {
                         value: t.searchForm.shipinleixing, callback: function (e) {
                             t.$set(t.searchForm, "shipinleixing", e)
@@ -5401,24 +5401,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("shipinleixing", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("shipinleixing", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -5427,21 +5427,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("shipinleixing", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("shipinleixing", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("shipinleixing", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("shipinleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -5451,7 +5451,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("shipinleixing", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("shipinleixing", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -5460,7 +5460,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -5469,7 +5469,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("shipinleixing", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("shipinleixing", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -5502,7 +5502,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -5513,7 +5513,7 @@
                         align: t.contents.tableAlign,
                         prop: "shipinleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "视频类型"
+                        label: "Video type"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.shipinleixing) + " ")]
@@ -5524,10 +5524,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("shipinleixing", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("shipinleixing", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -5537,7 +5537,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("shipinleixing", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("shipinleixing", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -5546,7 +5546,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -5555,7 +5555,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("shipinleixing", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("shipinleixing", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -5565,7 +5565,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("shipinleixing", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("shipinleixing", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -5574,7 +5574,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -5583,7 +5583,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("shipinleixing", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("shipinleixing", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -5593,7 +5593,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("shipinleixing", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("shipinleixing", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -5602,7 +5602,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("shipinleixing", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -5611,7 +5611,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 43955526)
                 })], 1) : t._e(), n("el-pagination", {
@@ -5641,9 +5641,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频类型", prop: "shipinleixing"}
+                    attrs: {label: "Video type", prop: "shipinleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频类型", clearable: "", readonly: t.ro.shipinleixing},
+                    attrs: {placeholder: "Video type", clearable: "", readonly: t.ro.shipinleixing},
                     model: {
                         value: t.ruleForm.shipinleixing, callback: function (e) {
                             t.$set(t.ruleForm, "shipinleixing", e)
@@ -5651,9 +5651,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "视频类型", prop: "shipinleixing"}
+                    attrs: {label: "Video type", prop: "shipinleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "视频类型", readonly: ""},
+                    attrs: {placeholder: "Video type", readonly: ""},
                     model: {
                         value: t.ruleForm.shipinleixing, callback: function (e) {
                             t.$set(t.ruleForm, "shipinleixing", e)
@@ -5663,21 +5663,21 @@
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, Re = [], Pe = {
                 data: function () {
                     return {
@@ -5760,7 +5760,7 @@
                         type: "",
                         ro: {shipinleixing: !1},
                         ruleForm: {shipinleixing: ""},
-                        rules: {shipinleixing: [{required: !0, message: "视频类型不能为空", trigger: "blur"}]}
+                        rules: {shipinleixing: [{required: !0, message: "The video type cannot be empty", trigger: "blur"}]}
                     }
                 }, props: ["parent"], computed: {}, created: function () {
                     this.addEditStyleChange(), this.addEditUploadStyleChange()
@@ -5825,7 +5825,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -5842,7 +5842,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -6115,15 +6115,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "shipinleixing/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -6144,10 +6144,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "用户名" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Username" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -6157,7 +6157,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -6165,16 +6165,16 @@
                         }, expression: "searchForm.nickname"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: ""},
+                    attrs: {placeholder: "Username", clearable: ""},
                     model: {
                         value: t.searchForm.nickname, callback: function (e) {
                             t.$set(t.searchForm, "nickname", e)
                         }, expression: "searchForm.nickname"
                     }
-                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论内容" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论Substance" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -6184,7 +6184,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -6192,7 +6192,7 @@
                         }, expression: "searchForm.content"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "评论内容", clearable: ""},
+                    attrs: {placeholder: "评论Substance", clearable: ""},
                     model: {
                         value: t.searchForm.content, callback: function (e) {
                             t.$set(t.searchForm, "content", e)
@@ -6207,24 +6207,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("discussshipinxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("discussshipinxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -6233,21 +6233,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -6257,7 +6257,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -6266,7 +6266,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -6275,7 +6275,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -6308,7 +6308,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -6319,7 +6319,7 @@
                         align: t.contents.tableAlign,
                         prop: "nickname",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.nickname) + " ")]
@@ -6331,7 +6331,7 @@
                         align: t.contents.tableAlign,
                         prop: "content",
                         "header-align": t.contents.tableAlign,
-                        label: "评论内容"
+                        label: "评论Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.content) + " ")]
@@ -6343,7 +6343,7 @@
                         align: t.contents.tableAlign,
                         prop: "reply",
                         "header-align": t.contents.tableAlign,
-                        label: "回复内容"
+                        label: "回复Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.reply) + " ")]
@@ -6354,7 +6354,7 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
@@ -6367,7 +6367,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -6376,7 +6376,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -6385,7 +6385,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -6395,7 +6395,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -6404,7 +6404,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -6413,7 +6413,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -6423,7 +6423,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("discussshipinxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -6432,7 +6432,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discussshipinxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -6441,7 +6441,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -6479,7 +6479,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -6488,7 +6488,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -6497,7 +6497,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 2770564457)
                 })], 1), n("el-pagination", {
@@ -6527,10 +6527,10 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row"), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "评论内容", prop: "content"}
+                    attrs: {label: "评论Substance", prop: "content"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "评论内容", readonly: ""},
+                    attrs: {type: "textarea", rows: 8, placeholder: "评论Substance", readonly: ""},
                     model: {
                         value: t.ruleForm.content, callback: function (e) {
                             t.$set(t.ruleForm, "content", e)
@@ -6538,15 +6538,15 @@
                     }
                 })], 1) : n("div", [t.ruleForm.content ? n("el-form-item", {
                     attrs: {
-                        label: "评论内容",
+                        label: "评论Substance",
                         prop: "content"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.content))])]) : t._e()], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "回复内容", prop: "reply"}
+                    attrs: {label: "回复Substance", prop: "reply"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "回复内容"},
+                    attrs: {type: "textarea", rows: 8, placeholder: "回复Substance"},
                     model: {
                         value: t.ruleForm.reply, callback: function (e) {
                             t.$set(t.ruleForm, "reply", e)
@@ -6554,28 +6554,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.reply ? n("el-form-item", {
                     attrs: {
-                        label: "回复内容",
+                        label: "回复Substance",
                         prop: "reply"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.reply))])]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, Ne = [], Qe = {
                 data: function () {
                     return {
@@ -6662,7 +6662,7 @@
                             refid: [{required: !0, message: "关联表id不能为空", trigger: "blur"}],
                             userid: [{required: !0, message: "用户id不能为空", trigger: "blur"}],
                             nickname: [],
-                            content: [{required: !0, message: "评论内容不能为空", trigger: "blur"}],
+                            content: [{required: !0, message: "评论Substance不能为空", trigger: "blur"}],
                             reply: []
                         }
                     }
@@ -6721,7 +6721,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -6738,7 +6738,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -7013,15 +7013,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "discussshipinxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -7042,10 +7042,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "用户名" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Username" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -7055,7 +7055,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -7063,16 +7063,16 @@
                         }, expression: "searchForm.nickname"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: ""},
+                    attrs: {placeholder: "Username", clearable: ""},
                     model: {
                         value: t.searchForm.nickname, callback: function (e) {
                             t.$set(t.searchForm, "nickname", e)
                         }, expression: "searchForm.nickname"
                     }
-                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论内容" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论Substance" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -7082,7 +7082,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -7090,7 +7090,7 @@
                         }, expression: "searchForm.content"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "评论内容", clearable: ""},
+                    attrs: {placeholder: "评论Substance", clearable: ""},
                     model: {
                         value: t.searchForm.content, callback: function (e) {
                             t.$set(t.searchForm, "content", e)
@@ -7105,24 +7105,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("discusstupianxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("discusstupianxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -7131,21 +7131,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -7155,7 +7155,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -7164,7 +7164,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -7173,7 +7173,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -7206,7 +7206,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -7217,7 +7217,7 @@
                         align: t.contents.tableAlign,
                         prop: "nickname",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.nickname) + " ")]
@@ -7229,7 +7229,7 @@
                         align: t.contents.tableAlign,
                         prop: "content",
                         "header-align": t.contents.tableAlign,
-                        label: "评论内容"
+                        label: "评论Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.content) + " ")]
@@ -7241,7 +7241,7 @@
                         align: t.contents.tableAlign,
                         prop: "reply",
                         "header-align": t.contents.tableAlign,
-                        label: "回复内容"
+                        label: "回复Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.reply) + " ")]
@@ -7252,7 +7252,7 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
@@ -7265,7 +7265,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -7274,7 +7274,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -7283,7 +7283,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -7293,7 +7293,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -7302,7 +7302,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -7311,7 +7311,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -7321,7 +7321,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("discusstupianxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -7330,7 +7330,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusstupianxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -7339,7 +7339,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -7377,7 +7377,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -7386,7 +7386,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -7395,7 +7395,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 2097951849)
                 })], 1), n("el-pagination", {
@@ -7425,10 +7425,10 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row"), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "评论内容", prop: "content"}
+                    attrs: {label: "评论Substance", prop: "content"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "评论内容", readonly: ""},
+                    attrs: {type: "textarea", rows: 8, placeholder: "评论Substance", readonly: ""},
                     model: {
                         value: t.ruleForm.content, callback: function (e) {
                             t.$set(t.ruleForm, "content", e)
@@ -7436,15 +7436,15 @@
                     }
                 })], 1) : n("div", [t.ruleForm.content ? n("el-form-item", {
                     attrs: {
-                        label: "评论内容",
+                        label: "评论Substance",
                         prop: "content"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.content))])]) : t._e()], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "回复内容", prop: "reply"}
+                    attrs: {label: "回复Substance", prop: "reply"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "回复内容"},
+                    attrs: {type: "textarea", rows: 8, placeholder: "回复Substance"},
                     model: {
                         value: t.ruleForm.reply, callback: function (e) {
                             t.$set(t.ruleForm, "reply", e)
@@ -7452,28 +7452,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.reply ? n("el-form-item", {
                     attrs: {
-                        label: "回复内容",
+                        label: "回复Substance",
                         prop: "reply"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.reply))])]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, rn = [], ln = {
                 data: function () {
                     return {
@@ -7560,7 +7560,7 @@
                             refid: [{required: !0, message: "关联表id不能为空", trigger: "blur"}],
                             userid: [{required: !0, message: "用户id不能为空", trigger: "blur"}],
                             nickname: [],
-                            content: [{required: !0, message: "评论内容不能为空", trigger: "blur"}],
+                            content: [{required: !0, message: "评论Substance不能为空", trigger: "blur"}],
                             reply: []
                         }
                     }
@@ -7619,7 +7619,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -7636,7 +7636,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -7911,15 +7911,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "discusstupianxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -7940,10 +7940,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "图片名称" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "The name of the image" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "图片名称",
+                        placeholder: "The name of the image",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.tupianmingcheng, callback: function (e) {
@@ -7953,7 +7953,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "图片名称",
+                        placeholder: "The name of the image",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.tupianmingcheng, callback: function (e) {
@@ -7961,7 +7961,7 @@
                         }, expression: "searchForm.tupianmingcheng"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "图片名称", clearable: ""},
+                    attrs: {placeholder: "The name of the image", clearable: ""},
                     model: {
                         value: t.searchForm.tupianmingcheng, callback: function (e) {
                             t.$set(t.searchForm, "tupianmingcheng", e)
@@ -7969,9 +7969,9 @@
                     }
                 }) : t._e()], 1), n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "是否通过", prop: "sfsh"}
+                    attrs: {label: "Whether it passes or not", prop: "sfsh"}
                 }, [n("el-select", {
-                    attrs: {clearable: "", placeholder: "是否通过"},
+                    attrs: {clearable: "", placeholder: "Whether it passes or not"},
                     on: {change: t.sfshChange},
                     model: {
                         value: t.searchForm.sfsh, callback: function (e) {
@@ -7989,24 +7989,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("tupianxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("tupianxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -8015,21 +8015,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("tupianxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("tupianxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("tupianxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -8039,7 +8039,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("tupianxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -8048,7 +8048,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -8057,7 +8057,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("tupianxinxi", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("tupianxinxi", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -8090,7 +8090,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -8101,7 +8101,7 @@
                         align: t.contents.tableAlign,
                         prop: "tupianmingcheng",
                         "header-align": t.contents.tableAlign,
-                        label: "图片名称"
+                        label: "The name of the image"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.tupianmingcheng) + " ")]
@@ -8113,7 +8113,7 @@
                         align: t.contents.tableAlign,
                         prop: "tupianleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "图片类型"
+                        label: "Image type"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.tupianleixing) + " ")]
@@ -8126,16 +8126,16 @@
                         prop: "tupianfengmian",
                         "header-align": t.contents.tableAlign,
                         width: "200",
-                        label: "图片封面"
+                        label: "Picture cover"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [e.row.tupianfengmian ? n("div", [n("img", {
                                 attrs: {
-                                    src: "https://soupfish.blob.core.windows.net/soup/" + e.row.tupianfengmian.split(",")[0],
+                                    src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e.row.tupianfengmian.split(",")[0],
                                     width: "100",
                                     height: "100"
                                 }
-                            })]) : n("div", [t._v("无图片")])]
+                            })]) : n("div", [t._v("No images")])]
                         }
                     }], null, !1, 2618800828)
                 }), n("el-table-column", {
@@ -8144,7 +8144,7 @@
                         align: t.contents.tableAlign,
                         prop: "yonghuming",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.yonghuming) + " ")]
@@ -8156,7 +8156,7 @@
                         align: t.contents.tableAlign,
                         prop: "fabushijian",
                         "header-align": t.contents.tableAlign,
-                        label: "发布时间"
+                        label: "Released"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.fabushijian) + " ")]
@@ -8168,7 +8168,7 @@
                         align: t.contents.tableAlign,
                         prop: "shhf",
                         "header-align": t.contents.tableAlign,
-                        label: "审核回复"
+                        label: "Review responses"
                     }
                 }), n("el-table-column", {
                     attrs: {
@@ -8176,19 +8176,19 @@
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核状态"
+                        label: "Review status"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "通过" : "未通过"))])]
+                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "Pass" : "Failed"))])]
                         }
                     }], null, !1, 4265292497)
-                }), t.isAuth("tupianxinxi", "审核") ? n("el-table-column", {
+                }), t.isAuth("tupianxinxi", "Audit") ? n("el-table-column", {
                     attrs: {
                         sortable: t.contents.tableSortable,
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核"
+                        label: "Audit"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [n("el-button", {
@@ -8198,7 +8198,7 @@
                                         return t.shDialog(e.row)
                                     }
                                 }
-                            }, [t._v("审核")])]
+                            }, [t._v("Audit")])]
                         }
                     }], null, !1, 2984907060)
                 }) : t._e(), n("el-table-column", {
@@ -8206,10 +8206,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("tupianxinxi", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("tupianxinxi", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -8219,7 +8219,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("tupianxinxi", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("tupianxinxi", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -8228,7 +8228,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -8237,7 +8237,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("tupianxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -8247,7 +8247,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("tupianxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -8256,7 +8256,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -8265,7 +8265,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("tupianxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -8275,7 +8275,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("tupianxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -8284,7 +8284,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -8293,7 +8293,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("tupianxinxi", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -8303,7 +8303,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("tupianxinxi", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -8312,7 +8312,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("tupianxinxi", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -8321,7 +8321,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 93429923)
                 })], 1) : t._e(), n("el-pagination", {
@@ -8342,7 +8342,7 @@
                     ref: "addOrUpdate",
                     attrs: {parent: this}
                 }) : t._e(), n("el-dialog", {
-                    attrs: {title: "审核", visible: t.sfshVisiable, width: "50%"},
+                    attrs: {title: "Audit", visible: t.sfshVisiable, width: "50%"},
                     on: {
                         "update:visible": function (e) {
                             t.sfshVisiable = e
@@ -8351,19 +8351,19 @@
                 }, [n("el-form", {
                     ref: "form",
                     attrs: {model: t.form, "label-width": "80px"}
-                }, [n("el-form-item", {attrs: {label: "审核状态"}}, [n("el-select", {
-                    attrs: {placeholder: "审核状态"},
+                }, [n("el-form-item", {attrs: {label: "Review status"}}, [n("el-select", {
+                    attrs: {placeholder: "Review status"},
                     model: {
                         value: t.shForm.sfsh, callback: function (e) {
                             t.$set(t.shForm, "sfsh", e)
                         }, expression: "shForm.sfsh"
                     }
-                }, [n("el-option", {attrs: {label: "通过", value: "是"}}), n("el-option", {
+                }, [n("el-option", {attrs: {label: "Pass", value: "是"}}), n("el-option", {
                     attrs: {
-                        label: "不通过",
+                        label: "Not passed",
                         value: "否"
                     }
-                })], 1)], 1), n("el-form-item", {attrs: {label: "内容"}}, [n("el-input", {
+                })], 1)], 1), n("el-form-item", {attrs: {label: "Substance"}}, [n("el-input", {
                     attrs: {
                         type: "textarea",
                         rows: 8
@@ -8389,9 +8389,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "图片名称", prop: "tupianmingcheng"}
+                    attrs: {label: "The name of the image", prop: "tupianmingcheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "图片名称", clearable: "", readonly: t.ro.tupianmingcheng},
+                    attrs: {placeholder: "The name of the image", clearable: "", readonly: t.ro.tupianmingcheng},
                     model: {
                         value: t.ruleForm.tupianmingcheng, callback: function (e) {
                             t.$set(t.ruleForm, "tupianmingcheng", e)
@@ -8399,9 +8399,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "图片名称", prop: "tupianmingcheng"}
+                    attrs: {label: "The name of the image", prop: "tupianmingcheng"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "图片名称", readonly: ""},
+                    attrs: {placeholder: "The name of the image", readonly: ""},
                     model: {
                         value: t.ruleForm.tupianmingcheng, callback: function (e) {
                             t.$set(t.ruleForm, "tupianmingcheng", e)
@@ -8409,9 +8409,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "图片类型", prop: "tupianleixing"}
+                    attrs: {label: "Image type", prop: "tupianleixing"}
                 }, [n("el-select", {
-                    attrs: {disabled: t.ro.tupianleixing, placeholder: "请选择图片类型"},
+                    attrs: {disabled: t.ro.tupianleixing, placeholder: "Please select an image type"},
                     model: {
                         value: t.ruleForm.tupianleixing, callback: function (e) {
                             t.$set(t.ruleForm, "tupianleixing", e)
@@ -8421,9 +8421,9 @@
                     return n("el-option", {key: e, attrs: {label: t, value: t}})
                 })), 1)], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "图片类型", prop: "tupianleixing"}
+                    attrs: {label: "Image type", prop: "tupianleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "图片类型", readonly: ""},
+                    attrs: {placeholder: "Image type", readonly: ""},
                     model: {
                         value: t.ruleForm.tupianleixing, callback: function (e) {
                             t.$set(t.ruleForm, "tupianleixing", e)
@@ -8431,21 +8431,21 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 24}}, ["info" == t.type || t.ro.tupianfengmian ? n("div", [t.ruleForm.tupianfengmian ? n("el-form-item", {
                     attrs: {
-                        label: "图片封面",
+                        label: "Picture cover",
                         prop: "tupianfengmian"
                     }
                 }, t._l(t.ruleForm.tupianfengmian.split(","), (function (e, o) {
                     return n("img", {
                         key: o,
                         staticStyle: {"margin-right": "20px"},
-                        attrs: {src: "https://soupfish.blob.core.windows.net/soup/" + e, width: "100", height: "100"}
+                        attrs: {src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e, width: "100", height: "100"}
                     })
                 })), 0) : t._e()], 1) : n("el-form-item", {
                     staticClass: "upload",
-                    attrs: {label: "图片封面", prop: "tupianfengmian"}
+                    attrs: {label: "Picture cover", prop: "tupianfengmian"}
                 }, [n("file-upload", {
                     attrs: {
-                        tip: "点击上传图片封面",
+                        tip: "点击上传Picture cover",
                         action: "tupianxinxi/upload",
                         limit: 3,
                         multiple: !0,
@@ -8453,9 +8453,9 @@
                     }, on: {change: t.tupianfengmianUploadChange}
                 })], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: "", readonly: t.ro.yonghuming},
+                    attrs: {placeholder: "Username", clearable: "", readonly: t.ro.yonghuming},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -8463,9 +8463,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", readonly: ""},
+                    attrs: {placeholder: "Username", readonly: ""},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -8473,13 +8473,13 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "date",
-                    attrs: {label: "发布时间", prop: "fabushijian"}
+                    attrs: {label: "Released", prop: "fabushijian"}
                 }, [n("el-date-picker", {
                     attrs: {
                         "value-format": "yyyy-MM-dd HH:mm:ss",
                         type: "datetime",
                         readonly: t.ro.fabushijian,
-                        placeholder: "发布时间"
+                        placeholder: "Released"
                     }, model: {
                         value: t.ruleForm.fabushijian, callback: function (e) {
                             t.$set(t.ruleForm, "fabushijian", e)
@@ -8487,9 +8487,9 @@
                     }
                 })], 1) : n("div", [t.ruleForm.fabushijian ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "发布时间", prop: "fabushijian"}
+                    attrs: {label: "Released", prop: "fabushijian"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "发布时间", readonly: ""},
+                    attrs: {placeholder: "Released", readonly: ""},
                     model: {
                         value: t.ruleForm.fabushijian, callback: function (e) {
                             t.$set(t.ruleForm, "fabushijian", e)
@@ -8497,10 +8497,10 @@
                     }
                 })], 1) : t._e()], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "图片简介", prop: "tupianjianjie"}
+                    attrs: {label: "Picture description", prop: "tupianjianjie"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "图片简介"},
+                    attrs: {type: "textarea", rows: 8, placeholder: "Picture description"},
                     model: {
                         value: t.ruleForm.tupianjianjie, callback: function (e) {
                             t.$set(t.ruleForm, "tupianjianjie", e)
@@ -8508,12 +8508,12 @@
                     }
                 })], 1) : n("div", [t.ruleForm.tupianjianjie ? n("el-form-item", {
                     attrs: {
-                        label: "图片简介",
+                        label: "Picture description",
                         prop: "tupianjianjie"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.tupianjianjie))])]) : t._e()], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     attrs: {
-                        label: "图片详情",
+                        label: "Image details",
                         prop: "tupianxiangqing"
                     }
                 }, [n("editor", {
@@ -8527,28 +8527,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.tupianxiangqing ? n("el-form-item", {
                     attrs: {
-                        label: "图片详情",
+                        label: "Image details",
                         prop: "tupianxiangqing"
                     }
                 }, [n("span", {domProps: {innerHTML: t._s(t.ruleForm.tupianxiangqing)}})]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, yn = [], Fn = {
                 data: function () {
                     var t = function (t, e, n) {
@@ -8743,7 +8743,7 @@
                                         }).then((function (e) {
                                             var n = e.data;
                                             n && 0 === n.code ? t.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -8760,7 +8760,7 @@
                             }).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -9047,15 +9047,15 @@
                         })
                     }, shHandler: function () {
                         var t = this;
-                        this.$confirm("确定操作?", "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("Determine the action?", "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             t.$http({url: "tupianxinxi/update", method: "post", data: t.shForm}).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -9070,15 +9070,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "tupianxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -9099,10 +9099,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "用户名" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Username" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -9112,7 +9112,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "用户名",
+                        placeholder: "Username",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.nickname, callback: function (e) {
@@ -9120,16 +9120,16 @@
                         }, expression: "searchForm.nickname"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: ""},
+                    attrs: {placeholder: "Username", clearable: ""},
                     model: {
                         value: t.searchForm.nickname, callback: function (e) {
                             t.$set(t.searchForm, "nickname", e)
                         }, expression: "searchForm.nickname"
                     }
-                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论内容" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }) : t._e()], 1), n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "评论Substance" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -9139,7 +9139,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "评论内容",
+                        placeholder: "评论Substance",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.content, callback: function (e) {
@@ -9147,7 +9147,7 @@
                         }, expression: "searchForm.content"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "评论内容", clearable: ""},
+                    attrs: {placeholder: "评论Substance", clearable: ""},
                     model: {
                         value: t.searchForm.content, callback: function (e) {
                             t.$set(t.searchForm, "content", e)
@@ -9162,24 +9162,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("discusswenzhangxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("discusswenzhangxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -9188,21 +9188,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -9212,7 +9212,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -9221,7 +9221,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -9230,7 +9230,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -9263,7 +9263,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -9274,7 +9274,7 @@
                         align: t.contents.tableAlign,
                         prop: "nickname",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.nickname) + " ")]
@@ -9286,7 +9286,7 @@
                         align: t.contents.tableAlign,
                         prop: "content",
                         "header-align": t.contents.tableAlign,
-                        label: "评论内容"
+                        label: "评论Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.content) + " ")]
@@ -9298,7 +9298,7 @@
                         align: t.contents.tableAlign,
                         prop: "reply",
                         "header-align": t.contents.tableAlign,
-                        label: "回复内容"
+                        label: "回复Substance"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.reply) + " ")]
@@ -9309,7 +9309,7 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
@@ -9322,7 +9322,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -9331,7 +9331,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -9340,7 +9340,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -9350,7 +9350,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -9359,7 +9359,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -9368,7 +9368,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -9378,7 +9378,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("discusswenzhangxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -9387,7 +9387,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("discusswenzhangxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -9396,7 +9396,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -9434,7 +9434,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -9443,7 +9443,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -9452,7 +9452,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 3913883753)
                 })], 1), n("el-pagination", {
@@ -9482,10 +9482,10 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row"), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "评论内容", prop: "content"}
+                    attrs: {label: "评论Substance", prop: "content"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "评论内容", readonly: ""},
+                    attrs: {type: "textarea", rows: 8, placeholder: "评论Substance", readonly: ""},
                     model: {
                         value: t.ruleForm.content, callback: function (e) {
                             t.$set(t.ruleForm, "content", e)
@@ -9493,15 +9493,15 @@
                     }
                 })], 1) : n("div", [t.ruleForm.content ? n("el-form-item", {
                     attrs: {
-                        label: "评论内容",
+                        label: "评论Substance",
                         prop: "content"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.content))])]) : t._e()], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "textarea",
-                    attrs: {label: "回复内容", prop: "reply"}
+                    attrs: {label: "回复Substance", prop: "reply"}
                 }, [n("el-input", {
                     staticStyle: {"min-width": "200px", "max-width": "600px"},
-                    attrs: {type: "textarea", rows: 8, placeholder: "回复内容"},
+                    attrs: {type: "textarea", rows: 8, placeholder: "回复Substance"},
                     model: {
                         value: t.ruleForm.reply, callback: function (e) {
                             t.$set(t.ruleForm, "reply", e)
@@ -9509,28 +9509,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.reply ? n("el-form-item", {
                     attrs: {
-                        label: "回复内容",
+                        label: "回复Substance",
                         prop: "reply"
                     }
                 }, [n("span", [t._v(t._s(t.ruleForm.reply))])]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, _n = [], kn = {
                 data: function () {
                     return {
@@ -9617,7 +9617,7 @@
                             refid: [{required: !0, message: "关联表id不能为空", trigger: "blur"}],
                             userid: [{required: !0, message: "用户id不能为空", trigger: "blur"}],
                             nickname: [],
-                            content: [{required: !0, message: "评论内容不能为空", trigger: "blur"}],
+                            content: [{required: !0, message: "评论Substance不能为空", trigger: "blur"}],
                             reply: []
                         }
                     }
@@ -9676,7 +9676,7 @@
                                         }).then((function (t) {
                                             var e = t.data;
                                             e && 0 === e.code ? o.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -9693,7 +9693,7 @@
                             }).then((function (t) {
                                 var e = t.data;
                                 e && 0 === e.code ? o.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -9968,15 +9968,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "discusswenzhangxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -9997,10 +9997,10 @@
                     staticClass: "slt",
                     style: {justifyContent: "1" == t.contents.searchBoxPosition ? "flex-start" : "2" == t.contents.searchBoxPosition ? "center" : "flex-end"},
                     attrs: {gutter: 20}
-                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "文章标题" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
+                }, [n("el-form-item", {attrs: {label: 1 == t.contents.inputTitle ? "Title of the article" : ""}}, [1 == t.contents.inputIcon && 1 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "prefix-icon": "el-icon-search",
-                        placeholder: "文章标题",
+                        placeholder: "Title of the article",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.wenzhangbiaoti, callback: function (e) {
@@ -10010,7 +10010,7 @@
                 }) : t._e(), 1 == t.contents.inputIcon && 2 == t.contents.inputIconPosition ? n("el-input", {
                     attrs: {
                         "suffix-icon": "el-icon-search",
-                        placeholder: "文章标题",
+                        placeholder: "Title of the article",
                         clearable: ""
                     }, model: {
                         value: t.searchForm.wenzhangbiaoti, callback: function (e) {
@@ -10018,7 +10018,7 @@
                         }, expression: "searchForm.wenzhangbiaoti"
                     }
                 }) : t._e(), 0 == t.contents.inputIcon ? n("el-input", {
-                    attrs: {placeholder: "文章标题", clearable: ""},
+                    attrs: {placeholder: "Title of the article", clearable: ""},
                     model: {
                         value: t.searchForm.wenzhangbiaoti, callback: function (e) {
                             t.$set(t.searchForm, "wenzhangbiaoti", e)
@@ -10026,9 +10026,9 @@
                     }
                 }) : t._e()], 1), n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "是否通过", prop: "sfsh"}
+                    attrs: {label: "Whether it passes or not", prop: "sfsh"}
                 }, [n("el-select", {
-                    attrs: {clearable: "", placeholder: "是否通过"},
+                    attrs: {clearable: "", placeholder: "Whether it passes or not"},
                     on: {change: t.sfshChange},
                     model: {
                         value: t.searchForm.sfsh, callback: function (e) {
@@ -10046,24 +10046,24 @@
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e(), 1 == t.contents.searchBtnIcon && 2 == t.contents.searchBtnIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : "")), n("i", {staticClass: "el-icon-search el-icon--right"})]) : t._e(), 0 == t.contents.searchBtnIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.search()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "查询" : ""))]) : t._e()], 1)], 1), n("el-row", {
+                }, [t._v(t._s(1 == t.contents.searchBtnFont ? "Inquire" : ""))]) : t._e()], 1)], 1), n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item", [t.isAuth("wenzhangxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [n("el-form-item", [t.isAuth("wenzhangxinxi", "New") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {
                         type: "success",
                         icon: "el-icon-plus"
@@ -10072,21 +10072,21 @@
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "新增") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "New") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "新增") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : "")), n("i", {staticClass: "el-icon-plus el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "New") && 0 == t.contents.btnAdAllIcon ? n("el-button", {
                     attrs: {type: "success"},
                     on: {
                         click: function (e) {
                             return t.addOrUpdateHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "新增" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "New" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 1 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger",
@@ -10096,7 +10096,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 1 == t.contents.btnAdAllIcon && 2 == t.contents.btnAdAllIconPosition && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -10105,7 +10105,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 0 == t.contents.btnAdAllIcon && t.contents.tableSelection ? n("el-button", {
                     attrs: {
                         disabled: t.dataListSelections.length <= 0,
                         type: "danger"
@@ -10114,7 +10114,7 @@
                             return t.deleteHandler()
                         }
                     }
-                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "删除" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("wenzhangxinxi", "查看") ? n("el-table", {
+                }, [t._v(t._s(1 == t.contents.btnAdAllFont ? "Delete" : ""))]) : t._e()], 1)], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("wenzhangxinxi", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -10147,7 +10147,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -10158,7 +10158,7 @@
                         align: t.contents.tableAlign,
                         prop: "wenzhangbiaoti",
                         "header-align": t.contents.tableAlign,
-                        label: "文章标题"
+                        label: "Title of the article"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.wenzhangbiaoti) + " ")]
@@ -10170,7 +10170,7 @@
                         align: t.contents.tableAlign,
                         prop: "wenzhangleixing",
                         "header-align": t.contents.tableAlign,
-                        label: "文章类型"
+                        label: "The type of article"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.wenzhangleixing) + " ")]
@@ -10183,16 +10183,16 @@
                         prop: "tupian",
                         "header-align": t.contents.tableAlign,
                         width: "200",
-                        label: "图片"
+                        label: "Image"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [e.row.tupian ? n("div", [n("img", {
                                 attrs: {
-                                    src: "https://soupfish.blob.core.windows.net/soup/" + e.row.tupian.split(",")[0],
+                                    src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e.row.tupian.split(",")[0],
                                     width: "100",
                                     height: "100"
                                 }
-                            })]) : n("div", [t._v("无图片")])]
+                            })]) : n("div", [t._v("No images")])]
                         }
                     }], null, !1, 1049564)
                 }), n("el-table-column", {
@@ -10201,7 +10201,7 @@
                         align: t.contents.tableAlign,
                         prop: "jianshu",
                         "header-align": t.contents.tableAlign,
-                        label: "简述"
+                        label: "Briefly"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.jianshu) + " ")]
@@ -10213,7 +10213,7 @@
                         align: t.contents.tableAlign,
                         prop: "fabushijian",
                         "header-align": t.contents.tableAlign,
-                        label: "发布时间"
+                        label: "Released"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.fabushijian) + " ")]
@@ -10225,7 +10225,7 @@
                         align: t.contents.tableAlign,
                         prop: "yonghuming",
                         "header-align": t.contents.tableAlign,
-                        label: "用户名"
+                        label: "Username"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.yonghuming) + " ")]
@@ -10237,7 +10237,7 @@
                         align: t.contents.tableAlign,
                         prop: "shhf",
                         "header-align": t.contents.tableAlign,
-                        label: "审核回复"
+                        label: "Review responses"
                     }
                 }), n("el-table-column", {
                     attrs: {
@@ -10245,19 +10245,19 @@
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核状态"
+                        label: "Review status"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "通过" : "未通过"))])]
+                            return [n("span", {staticStyle: {"margin-right": "10px"}}, [t._v(t._s("是" == e.row.sfsh ? "Pass" : "Failed"))])]
                         }
                     }], null, !1, 4265292497)
-                }), t.isAuth("wenzhangxinxi", "审核") ? n("el-table-column", {
+                }), t.isAuth("wenzhangxinxi", "Audit") ? n("el-table-column", {
                     attrs: {
                         sortable: t.contents.tableSortable,
                         align: t.contents.tableAlign,
                         prop: "sfsh",
                         "header-align": t.contents.tableAlign,
-                        label: "审核"
+                        label: "Audit"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [n("el-button", {
@@ -10267,7 +10267,7 @@
                                         return t.shDialog(e.row)
                                     }
                                 }
-                            }, [t._v("审核")])]
+                            }, [t._v("Audit")])]
                         }
                     }], null, !1, 2984907060)
                 }) : t._e(), n("el-table-column", {
@@ -10275,10 +10275,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("wenzhangxinxi", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("wenzhangxinxi", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -10288,7 +10288,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -10297,7 +10297,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -10306,7 +10306,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -10316,7 +10316,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -10325,7 +10325,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -10334,7 +10334,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -10344,7 +10344,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "查看评论") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Check out the reviews") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -10353,7 +10353,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "查看评论") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "Check out the reviews") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -10362,7 +10362,7 @@
                                         return t.disscussListHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "查看评论" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Check out the reviews" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     icon: "el-icon-delete",
@@ -10372,7 +10372,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -10381,7 +10381,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "删除") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : "")), n("i", {staticClass: "el-icon-delete el-icon--right"})]) : t._e(), t.isAuth("wenzhangxinxi", "Delete") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "danger",
                                     size: "mini"
@@ -10390,7 +10390,7 @@
                                         return t.deleteHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "删除" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Delete" : ""))]) : t._e()]
                         }
                     }], null, !1, 3476895683)
                 })], 1) : t._e(), n("el-pagination", {
@@ -10411,7 +10411,7 @@
                     ref: "addOrUpdate",
                     attrs: {parent: this}
                 }) : t._e(), n("el-dialog", {
-                    attrs: {title: "审核", visible: t.sfshVisiable, width: "50%"},
+                    attrs: {title: "Audit", visible: t.sfshVisiable, width: "50%"},
                     on: {
                         "update:visible": function (e) {
                             t.sfshVisiable = e
@@ -10420,19 +10420,19 @@
                 }, [n("el-form", {
                     ref: "form",
                     attrs: {model: t.form, "label-width": "80px"}
-                }, [n("el-form-item", {attrs: {label: "审核状态"}}, [n("el-select", {
-                    attrs: {placeholder: "审核状态"},
+                }, [n("el-form-item", {attrs: {label: "Review status"}}, [n("el-select", {
+                    attrs: {placeholder: "Review status"},
                     model: {
                         value: t.shForm.sfsh, callback: function (e) {
                             t.$set(t.shForm, "sfsh", e)
                         }, expression: "shForm.sfsh"
                     }
-                }, [n("el-option", {attrs: {label: "通过", value: "是"}}), n("el-option", {
+                }, [n("el-option", {attrs: {label: "Pass", value: "是"}}), n("el-option", {
                     attrs: {
-                        label: "不通过",
+                        label: "Not passed",
                         value: "否"
                     }
-                })], 1)], 1), n("el-form-item", {attrs: {label: "内容"}}, [n("el-input", {
+                })], 1)], 1), n("el-form-item", {attrs: {label: "Substance"}}, [n("el-input", {
                     attrs: {
                         type: "textarea",
                         rows: 8
@@ -10458,9 +10458,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "文章标题", prop: "wenzhangbiaoti"}
+                    attrs: {label: "Title of the article", prop: "wenzhangbiaoti"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "文章标题", clearable: "", readonly: t.ro.wenzhangbiaoti},
+                    attrs: {placeholder: "Title of the article", clearable: "", readonly: t.ro.wenzhangbiaoti},
                     model: {
                         value: t.ruleForm.wenzhangbiaoti, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangbiaoti", e)
@@ -10468,9 +10468,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "文章标题", prop: "wenzhangbiaoti"}
+                    attrs: {label: "Title of the article", prop: "wenzhangbiaoti"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "文章标题", readonly: ""},
+                    attrs: {placeholder: "Title of the article", readonly: ""},
                     model: {
                         value: t.ruleForm.wenzhangbiaoti, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangbiaoti", e)
@@ -10478,9 +10478,9 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "select",
-                    attrs: {label: "文章类型", prop: "wenzhangleixing"}
+                    attrs: {label: "The type of article", prop: "wenzhangleixing"}
                 }, [n("el-select", {
-                    attrs: {disabled: t.ro.wenzhangleixing, placeholder: "请选择文章类型"},
+                    attrs: {disabled: t.ro.wenzhangleixing, placeholder: "Please select a post type"},
                     model: {
                         value: t.ruleForm.wenzhangleixing, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangleixing", e)
@@ -10490,9 +10490,9 @@
                     return n("el-option", {key: e, attrs: {label: t, value: t}})
                 })), 1)], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "文章类型", prop: "wenzhangleixing"}
+                    attrs: {label: "The type of article", prop: "wenzhangleixing"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "文章类型", readonly: ""},
+                    attrs: {placeholder: "The type of article", readonly: ""},
                     model: {
                         value: t.ruleForm.wenzhangleixing, callback: function (e) {
                             t.$set(t.ruleForm, "wenzhangleixing", e)
@@ -10500,21 +10500,21 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 24}}, ["info" == t.type || t.ro.tupian ? n("div", [t.ruleForm.tupian ? n("el-form-item", {
                     attrs: {
-                        label: "图片",
+                        label: "Image",
                         prop: "tupian"
                     }
                 }, t._l(t.ruleForm.tupian.split(","), (function (e, o) {
                     return n("img", {
                         key: o,
                         staticStyle: {"margin-right": "20px"},
-                        attrs: {src: "https://soupfish.blob.core.windows.net/soup/" + e, width: "100", height: "100"}
+                        attrs: {src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e, width: "100", height: "100"}
                     })
                 })), 0) : t._e()], 1) : n("el-form-item", {
                     staticClass: "upload",
-                    attrs: {label: "图片", prop: "tupian"}
+                    attrs: {label: "Image", prop: "tupian"}
                 }, [n("file-upload", {
                     attrs: {
-                        tip: "点击上传图片",
+                        tip: "Click Upload image",
                         action: "wenzhangxinxi/upload",
                         limit: 3,
                         multiple: !0,
@@ -10522,9 +10522,9 @@
                     }, on: {change: t.tupianUploadChange}
                 })], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "简述", prop: "jianshu"}
+                    attrs: {label: "Briefly", prop: "jianshu"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "简述", clearable: "", readonly: t.ro.jianshu},
+                    attrs: {placeholder: "Briefly", clearable: "", readonly: t.ro.jianshu},
                     model: {
                         value: t.ruleForm.jianshu, callback: function (e) {
                             t.$set(t.ruleForm, "jianshu", e)
@@ -10532,9 +10532,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "简述", prop: "jianshu"}
+                    attrs: {label: "Briefly", prop: "jianshu"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "简述", readonly: ""},
+                    attrs: {placeholder: "Briefly", readonly: ""},
                     model: {
                         value: t.ruleForm.jianshu, callback: function (e) {
                             t.$set(t.ruleForm, "jianshu", e)
@@ -10542,13 +10542,13 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "date",
-                    attrs: {label: "发布时间", prop: "fabushijian"}
+                    attrs: {label: "Released", prop: "fabushijian"}
                 }, [n("el-date-picker", {
                     attrs: {
                         "value-format": "yyyy-MM-dd HH:mm:ss",
                         type: "datetime",
                         readonly: t.ro.fabushijian,
-                        placeholder: "发布时间"
+                        placeholder: "Released"
                     }, model: {
                         value: t.ruleForm.fabushijian, callback: function (e) {
                             t.$set(t.ruleForm, "fabushijian", e)
@@ -10556,9 +10556,9 @@
                     }
                 })], 1) : n("div", [t.ruleForm.fabushijian ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "发布时间", prop: "fabushijian"}
+                    attrs: {label: "Released", prop: "fabushijian"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "发布时间", readonly: ""},
+                    attrs: {placeholder: "Released", readonly: ""},
                     model: {
                         value: t.ruleForm.fabushijian, callback: function (e) {
                             t.$set(t.ruleForm, "fabushijian", e)
@@ -10566,9 +10566,9 @@
                     }
                 })], 1) : t._e()], 1)], 1), n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", clearable: "", readonly: t.ro.yonghuming},
+                    attrs: {placeholder: "Username", clearable: "", readonly: t.ro.yonghuming},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -10576,9 +10576,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "用户名", prop: "yonghuming"}
+                    attrs: {label: "Username", prop: "yonghuming"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "用户名", readonly: ""},
+                    attrs: {placeholder: "Username", readonly: ""},
                     model: {
                         value: t.ruleForm.yonghuming, callback: function (e) {
                             t.$set(t.ruleForm, "yonghuming", e)
@@ -10586,7 +10586,7 @@
                     }
                 })], 1)], 1)], 1)], 1), n("el-row", [n("el-col", {attrs: {span: 24}}, ["info" != t.type ? n("el-form-item", {
                     attrs: {
-                        label: "文章内容",
+                        label: "Article Content",
                         prop: "wenzhangneirong"
                     }
                 }, [n("editor", {
@@ -10600,28 +10600,28 @@
                     }
                 })], 1) : n("div", [t.ruleForm.wenzhangneirong ? n("el-form-item", {
                     attrs: {
-                        label: "文章内容",
+                        label: "Article Content",
                         prop: "wenzhangneirong"
                     }
                 }, [n("span", {domProps: {innerHTML: t._s(t.ruleForm.wenzhangneirong)}})]) : t._e()], 1)], 1)], 1), n("el-form-item", {staticClass: "btn"}, ["info" != t.type ? n("el-button", {
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }, Tn = [], Zn = {
                 data: function () {
                     var t = function (t, e, n) {
@@ -10733,8 +10733,8 @@
                         },
                         wenzhangleixingOptions: [],
                         rules: {
-                            wenzhangbiaoti: [{required: !0, message: "文章标题不能为空", trigger: "blur"}],
-                            wenzhangleixing: [{required: !0, message: "文章类型不能为空", trigger: "blur"}],
+                            wenzhangbiaoti: [{required: !0, message: "The title of the article cannot be empty", trigger: "blur"}],
+                            wenzhangleixing: [{required: !0, message: "The article type cannot be empty", trigger: "blur"}],
                             tupian: [],
                             jianshu: [],
                             wenzhangneirong: [],
@@ -10820,7 +10820,7 @@
                                         }).then((function (e) {
                                             var n = e.data;
                                             n && 0 === n.code ? t.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -10837,7 +10837,7 @@
                             }).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -11126,15 +11126,15 @@
                         })
                     }, shHandler: function () {
                         var t = this;
-                        this.$confirm("确定操作?", "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("Determine the action?", "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             t.$http({url: "wenzhangxinxi/update", method: "post", data: t.shForm}).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -11149,15 +11149,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "wenzhangxinxi/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -11177,7 +11177,7 @@
                 }, [n("el-row", {
                     staticClass: "ad",
                     style: {justifyContent: "1" == t.contents.btnAdAllBoxPosition ? "flex-start" : "2" == t.contents.btnAdAllBoxPosition ? "center" : "flex-end"}
-                }, [n("el-form-item")], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("config", "查看") ? n("el-table", {
+                }, [n("el-form-item")], 1)], 1), n("div", {staticClass: "table-content"}, [t.isAuth("config", "View") ? n("el-table", {
                     directives: [{
                         name: "loading",
                         rawName: "v-loading",
@@ -11210,7 +11210,7 @@
                     }
                 }) : t._e(), t.contents.tableIndex ? n("el-table-column", {
                     attrs: {
-                        label: "索引",
+                        label: "Index",
                         align: t.contents.tableAlign,
                         type: "index",
                         width: "50"
@@ -11221,7 +11221,7 @@
                         align: t.contents.tableAlign,
                         prop: "name",
                         "header-align": t.contents.tableAlign,
-                        label: "名称"
+                        label: "Name"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [t._v(" " + t._s(e.row.name) + " ")]
@@ -11234,16 +11234,16 @@
                         prop: "value",
                         "header-align": t.contents.tableAlign,
                         width: "200",
-                        label: "值"
+                        label: "Value"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
                             return [e.row.value ? n("div", [n("img", {
                                 attrs: {
-                                    src: "https://soupfish.blob.core.windows.net/soup/" + e.row.value.split(",")[0],
+                                    src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e.row.value.split(",")[0],
                                     width: "100",
                                     height: "100"
                                 }
-                            })]) : n("div", [t._v("无图片")])]
+                            })]) : n("div", [t._v("No images")])]
                         }
                     }], null, !1, 3940352572)
                 }), n("el-table-column", {
@@ -11251,10 +11251,10 @@
                         width: "300",
                         align: t.contents.tableAlign,
                         "header-align": t.contents.tableAlign,
-                        label: "操作"
+                        label: "Operation"
                     }, scopedSlots: t._u([{
                         key: "default", fn: function (e) {
-                            return [t.isAuth("config", "查看") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            return [t.isAuth("config", "View") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     icon: "el-icon-tickets",
@@ -11264,7 +11264,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("config", "查看") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("config", "View") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -11273,7 +11273,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("config", "查看") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : "")), n("i", {staticClass: "el-icon-tickets el-icon--right"})]) : t._e(), t.isAuth("config", "View") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "success",
                                     size: "mini"
@@ -11282,7 +11282,7 @@
                                         return t.addOrUpdateHandler(e.row.id, "info")
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "详情" : ""))]) : t._e(), t.isAuth("config", "修改") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Detail" : ""))]) : t._e(), t.isAuth("config", "Revise") && 1 == t.contents.tableBtnIcon && 1 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     icon: "el-icon-edit",
@@ -11292,7 +11292,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e(), t.isAuth("config", "修改") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e(), t.isAuth("config", "Revise") && 1 == t.contents.tableBtnIcon && 2 == t.contents.tableBtnIconPosition ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -11301,7 +11301,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("config", "修改") && 0 == t.contents.tableBtnIcon ? n("el-button", {
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : "")), n("i", {staticClass: "el-icon-edit el-icon--right"})]) : t._e(), t.isAuth("config", "Revise") && 0 == t.contents.tableBtnIcon ? n("el-button", {
                                 attrs: {
                                     type: "primary",
                                     size: "mini"
@@ -11310,7 +11310,7 @@
                                         return t.addOrUpdateHandler(e.row.id)
                                     }
                                 }
-                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "修改" : ""))]) : t._e()]
+                            }, [t._v(t._s(1 == t.contents.tableBtnFont ? "Revise" : ""))]) : t._e()]
                         }
                     }], null, !1, 1432892404)
                 })], 1) : t._e(), n("el-pagination", {
@@ -11340,9 +11340,9 @@
                     attrs: {model: t.ruleForm, rules: t.rules, "label-width": "80px"}
                 }, [n("el-row", [n("el-col", {attrs: {span: 12}}, ["info" != t.type ? n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "名称", prop: "name"}
+                    attrs: {label: "Name", prop: "name"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "名称", clearable: "", readonly: ""},
+                    attrs: {placeholder: "Name", clearable: "", readonly: ""},
                     model: {
                         value: t.ruleForm.name, callback: function (e) {
                             t.$set(t.ruleForm, "name", e)
@@ -11350,9 +11350,9 @@
                     }
                 })], 1) : n("div", [n("el-form-item", {
                     staticClass: "input",
-                    attrs: {label: "名称", prop: "name"}
+                    attrs: {label: "Name", prop: "name"}
                 }, [n("el-input", {
-                    attrs: {placeholder: "名称", readonly: ""},
+                    attrs: {placeholder: "Name", readonly: ""},
                     model: {
                         value: t.ruleForm.name, callback: function (e) {
                             t.$set(t.ruleForm, "name", e)
@@ -11360,18 +11360,18 @@
                     }
                 })], 1)], 1)], 1), n("el-col", {attrs: {span: 24}}, ["info" == t.type || t.ro.value ? n("div", [t.ruleForm.value ? n("el-form-item", {
                     attrs: {
-                        label: "值",
+                        label: "Value",
                         prop: "value"
                     }
                 }, t._l(t.ruleForm.value.split(","), (function (e, o) {
                     return n("img", {
                         key: o,
                         staticStyle: {"margin-right": "20px"},
-                        attrs: {src: "https://soupfish.blob.core.windows.net/soup/" + e, width: "100", height: "100"}
+                        attrs: {src: "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + e, width: "100", height: "100"}
                     })
                 })), 0) : t._e()], 1) : n("el-form-item", {
                     staticClass: "upload",
-                    attrs: {label: "值", prop: "value"}
+                    attrs: {label: "Value", prop: "value"}
                 }, [n("file-upload", {
                     attrs: {
                         tip: "点击上传值",
@@ -11384,21 +11384,21 @@
                     staticClass: "btn-success",
                     attrs: {type: "primary"},
                     on: {click: t.onSubmit}
-                }, [t._v("提交")]) : t._e(), "info" != t.type ? n("el-button", {
+                }, [t._v("Submit")]) : t._e(), "info" != t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("取消")]) : t._e(), "info" == t.type ? n("el-button", {
+                }, [t._v("Cancel")]) : t._e(), "info" == t.type ? n("el-button", {
                     staticClass: "btn-close",
                     on: {
                         click: function (e) {
                             return t.back()
                         }
                     }
-                }, [t._v("返回")]) : t._e()], 1)], 1)], 1)
+                }, [t._v("Return")]) : t._e()], 1)], 1)], 1)
             }), to = [], eo = {
                 data: function () {
                     return {
@@ -11540,7 +11540,7 @@
                                         }).then((function (e) {
                                             var n = e.data;
                                             n && 0 === n.code ? t.$message({
-                                                message: "操作成功",
+                                                message: "Operation Success",
                                                 type: "success",
                                                 duration: 1500,
                                                 onClose: function () {
@@ -11557,7 +11557,7 @@
                             }).then((function (e) {
                                 var n = e.data;
                                 n && 0 === n.code ? t.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -11828,15 +11828,15 @@
                         var e = this, n = t ? [Number(t)] : this.dataListSelections.map((function (t) {
                             return Number(t.id)
                         }));
-                        this.$confirm("确定进行[".concat(t ? "删除" : "批量删除", "]操作?"), "提示", {
-                            confirmButtonText: "确定",
-                            cancelButtonText: "取消",
+                        this.$confirm("OK to proceed[".concat(t ? "Delete" : "delete in bulk", "]Operation?"), "Prompt", {
+                            confirmButtonText: "Are you sure",
+                            cancelButtonText: "Cancel",
                             type: "warning"
                         }).then((function () {
                             e.$http({url: "config/delete", method: "post", data: n}).then((function (t) {
                                 var n = t.data;
                                 n && 0 === n.code ? e.$message({
-                                    message: "操作成功",
+                                    message: "Operation Success",
                                     type: "success",
                                     duration: 1500,
                                     onClose: function () {
@@ -11851,50 +11851,50 @@
         a["default"].use(g["a"]);
         var co = [{
                 path: "/index",
-                name: "首页",
+                name: "Home",
                 component: U,
                 children: [{
                     path: "/",
-                    name: "首页",
+                    name: "Home",
                     component: D,
                     meta: {icon: "", title: "center"}
                 }, {
                     path: "/updatePassword",
-                    name: "修改密码",
+                    name: "Change your password",
                     component: ct,
                     meta: {icon: "", title: "updatePassword"}
                 }, {path: "/pay", name: "支付", component: mt, meta: {icon: "", title: "pay"}}, {
                     path: "/center",
-                    name: "个人信息",
+                    name: "Personal Information",
                     component: Rt,
                     meta: {icon: "", title: "center"}
-                }, {path: "/wenzhangleixing", name: "文章类型", component: Jt}, {
+                }, {path: "/wenzhangleixing", name: "The type of article", component: Jt}, {
                     path: "/tupianleixing",
-                    name: "图片类型",
+                    name: "Image type",
                     component: ie
-                }, {path: "/yonghu", name: "用户", component: Fe}, {
+                }, {path: "/yonghu", name: "User", component: Fe}, {
                     path: "/shipinxinxi",
-                    name: "视频信息",
+                    name: "Multimedia",
                     component: ke
-                }, {path: "/shipinleixing", name: "视频类型", component: Ze}, {
+                }, {path: "/shipinleixing", name: "Video type", component: Ze}, {
                     path: "/discussshipinxinxi",
-                    name: "视频信息评论",
+                    name: "Video informative commentary",
                     component: en
-                }, {path: "/discusstupianxinxi", name: "图片信息评论", component: gn}, {
+                }, {path: "/discusstupianxinxi", name: "Picture information review", component: gn}, {
                     path: "/tupianxinxi",
-                    name: "图片信息",
+                    name: "Image",
                     component: En
-                }, {path: "/discusswenzhangxinxi", name: "文章信息评论", component: Mn}, {
+                }, {path: "/discusswenzhangxinxi", name: "Article information review", component: Mn}, {
                     path: "/wenzhangxinxi",
-                    name: "文章信息",
+                    name: "Article",
                     component: Yn
-                }, {path: "/config", name: "轮播图管理", component: so}]
+                }, {path: "/config", name: "Carousel management", component: so}]
             }, {path: "/login", name: "login", component: G, meta: {icon: "", title: "login"}}, {
                 path: "/register",
                 name: "register",
                 component: Bt,
                 meta: {icon: "", title: "register"}
-            }, {path: "/", name: "首页", redirect: "/index"}, {path: "*", component: at}],
+            }, {path: "/", name: "Home", redirect: "/index"}, {path: "*", component: at}],
             uo = new g["a"]({mode: "hash", routes: co}), ho = uo, po = function () {
                 var t = this, e = t.$createElement, n = t._self._c || e;
                 return n("el-breadcrumb", {
@@ -12014,9 +12014,9 @@
         var wo = Eo, zo = {
             get: function () {
                 return {
-                    url: "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/",
+                    url: "https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/",
                     name: "springboot9zo8s",
-                    indexUrl: "https://cccc-csmedia.azuremicroservices.io/springboot9zo8s/front/index.html"
+                    indexUrl: "https://cscloudmedia-cscloudmedia.azuremicroservices.io/springboot9zo8s/front/index.html"
                 }
             }, getProjectName: function () {
                 return {projectName: "CS Cloud Media"}
@@ -12110,13 +12110,13 @@
                     }, handleUploadSuccess: function (t, e, n) {
                         t && 0 === t.code ? (n[n.length - 1]["url"] = "upload/" + e.response.file, this.setFileList(n), this.$emit("change", this.fileUrlList.join(","))) : this.$message.error(t.msg)
                     }, handleUploadErr: function (t, e, n) {
-                        this.$message.error("文件上传失败")
+                        this.$message.error("File upload failed")
                     }, handleRemove: function (t, e) {
                         this.setFileList(e), this.$emit("change", this.fileUrlList.join(","))
                     }, handleUploadPreview: function (t) {
                         this.dialogImageUrl = t.url, this.dialogVisible = !0
                     }, handleExceed: function (t, e) {
-                        this.$message.warning("最多上传".concat(this.limit, "张图片"))
+                        this.$message.warning("Most uploads".concat(this.limit, "Pictures"))
                     }, setFileList: function (t) {
                         var e = [], n = [], o = vo.get("token"), a = this;
                         t.forEach((function (t, r) {
@@ -12197,7 +12197,7 @@
                     }, handleUploadPreview: function (t) {
                         this.dialogImageUrl = t.url, this.dialogVisible = !0
                     }, handleExceed: function (t, e) {
-                        this.$message.warning("最多上传".concat(this.limit, "张图片"))
+                        this.$message.warning("Most uploads".concat(this.limit, "Pictures"))
                     }, setFileList: function (t) {
                         var e = [], n = [], o = vo.get("token"), a = this;
                         t.forEach((function (t, r) {
@@ -12282,10 +12282,10 @@
                         if (0 === t.code) {
                             var o = n.getSelection().index;
                             n.insertEmbed(o, "image", this.$base.url + "upload/" + t.file), n.setSelection(o + 1)
-                        } else this.$message.error("图片插入失败");
+                        } else this.$message.error("Picture insertion failed");
                         this.quillUpdateImg = !1
                     }, uploadError: function () {
-                        this.quillUpdateImg = !1, this.$message.error("图片插入失败")
+                        this.quillUpdateImg = !1, this.$message.error("Picture insertion failed")
                     }
                 }
             }, Yo = Jo, Ko = (n("fffb"), Object(d["a"])(Yo, jo, Do, !1, null, null, null)), Go = Ko.exports, Xo = {
@@ -12628,7 +12628,7 @@
             id: "icon-videoKey",
             use: "icon-videoKey-usage",
             viewBox: "0 0 113.39 94.78",
-            content: '<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 94.78" id="icon-videoKey"><defs><style>#icon-videoKey .cls-1{fill:#bfcbd9;}</style></defs><title>视频云配置1</title><path class="cls-1" d="M96.41,102.28H17a17,17,0,0,1-17-17V24.46a17,17,0,0,1,17-17H42.59c8,0,14.21,7.54,17.93,12.05.49.59.91,1.11,1.27,1.51a8,8,0,0,0,3.62,2l31,.31a17,17,0,0,1,16.94,17V86.11c0,3.78,0,8.49-3.5,12-2.81,2.81-7.09,4.13-13.47,4.13ZM17,18.24a6.23,6.23,0,0,0-6.22,6.22V85.31A6.23,6.23,0,0,0,17,91.53H96.41c4.83,0,5.84-1,5.85-1,.39-.39.38-3.12.37-4.43V40.29a6.22,6.22,0,0,0-6.22-6.21h0l-32.53-.4A19.06,19.06,0,0,1,53.76,28.2c-.43-.48-.94-1.1-1.53-1.81-1.84-2.22-6.73-8.15-9.63-8.15Z" transform="translate(0 -7.5)" /><path class="cls-1" d="M46.6,84.49a5.37,5.37,0,0,1-5.38-5.37V44.57A5.38,5.38,0,0,1,49.39,40L77.82,57.25a5.38,5.38,0,0,1,0,9.19L49.39,83.71A5.36,5.36,0,0,1,46.6,84.49ZM52,54.13V69.56l12.7-7.72Z" transform="translate(0 -7.5)" /></symbol>'
+            content: '<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 94.78" id="icon-videoKey"><defs><style>#icon-videoKey .cls-1{fill:#bfcbd9;}</style></defs><title>Video Cloud Configuration 1</title><path class="cls-1" d="M96.41,102.28H17a17,17,0,0,1-17-17V24.46a17,17,0,0,1,17-17H42.59c8,0,14.21,7.54,17.93,12.05.49.59.91,1.11,1.27,1.51a8,8,0,0,0,3.62,2l31,.31a17,17,0,0,1,16.94,17V86.11c0,3.78,0,8.49-3.5,12-2.81,2.81-7.09,4.13-13.47,4.13ZM17,18.24a6.23,6.23,0,0,0-6.22,6.22V85.31A6.23,6.23,0,0,0,17,91.53H96.41c4.83,0,5.84-1,5.85-1,.39-.39.38-3.12.37-4.43V40.29a6.22,6.22,0,0,0-6.22-6.21h0l-32.53-.4A19.06,19.06,0,0,1,53.76,28.2c-.43-.48-.94-1.1-1.53-1.81-1.84-2.22-6.73-8.15-9.63-8.15Z" transform="translate(0 -7.5)" /><path class="cls-1" d="M46.6,84.49a5.37,5.37,0,0,1-5.38-5.37V44.57A5.38,5.38,0,0,1,49.39,40L77.82,57.25a5.38,5.38,0,0,1,0,9.19L49.39,83.71A5.36,5.36,0,0,1,46.6,84.49ZM52,54.13V69.56l12.7-7.72Z" transform="translate(0 -7.5)" /></symbol>'
         });
         l.a.add(i);
         e["default"] = i
@@ -12683,7 +12683,7 @@
             id: "icon-video",
             use: "icon-video-usage",
             viewBox: "0 0 113.39 113.39",
-            content: '<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 113.39" id="icon-video"><defs><style>#icon-video .cls-1{fill:#bfcbd9;}</style></defs><title>视频云配置sp</title><path class="cls-1" d="M56.69,113.39a56.7,56.7,0,1,1,56.7-56.7A56.75,56.75,0,0,1,56.69,113.39Zm0-104.76a48.07,48.07,0,1,0,48.07,48.06A48.11,48.11,0,0,0,56.69,8.63Z" /><path class="cls-1" d="M50.68,77.39a8.37,8.37,0,0,1-4-1,8.51,8.51,0,0,1-4.55-7.57V44.55a8.55,8.55,0,0,1,13.37-7.07L72.35,49.66a8.54,8.54,0,0,1-.07,14.11L55.61,75.84A8.73,8.73,0,0,1,50.68,77.39Zm-.13-32.86.21,24.3L67.32,56.71l0,0h0Z" /></symbol>'
+            content: '<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 113.39" id="icon-video"><defs><style>#icon-video .cls-1{fill:#bfcbd9;}</style></defs><title>Configure the SP for the video cloud</title><path class="cls-1" d="M56.69,113.39a56.7,56.7,0,1,1,56.7-56.7A56.75,56.75,0,0,1,56.69,113.39Zm0-104.76a48.07,48.07,0,1,0,48.07,48.06A48.11,48.11,0,0,0,56.69,8.63Z" /><path class="cls-1" d="M50.68,77.39a8.37,8.37,0,0,1-4-1,8.51,8.51,0,0,1-4.55-7.57V44.55a8.55,8.55,0,0,1,13.37-7.07L72.35,49.66a8.54,8.54,0,0,1-.07,14.11L55.61,75.84A8.73,8.73,0,0,1,50.68,77.39Zm-.13-32.86.21,24.3L67.32,56.71l0,0h0Z" /></symbol>'
         });
         l.a.add(i);
         e["default"] = i

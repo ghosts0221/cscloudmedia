@@ -3,16 +3,16 @@ package com.controller;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import javax.servlet.http.HttpServletRequest;
 
+import com.azure.cosmos.CosmosClient;
+import com.azure.cosmos.CosmosClientBuilder;
+import com.azure.cosmos.CosmosContainer;
+import com.azure.cosmos.models.CosmosItemRequestOptions;
+import com.azure.cosmos.models.PartitionKey;
 import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
@@ -52,7 +52,7 @@ import com.entity.StoreupEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * 图片信息
+ * Image
  * 后端接口
  * @author 
  * @email 
@@ -71,12 +71,12 @@ public class TupianxinxiController {
 	private ConfigService configService;
 
 	// 替换为你的存储帐户名称
-	private static final String AZURE_ACCOUNT_NAME = "soupfish";
+	private static final String AZURE_ACCOUNT_NAME = "cscloudmedia";
 
 	// 替换为你的存储帐户密钥
-	private static final String AZURE_ACCOUNT_KEY = "vwmS6PRxFkcBmp6ObsAgO5jXSVJnPIoUsCoCh1pgZLXLx5LJLSJj0vJehRzXFK1p7v+9jOMELdhw+AStwFipfw==";
+	private static final String AZURE_ACCOUNT_KEY = "goi3NRQp2MPP9IddxCD0h0veGJtVhU/HhRg2HfdVbo3mnzWjoa/tgPbKD/rmgc1Jaa2Mmg66+rn7+AStXAT2WA==";
 
-	private static final String AZURE_CONTAINER_NAME = "soup";
+	private static final String AZURE_CONTAINER_NAME = "cscloudmedia";
 
 	private static final String COSMOS_DB_ENDPOINT = "your-cosmos-db-endpoint";
 	private static final String COSMOS_DB_KEY = "your-cosmos-db-key";
@@ -190,7 +190,7 @@ public class TupianxinxiController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional
@@ -214,6 +214,12 @@ public class TupianxinxiController {
 			throw new EIException("上传文件不能为空");
 		}
 
+
+		CosmosClient client = new CosmosClientBuilder()
+				.endpoint("https://cscloudmedia.documents.azure.com:443/")
+				.key("U7iCXQBByn2QF11N1xXekyxACWD4RtEdbNp3UhMcDPkxwLzFZU06fWHZlwxV2TabuXz4fyYlFgHhACDbMCBhjw==")
+				.buildClient();
+
 		// 使用存储帐户名称和密钥创建 BlobServiceClient
 		BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
 				.endpoint("https://" + AZURE_ACCOUNT_NAME + ".blob.core.windows.net")
@@ -235,8 +241,26 @@ public class TupianxinxiController {
 		BlobHttpHeaders headers = new BlobHttpHeaders();
 		headers.setContentType(file.getContentType());
 		blobClient.setHttpHeaders(headers);
-		String fileUrl = "https://soupfish.blob.core.windows.net/soup/" + fileName;
+		String fileUrl = "https://cscloudmedia.blob.core.windows.net/cscloudmedia/" + fileName;
 		request.getSession().setAttribute("file",fileName);
+
+		LocalDateTime currentTime = LocalDateTime.now();
+		String uniqueDocumentId = UUID.randomUUID().toString();
+		// 定义日期时间格式（可选）
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		String formattedTime = currentTime.format(formatter);
+		Map<String, Object> documentProperties = new HashMap<>();
+		documentProperties.put("id", uniqueDocumentId);
+		documentProperties.put("fileName", fileName);
+		documentProperties.put("fileUrl","https://cscloudmedia.blob.core.windows.net/cscloudmedia/"+fileName);
+		documentProperties.put("type", fileExt);
+		documentProperties.put("timestamp", formattedTime);
+
+		CosmosContainer container = client.getDatabase("cscloudmedia")
+				.getContainer("cscloudmedia");
+		// 插入文档到 Cosmos 容器中
+		container.createItem(documentProperties, new PartitionKey(uniqueDocumentId),
+				new CosmosItemRequestOptions());
 
 		if(StringUtils.isNotBlank(type) && type.equals("1")) {
 			ConfigEntity configEntity = configService.selectOne(new EntityWrapper<ConfigEntity>().eq("name", "faceFile"));

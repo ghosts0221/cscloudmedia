@@ -1,11 +1,11 @@
 
-<!-- 个人中心 -->
+<!-- PersonalCenter -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>个人中心</title>
+		<title>PersonalCenter</title>
 		<link rel="stylesheet" href="../../layui/css/layui.css">
 		<!-- 样式 -->
 		<link rel="stylesheet" href="../../css/style.css" />
@@ -191,15 +191,15 @@
 			<!-- 标题 -->
 			<!-- <h2 style="margin-top: 20px;" class="index-title">USER / CENTER</h2>
 			<div class="line-container">
-				<p class="line" style="background: #EEEEEE;"> 个人中心 </p>
+				<p class="line" style="background: #EEEEEE;"> PersonalCenter </p>
 			</div> -->
 			<div class="index-title" :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px auto","borderColor":"rgba(21, 71, 106, 1)","backgroundColor":"rgba(130, 198, 243, 1)","color":"rgba(0, 0, 0, 1)","borderRadius":"4px","borderWidth":"0 0 10px","fontSize":"20px","borderStyle":"solid","height":"auto"}'>
-			  <span>USER / CENTER</span><span>个人中心</span>
+			  <span>USER / CENTER</span>
 			</div>
 			<!-- 标题 -->
 
 			<div class="center-container">
-				<!-- 个人中心菜单 config.js-->
+				<!-- PersonalCenter菜单 config.js-->
 				<div class="left-container" :style='{"padding":"0","boxShadow":"0px 3px 6px rgba(0, 0, 0, 0.16)","margin":"0 10px 0 0","borderColor":"rgba(152, 152, 152, 1)","backgroundColor":"rgba(255, 255, 255, 1)","borderRadius":"0","borderWidth":"0 0 0px 0","width":"160px","borderStyle":"solid"}'>
 					<ul class="layui-nav layui-nav-tree">
 						<li v-for="(item,index) in centerMenu" v-bind:key="index" class="layui-nav-item" :class="index==0?'layui-this':''">
@@ -207,50 +207,50 @@
 						</li>
 					</ul>
 				</div>
-				<!-- 个人中心菜单 -->
-				<!-- 个人中心 -->
+				<!-- PersonalCenter菜单 -->
+				<!-- PersonalCenter -->
 				<div class="right-container" :style='{"padding":"20px","boxShadow":"0px 3px 6px rgba(0, 0, 0, 0.16)","margin":"0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"0","borderStyle":"solid"}'>
 					<form class="layui-form" lay-filter="myForm">
 						<!-- 主键 -->
 						<input type="hidden" name="id" id="id" />
                         <div class="layui-form-item"  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0 0 0px 0","borderStyle":"solid"}'>
-							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">用户名</label>
+							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Username</label>
 							<div class="layui-input-block input">
-								<input type="text" readonly="readonly" name="yonghuming" id="yonghuming" placeholder="用户名" autocomplete="off" class="layui-input">
+								<input type="text" readonly="readonly" name="yonghuming" id="yonghuming" placeholder="Username" autocomplete="off" class="layui-input">
 							</div>
 						</div>
                         <div class="layui-form-item"  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0 0 0px 0","borderStyle":"solid"}'>
-							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">密码</label>
+							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Password</label>
 							<div class="layui-input-block input">
-								<input type="password" name="mima" id="mima" placeholder="密码" autocomplete="off" class="layui-input">
+								<input type="password" name="mima" id="mima" placeholder="Password" autocomplete="off" class="layui-input">
 							</div>
 						</div>
                         <div class="layui-form-item"  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0 0 0px 0","borderStyle":"solid"}'>
-							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">昵称</label>
+							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Nickname</label>
 							<div class="layui-input-block input">
-								<input type="text"  name="nicheng" id="nicheng" placeholder="昵称" autocomplete="off" class="layui-input">
+								<input type="text"  name="nicheng" id="nicheng" placeholder="Nickname" autocomplete="off" class="layui-input">
 							</div>
 						</div>
                         <div class="layui-form-item"  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0 0 0px 0","borderStyle":"solid"}'>
-							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">性别</label>
+							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">Gender</label>
 							<div class="layui-input-block select">
 								<select name="xingbie" id="xingbie" >
-									<option value="">请选择</option>
+									<option value="">PleaseSelect</option>
 									<option v-for="(item,index) in xingbie" v-bind:key="index" :value="item">{{item}}</option>
 								</select>
 							</div>
 						</div>
                         <div class="layui-form-item"  :style='{"padding":"10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"0 0 10px 0","borderColor":"rgba(255,0,0,.3)","backgroundColor":"#fff","borderRadius":"4px","borderWidth":"0 0 0px 0","borderStyle":"solid"}'>
-							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">手机</label>
+							<label  :style='{"width":"94px","padding":"0 12px 0 0","fontSize":"16px","color":"rgba(0, 0, 0, 1)","textAlign":"right"}' class="layui-form-label">CellPhone</label>
 							<div class="layui-input-block input">
-								<input type="text"  name="shouji" id="shouji" placeholder="手机" autocomplete="off" class="layui-input">
+								<input type="text"  name="shouji" id="shouji" placeholder="CellPhone" autocomplete="off" class="layui-input">
 							</div>
 						</div>
 
 						<div class="layui-form-item">
 							<div class="layui-input-block" style="display: flex;flex-wrap:wrap;">
-								<button :style='{"padding":"0 10px","boxShadow":"0 6px 0 #15476A","margin":"10px auto 0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"rgba(255, 0, 0, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' class="layui-btn btn-submit btn-theme" lay-submit lay-filter="*">更新信息</button>
-                <button :style='{"padding":"0 10px","boxShadow":"0 6px 0 #989898","margin":"10px auto","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' @click="logout" class="layui-btn btn-submit">退出登录</button>
+								<button :style='{"padding":"0 10px","boxShadow":"0 6px 0 #15476A","margin":"10px auto 0","borderColor":"rgba(130, 198, 243, 1)","backgroundColor":"rgba(255, 0, 0, 0)","color":"rgba(130, 198, 243, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' class="layui-btn btn-submit btn-theme" lay-submit lay-filter="*">UpdateTheInformation</button>
+                <button :style='{"padding":"0 10px","boxShadow":"0 6px 0 #989898","margin":"10px auto","borderColor":"rgba(220, 220, 220, 1)","backgroundColor":"rgba(255, 255, 255, 0)","color":"rgba(152, 152, 152, 1)","borderRadius":"0","borderWidth":"0 0 6px","width":"10%","fontSize":"14px","borderStyle":"solid","height":"44px"}' @click="logout" class="layui-btn btn-submit">SignOut</button>
 							</div>
 						</div>
 						<!-- <div class="layui-form-item">
@@ -260,7 +260,7 @@
 						</div> -->
 					</form>
 				</div>
-				<!-- 个人中心 -->
+				<!-- PersonalCenter -->
 			</div>
 
 		</div>
@@ -355,7 +355,7 @@
 				jquery('#btn-recharge').click(function(e) {
 					layer.open({
 						type: 2,
-						title: '用户充值',
+						title: 'TheUserRecharges',
 						area: ['900px', '600px'],
 						content: '../shop-recharge/recharge.html'
 					});
@@ -364,7 +364,7 @@
 				jquery('#btn-buyvip').click(function(e) {
 					layer.open({
 						type: 2,
-						title: '会员购买',
+						title: 'MembershipPurchases',
 						area: ['900px', '600px'],
 						content: '../shop-recharge/buyvip.html'
 					});
@@ -411,13 +411,13 @@
 					}
 				});
 
-				vue.xingbie = '男,女'.split(',')
+				vue.xingbie = 'Man,Woman'.split(',')
 
 				// 查询用户信息
 				let table = localStorage.getItem("userTable");
 
 				if(!table){
-					layer.msg('请先登录', {
+					layer.msg('PleaseLogInFirst', {
 						time: 2000,
 						icon: 5
 					}, function() {
@@ -435,28 +435,28 @@
 				form.on('submit(*)', function(data) {
 					data = data.field;
 					if(!data.yonghuming){
-						layer.msg('用户名不能为空', {
+						layer.msg('TheUsernameCannotBeEmpty', {
 														time: 2000,
 														icon: 5
 												});
 						return false
 					}
 					if(!data.mima){
-						layer.msg('密码不能为空', {
+						layer.msg('ThePasswordCannotBeEmpty', {
 														time: 2000,
 														icon: 5
 												});
 						return false
 					}
 					if(!isMobile(data.shouji)){
-						layer.msg('手机应输入手机格式', {
+						layer.msg('ThePhoneShouldBeEnteredInThePhoneFormat', {
 														time: 2000,
 														icon: 5
 												});
 						return false
 					}
 					http.requestJson(table + '/update', 'post', data, function(res) {
-						layer.msg('修改成功', {
+						layer.msg('TheModificationWasSuccessful', {
 							time: 2000,
 							icon: 6
 						}, function() {

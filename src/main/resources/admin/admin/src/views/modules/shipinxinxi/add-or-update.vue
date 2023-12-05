@@ -104,14 +104,14 @@
         </div>
       </el-col>
       <el-col :span="12">
-        <el-form-item class="input" v-if="type!='info'"  label="用户名" prop="yonghuming">
+        <el-form-item class="input" v-if="type!='info'"  label="Username" prop="yonghuming">
           <el-input v-model="ruleForm.yonghuming" 
-              placeholder="用户名" clearable  :readonly="ro.yonghuming"></el-input>
+              placeholder="Username" clearable  :readonly="ro.yonghuming"></el-input>
         </el-form-item>
         <div v-else>
-          <el-form-item class="input" label="用户名" prop="yonghuming">
+          <el-form-item class="input" label="Username" prop="yonghuming">
               <el-input v-model="ruleForm.yonghuming" 
-                placeholder="用户名" readonly></el-input>
+                placeholder="Username" readonly></el-input>
           </el-form-item>
         </div>
       </el-col>
@@ -135,8 +135,8 @@
             </el-col>
           </el-row>
       <el-form-item class="btn">
-        <el-button  v-if="type!='info'" type="primary" class="btn-success" @click="onSubmit">提交</el-button>
-        <el-button v-if="type!='info'" class="btn-close" @click="back()">取消</el-button>
+        <el-button  v-if="type!='info'" type="primary" class="btn-success" @click="onSubmit">Submit</el-button>
+        <el-button v-if="type!='info'" class="btn-close" @click="back()">Cancel</el-button>
         <el-button v-if="type=='info'" class="btn-close" @click="back()">返回</el-button>
       </el-form-item>
     </el-form>
@@ -418,7 +418,7 @@ export default {
     },
 
 
-    // 提交
+    // Submit
     onSubmit() {
 
 

@@ -14,20 +14,20 @@ import com.baomidou.mybatisplus.plugins.Page;
 public class Query<T> extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
     /**
-     * mybatis-plus分页参数
+     * mybatis-plus分Page参数
      */
     private Page<T> page;
     /**
-     * 当前页码
+     * 当前Page码
      */
     private int currPage = 1;
     /**
-     * 每页条数
+     * 每PageArticle数
      */
     private int limit = 10;
 
     public Query(JQPageInfo pageInfo) {
-    	//分页参数
+    	//分Page参数
         if(pageInfo.getPage()!= null){
             currPage = pageInfo.getPage();
         }
@@ -41,7 +41,7 @@ public class Query<T> extends LinkedHashMap<String, Object> {
         String order = SQLFilter.sqlInject(pageInfo.getOrder());
         
 
-        //mybatis-plus分页
+        //mybatis-plus分Page
         this.page = new Page<>(currPage, limit);
 
         //排序
@@ -55,7 +55,7 @@ public class Query<T> extends LinkedHashMap<String, Object> {
     public Query(Map<String, Object> params){
         this.putAll(params);
 
-        //分页参数
+        //分Page参数
         if(params.get("page") != null){
             currPage = Integer.parseInt((String)params.get("page"));
         }
@@ -73,7 +73,7 @@ public class Query<T> extends LinkedHashMap<String, Object> {
         this.put("sidx", sidx);
         this.put("order", order);
 
-        //mybatis-plus分页
+        //mybatis-plus分Page
         this.page = new Page<>(currPage, limit);
 
         //排序

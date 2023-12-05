@@ -144,7 +144,7 @@ public class DiscussshipinxinxiController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

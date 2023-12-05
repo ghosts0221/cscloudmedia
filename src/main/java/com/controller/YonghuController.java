@@ -38,7 +38,7 @@ import com.utils.CommonUtil;
 import java.io.IOException;
 
 /**
- * 用户
+ * User
  * 后端接口
  * @author 
  * @email 
@@ -66,7 +66,7 @@ public class YonghuController {
 			return R.error("账号或密码不正确");
 		}
 		
-		String token = tokenService.generateToken(user.getId(), username,"yonghu",  "用户" );
+		String token = tokenService.generateToken(user.getId(), username,"yonghu",  "User" );
 		return R.ok().put("token", token);
 	}
 	
@@ -223,7 +223,7 @@ public class YonghuController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

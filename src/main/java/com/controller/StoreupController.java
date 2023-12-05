@@ -151,7 +151,7 @@ public class StoreupController {
     }
 
     /**
-     * 修改
+     * Revise
      */
     @RequestMapping("/update")
     @Transactional

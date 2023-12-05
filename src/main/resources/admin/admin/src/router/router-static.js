@@ -63,12 +63,12 @@ const routes = [{
       }
       ,{
 	path: '/yonghu',
-        name: '用户',
+        name: 'User',
         component: yonghu
       }
       ,{
 	path: '/shipinxinxi',
-        name: '视频信息',
+        name: 'Multimedia',
         component: shipinxinxi
       }
       ,{
@@ -88,7 +88,7 @@ const routes = [{
       }
       ,{
 	path: '/tupianxinxi',
-        name: '图片信息',
+        name: 'Image',
         component: tupianxinxi
       }
       ,{
@@ -98,7 +98,7 @@ const routes = [{
       }
       ,{
 	path: '/wenzhangxinxi',
-        name: '文章信息',
+        name: 'Article',
         component: wenzhangxinxi
       }
       ,{

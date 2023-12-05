@@ -11,20 +11,15 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://soupfish.mysql.database.azure.com:3306/springboot9zo8s?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
-    username: soupfish
-    password: Tygg0906
+    url: jdbc:mysql://cscloudmedia.mysql.database.azure.com:3306/springboot9zo8s?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: cs
+    password: Abcd1234
 
     #        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
     #        url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=springboot9zo8s
     #        username: sa
     #        password: 123456
 
-    azure:
-      storage:
-        account-name: soupfish
-        account-key: dleJwXdJd8TfuMwalBMZvp7F7BSVuGB7xJ2+JJthsUcyK5JFSTbD8UcSsWmkHGNyCOomDb//rYnJ+AStwrW8KA==
-        blob-endpoint: https://soupfish.blob.core.windows.net/
 
     servlet:
       multipart:
