@@ -12,4 +12,4 @@ This repository contains my undergraduate coursework project.
 
 ## Portfolio
 For a cleaner, internship-focused project, see:
-- https://github.com/ghosts0221/med-api-starter
+- https://github.com/ghosts0221
